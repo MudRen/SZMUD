@@ -1,0 +1,7 @@
+#/clone/user/user.c
+alias (["v":"volunteer","x":"xue lingxu taiji-shengong","ab":"ask bei about job","t":"trade $1","b":"bargain $1",])
+dbase (["long":"²»·²Ê¥×Ó³õÉúÊ±£¬Ò»ÊÖÖ¸ÌìÒ»ÊÖÖ¸µØ£¬ÏòÖÜÎ§×ßÆß²½£¬ÍùËÄ·½´óÉùÑÔµÀ¡ª¡ªÌìÉÏµØÏÂÎ¨ÎÒ¶À×ğ¡£","death_count":2,"max_qi":101,"family":(["generation":4,"privs":0,"master_name":"ÁéĞéµÀ³¤","title":"µÜ×Ó","enter_time":1005963418,"family_name":"Îäµ±ÅÉ","master_id":"lingxu daozhang",]),"max_jing":100,"startroom":"/d/wudang/shanmen","max_potential":104,"eff_qi":101,"nickname":"[1;32mÎäµ±Ò»Ô±[37;0m","race":"ÈËÀà","combat_exp":2928,"mud_age_last":14518,"eff_jing":100,"combat_exp_last":1724,"age":14,"language":"GB","job":(["fail":10,"succeed":30,]),"pighead":0,"death_times":1,"shen_type":0,"totalmoney":0,"env":([]),"balance":0,"jiajin":1,"behavior_exp":0,"mud_age":17731,"default_actions":,"shen":163,"gender":"ÄĞĞÔ","name":"²»·²Ê¥×Ó","jiali":0,"actions":,"newsaver":1,"channels":({"chat","rumor","xkx",}),"sleeptime":1005705140,"potential":81,"birthday":1005443711,"qi":101,"title":"Îäµ±ÅÉµÚËÄ´úµÜ×Ó","food":360,"water":310,"job_server":([]),"max_neili":7,"wudang":(["offerring":78,]),"neili":14,"max_jingli":100,"disable_type":" <»èÃÔ²»ĞÑ>","registered":"yes","jingli":100,"str":20,"per":20,"clbscore":30,"id":"coolboy","kar":29,"jing":60,"quest_exp":140,"month":3,"dex":21,"con":30,"int":18,"bangs":(["jointime":1005704491,"asktime":1005705518,]),])
+skills (["force":12,"parry":19,"taiji-shengong":18,])
+learned (["force":61,"parry":311,"dodge":0,"taiji-shengong":0,])
+skill_map (["force":"taiji-shengong",])
+autoload ({})

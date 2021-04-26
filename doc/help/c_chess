@@ -1,0 +1,42 @@
+
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+                                  ¡¶ÏóÆå¡·                                  
+                              £¨Chinese chess£©                             
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+
+»¶Ó­ÖîÎ»ÆåÊ¿ÔÄ¶Á±¾ÎÄ¼þ£¬Ï£ÍûÕâ·Ý×ÊÁÏÄÜ°ïÖúÄãÓä¿ìµØÔÚ[1;37mÉñÖÝ[37;0m¶ÔÞÄÏóÆå¡£
+ÕâÀï¼ÙÉè´ó¼Ò¶¼Ã÷°×ÏóÆåµÄ¹æÔò£¬ìó½éÉÜÊ¹ÓÃÖ¸Áî¡£
+
+ÒÆ¶¯Æå×Ó  £ºmove <ºá×ù±ê> <×Ý×ù±ê> to <ºá×ù±ê> <×Ý×ù±ê>
+            Àý×Ó£ºmove 1 1 to 1 2
+
+ÖØÏÂ      £ºreset
+            ´òÂÒÆåÅÌÉÏµÄÆå£¬ÖØÐÂ°ÚÒ»¸öÆå¾Ö¡£
+
+¼ÇÂ¼²Ð¾Ö  £ºcsave
+            °ÑÏÖÔÚµÄÆå¾Ö´æÆðÀ´£¬ÒÔáá¿ÉÒÔÓÃdeployÖ¸ÁîÖØÐÂ°Ú³öÀ´¡£
+            µ«ÊÇÒ»¸öÈËìóÄÜ´æÒ»¾ÖÆå¡£
+
+¶Á³ö²Ð¾Ö  £ºdeploy
+            Èç¹ûÄãÓÐ±£´æ²Ð¾Ö£¬¿ÉÒÔÓÃ´ËÖ¸Áî°Ú³öÀ´¼ÌÐø¶ÔÞÄ¡£
+
+ÖÀ÷»      £ºtoss
+            ÖÀ÷»×Ó¾ö¶¨ÏÈáá£¬ÏÈÊÖÏÂºì×Ó¡£
+
+»Ø¹Ë      £ºreview
+            ÁÐ³öÕâ¾ÖÆåÏÂ¹ýµÄÆåÂ·¡£
+
+ÌáÒéºÍ¾Ö  £ºdraw
+            Èç¹ûÆåÂ·³¬¹ýÈýÊ®Â·£¬»¹ÎÞ·¨·Ö³öÊ¤¸º£¬Äã¿ÉÒÔÔÚÏÂÍêÒ»×ÓááÌáÒéºÍ¾Ö¡£
+            µ±È»£¬±ØÐè¶ÔÊÖÒ²Í¬Òâ²ÅÐÐ¡£
+
+ÈÏÊä      £ºlose
+            Èç¹û±»½«¾üÓÖÃ»·¨×Ó¶Ô¸¶£¬Ì¹°×ÈÏÊä°É£¬·­ÆåÅÌÊÇÃ»·ç¶ÈµÄÐÐÎª¡£
+
+ÖîÎ»¿ÉÒÔËæÊ±ÏòÆåÔ·Ö÷ÈË´òÌýÆå½çÏà¹ØÏûÏ¢¡£±ÈÈçÆåÊ¿ÖÐ×î¶àÊ¤(win)¡¢°Ü(lose)µÄÈË£¬
+ÒÔ¼°×Ô¼ºµÄ³É¼¨(score)¡£Èç¹ûÄãÀú¾­ÁË¶à´Î¶ÔÞÄ£¬Ò²¿ÉÒÔÇå³ý×Ô¼ºµÄÊ¤¸º¼ÇÂ¼(clean)
+¡£ÔÚÏÐÏ¾Ö®Ê±£¬²»·ÁÔÝÀë³äÂúÑªÐÈ¶·ÕùµÄ½­ºþ£¬À´ÆåÔ·ÏÂÅÌÆå°É¡£
+
+ÎÄ (maco) Ð´ì¶2000Äê3ÔÂ7ÈÕ
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª

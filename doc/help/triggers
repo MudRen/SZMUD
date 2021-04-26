@@ -1,0 +1,42 @@
+[0m
+[0m
+[0m
+[37;44m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤[0m
+[37;44m¡¾·þÎñÆ÷¶Ë´¥·¢¡¿¡¡                                    [40m                [0m 
+[37;44m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤[0m
+[0m
+
+
+    ´ó¼ÒÖªµÀ£¬Íæ MUD ¶¼ÓÃ ZmudµÈ¹¤¾ßÀ´ÊµÏÖÒ»ÏµÁÐµÄ´¥·¢£¬Â·¾¶
+µÈµÈ¹¦ÄÜ¡£Ã¿µ±ÍøÂçËÙ¶ÈÌ«Âý£¬¶øµ¼ÖÂÄãµÄÖ¸ÁîÎÞ·¨¼°Ê±ËÍ³öµÄÊ±ºò£¬
+ÄãÒ»¶¨»áÓÐ°Ñ»úÆ÷ÔÒµôµÄ³å¶¯£¬ÓÈÆäÊÇ¿´µ½ÆÁÄ»Í»È»²»¶¯£¬µÈ´«¹ýÀ´
+µÄÊ±ºòÒÑ¾­ÔÚ°×ÎÞ³£ÕâÀï±¨µ½ÁË£¬ÊµÔÚÊÇºÜ²»Ë¬µÄÒ»ÖÖÊÂÇé¡£
+    Ò²ÓÐÔÚÄ³ÖÖ³¡ºÏ£¬Ò»Ð©ÐÅÏ¢·Ç³£ FLOOD£¬»òÕßÊÇÄã²»Ïë¿´µ½µÄÈË
+Ãû»òÕß×ÖÑÛ£¬ÅöÇÉÄãÓÖÊÇÔÚÍø°ÉÉÏÍø£¬ÉõÖÁÔÚÓÃ Telnet£¬Ã»ÓÐ°ì·¨Ê¹
+ÓÃ Zmud ÀïµÄ #GAG ¹¦ÄÜ¡£
+    »òÕßÔÚÍøËÙ²»ÎÈµÄÊ±ºò£¬ÄãÉí´¦±ù¶´£¬»òÕßÅöÇÉÄãÉíÉÏ´ø×ÅÒ»±¾
+ÉñÕÕ¾­£¬¶ÏÏßËÀ»úµÄÊ±ºò£¬ÄãÊ×ÏÈÏëµ½µÄ£¬¿Ï¶¨ÊÇÕâÏÂËÀ¶¨ÁË¡£
+    »ùÓÚÕâÖÖ¿¼ÂÇ£¬ÉñÖÝÏÖÔÚ¿ª·Å·þÎñÆ÷¶Ë´¥·¢µÄ¸ÅÄî£¬¼´ÔÊÐíÍæ¼Ò
+ÊÂÏÈ×Ô¶¨ÒåÒ»Ð©¼òµ¥µÄ Trigger£¬ÔÚ·þÎñÆ÷¶ÔÓÃ»§·¢³öÕâÐ©ÐÅÏ¢µÄÊ±
+ºò£¬Í¬Ê±´¥·¢ÕâÐ© Trigger£¬Ö´ÐÐÒ»ÏµÁÐÊÂÏÈ¶¨ÒåºÃµÄÃüÁî£¬ÒÔ±ÜÃâ
+ÍøËÙ¸øÍæ¼Ò´øÀ´µÄÓ°Ïì¡£Õâ±¾À´¾Í²»Ó¦¸ÃÊÇÓÎÏ·µÄÒ»²¿·Ö¡£
+    ËäÈ»ÏÖÔÚµÄ Trigger»¹ºÜ¼òµ¥£¬Ö»ÄÜ´¥·¢¼òµ¥Ö¸Áî¶øÎÞ·¨³ÉÎª·þ
+ÎñÆ÷¶ËµÄ»úÆ÷ÈË£¬²»¹ýÒÑ¾­ÊÇºÜ´óµÄÒ»ÖÖ½ø²½ÁË¡£
+
+Ê¹ÓÃ·½·¨£º
+
+Ö¸Áî¸ñÊ½ : trigger <´¥·¢ÏûÏ¢> <´¥·¢ºóÔ¤¶¨Ö´ÐÐµÄÃüÁî>
+
+trigger äìÈ÷ÈËÉú¿ì²½×ßÁË¹ýÀ´¡£ kill ysyysy 
+³öÏÖ¡°äìÈ÷ÈËÉú¿ì²½×ßÁË¹ýÀ´¡£¡±µÄÊ±ºò£¬ÏµÍ³×Ô¶¯Ö´ÐÐ "kill ysyysy" ¡£
+ 'trigger' ºó²»¼Ó²ÎÊýÔòÁÐ³öÄãËùÓÐµÄ Trigger¡£
+ "trigger äìÈ÷ÈËÉú¿ì²½×ßÁË¹ýÀ´¡£" »áÏû³ýÕâ¸ö Trigger¡£ 
+ 'trigger on' »á´ò¿ªËùÓÐ Trigger µÄ´¥·¢¡£
+ 'trigger off' »á¹Ø±ÕËùÓÐ Trigger µÄ´¥·¢¡£
+ 'trigger xxxx $gag' »á²»ÏÔÊ¾ËùÓÐ°üº¬xxxxµÄÐÅÏ¢¡£
+ ±ÈÈç 'trigger ÁúÁú×Ó $gag',ÕâÑùÄã¾Í¿´²»µ½ÓÐ¹ØÁúÁú×ÓµÄÒ»ÇÐµÄÐÅÏ¢ÁË¡£
+
+ÁíÍâ£¬Íæ¼Ò»¹¿ÉÒÔÉè¶¨ set disconnect quit »òÕß set disconnect out£¬
+ÕâÊÇÏµÍ³ÅÐ¶ÏÍæ¼Ò¶ÏÏßºó£¬Íæ¼Ò×Ô¶¯Ö´ÐÐµÄ×îºóÒ»¸öÃüÁî¡£ÎªÁË±ÜÃâÁÄÌì
+ÆµµÀÖÐ±»´¥·¢£¬Òò´ËÇëÓÃ " set " À´Éè¶¨¡£
+

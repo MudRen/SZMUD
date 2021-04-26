@@ -1,0 +1,395 @@
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  ½¨Òé                                         ÁôÏã(awp)(Tue May  7)
+ËäÈ»ÎÒ²»ÔÚÕâÍæÌÒ»¨.µ«ÊÇ×÷ÎªÒ»¸öÔÚÌÒ»¨´ôÁËËÄÄêµÄ²»ËãÄêÇáµÄÌÒ»¨µÜ×Ó
+Ò»Ö±¶¼ºÜ¹ØÐÄÌÒ»¨.ÀÏÊµËµ,Õâ¼¸ÄêÍæµÄmudÕæµÄ²»ÉÙ.´ó¸ÅµÄËµ
+·²ÊÇÄÜÕÒµÃµ½µÄ.»ù±¾ÉÏ¶¼È¥ÁË.µ±È»ÓÐÐ©ÊÇÃ»Íæ,ËùÓÐmudÖÐ³ýÁË
+fyºÍÆäËûÓÐÏÞµÄ¼¸¸öÍâ»ù±¾ÉÏ¶¼ÓÐÌÒ»¨.Éè¶¨ÉÏ»ù±¾ÉÏºÍxkxµÄ´óÍ¬Ð¡Òì
+ÆäÊµÎÒ¾õµÃxkxÔÚupdate 2jmºó.ÌÒ»¨Ò²²»ÄÜËãÌ«Èõ.ÎÒÊÇËµskills²»ËãÌ«Èô
+2jmËãÆðÀ´Ò²Í¦Á÷Ã¥µÄ.²»¹ý¸Ð¾õÀÏÊÇÓÐµã²»¶Ô.¾ßÌåµÄËµ.»ÆÀÏÐ°
+×îÄÃµÃ³öÊÖµÄ¹¦·òÊÇtzst.ÎÒ¾õµÃÌÒ»¨°ÑËüÐ´³ÉºÍyxj´îÅäÊÇ·ûºÏ
+sdxlÀïÑò¹ýÓÃyxj+tzstµÄ.µ«ÊÇÑò¹ýÑ§ÄÇµãËãµÃÁËÊ²Ã´°¡.¶øÇÒ
+ÔÚhelplÀïÒ²ÊÇËµÁËÅ¼¼ÒthdµÄtzstºÍ´óÀíµÄyyzÆëÃû.µ«ÊÇyyzµÄqiankun
+µãÑ¨¶àË§°¡.¸ã²»¶®ÎªÊ²Ã´tzst²»ÄÜµã.ÏÖÔÚxkx update taohuaÓÃxiao
+perform jianzhiÓÐµãÑ¨µÄÃèÊö.µ«ÊÇÈç¹û¿ÕÊÖÓÃtzst»¹ÊÇÌ«Èõ.Ò»¸öjinglei
+¹Ü¸öPÓÃ°¡.kf¾Í²»ËµÁË.¶Ô¸¶emei.wd.qz=s-f.Ï£ÍûÔÚszÀï¿ÉÒÔ°Ñtzst
+¸ÄÒ»ÏÂ.¿ÉÒÔµãÑ¨.µ«ÒªÓÐ±ðÓÚyyz.¿ÉÒÔÉè¼Æ³É°´tzstµÄµÈ¼¶À´µã¼¸¸ö²»Í¬µÄÑ¨
+²»Í¬µÄÑ¨ÓÐ²»Í¬µÄÐ§¹û.µ±È».¼¶±ðÔ½¸ßÔ½ºÝ.
+ÒÔÉÏÊÇÎÒµÄÒ»µãµã¿´·¨.ÍêÈ«²»´øÈÎºÎ¹¦À÷.Ö»ÊÇÒ»¸öÌÒ»¨µÜ×Ó¶àÄêÐÄÔ¸
+ÎÒ²»»áÔÙÍæÌÒ»¨ÁË.ÔÚÌÒ»¨´ôÁËËÄÄêÁË.Ò²¸Ã»»¸öµØ·½ºôÎü¿ÕÆøÁË
+²»¹ýÈÔÈ»Ï£ÍûÌÒ»¨ÄÜÓÐ»Ô»ÍµÄÒ»Ìì. bow all
+
+
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  to all                                    ÐéÀ§(kunnan)(Fri May 10)
+ÉÙÁÖ¼ÓÁË¸öÐÂpfm,´ó¼ÒºÃÏó¶¼ºÜÓÐÒâ¼û¡£ÎÒ¸ø´ó¼Ò
+·ÖÎöÒ»ÏÂ£¬¿´¿´ÉÙÁÖÕâ¸öpfmÊÇ²»ÊÇÌìÏÂÎÞµÐ¡£
+Ô­À´ÉÙÁÖ´ò¼Ü¿¿yzcºÍbrz,ÏÈÔË½ð¸Õ£¬£¨¼ÓÁ¦Ð§¹û¸üºÃ£¬
+²»¹ý¶ÔºÜ¶àÃÅÅÉ£¬¼ÓÁ¦»áºÜ²ÒµÄ£©£¬È»ºó¾Í±ÈË­ÏÈ³öÊÖ¡£
+Íí³öÊÖ¾Í²»ÓÃËµÁË£¬Èç¹ûÍø¿ì¼ÓÔËÆø£¬ÏÈ³öÊÖÁË£¬»¹Òª
+µãµãµÃÖÐ¡£ÕâºÜÖØÒª£¬µã²»ÖÐ£¬Ã¦¸öËÄÎåÃë£¬¾Í¿Ï¶¨Íêµ°¡£
+µãÖÐÁË£¬¾ÍÒª´òµÃÖÐ£¬¶øÉÙÁÖ¿ÕÊÖµÄÒ»°ã¹¥»÷ÃüÖÐÂÊ
+ÊµÔÚ²»¸ß£¬ÒªÊÇÓöµ½ÔËÈý»¨µÄ£¬ÔË¹í÷ÈµÄ£¬ÄÇ¾Í¸üÄÑ
+´òÖÐÁË¡£ÒªÊÇ²»ÄÜ¼ÓÁ¦£¬³ý·Ç¶ÔÊÖÆø¶Ì£¬¹À¼ÆÔËÆøºÃµã
+¿ÉÒÔÔÚµãÖÐµÄÄÇ¶ÎÊ±¼ä´òµ¹¶Ô·½¡£
+µ±È»Ò²¿ÉÒÔÔËÉ¢£¬²»¹ýÄÇ¸öÃüÖÐÂÊµÍÁËµã¡£
+ÏÖÔÚÉÙÁÖÐÂpfmµÄÌØµã¾ÍÊÇ¹¥»÷Á¦¸ß¡£´òÖÐÒ»ÏÂ´ó¸ÅÊÇ
+6kÆø¡£²»¹ýÃüÖÐÂÊÒ»°ã¡£µ±È»ÏÖÔÚÓÐ¸öÎÊÌâ¾ÍÊÇ£¬
+ÃüÖÐÂÊºÍË«·½µÄ¾­Ñé²î±ðÃ»ÓÐ¹ØÏµ£¨»ò¹ØÏµ²»´ó£©¡£
+½â¾öÁËÕâ¸öÎÊÌâ£¬ÉÙÁÖµÄÐÂpfmÒ²´æÔÚ×Å£¬Ò»ÒªÏÈ³öÊÖ£¬
+¶þÒªÃüÖÐ£¬ºÍÆäËûÃÅÅÉ¹¦·òÏà±È£¬Ã»É¶²î±ð¡£
+¿ÉÁ¯ÉÙÁÖµÈµ½ÏÖÔÚ£¬²ÅÓÐ¸öÄÜ´ò¼ÜµÄpfm¡£
+Ï£ÍûµÈÎ×Ê¦¸ÄºÃºó£¬´ó¼Ò±ðÔÚÍ¬ÉùÇ´ÔðÁË¡£¡£
+ºÇºÇ¡£¡£¡£
+
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  about gumu                                     Áã(xpk)(Sat May 25)
+ÏÂÃæËµµÄ¶¼ÊÇÐÄÀï»°£¬Ò²ÊÇ¸÷Î»gumu dizi µÄÐÄµ×»°
+
+µ±³õ@sz ³öÌ¨£¬ºÜ¶àÈËÍægumu, ¶¼ÊÇÒòÎªgumu ÐÂmenpai
+´ó¼Ò¶¼ÍæÑáÁË±ðµÄmenpai, ¶øÇÒgumu ÄÇÊ±ºòpfm suxin
+yc
+yf
+yx
+ÊÇºÜÄÇÊ±ºò×îÁ÷Ã¥µÄpfm, ËùÒÔÁîµ½gumu ÔÚ¶¥·å
+Ê±ÆÚÓÐ¹ý40-50 ¸öÍæ¼ÒÊÇµ±Ê±@sz ÉÏÏßplayer µÄ1/3
+µÄÈ·gumu Ò»¿ªÊ¼Éè¼ÆÊÇÉè¼ÆµÄ³¬Ç¿¡£
+ÎÒÒ²²»ÅÂÀÏÊµËµ£¬gumu µ±Ê±µÄÄÚ¹¦»¹ÓÐfanzhen
+(µ«¿ªÕ¾²»¹»1 ¸öÔÂfanzhen µÄ¹¦ÄÜ¾Ícut le)
+yc
+yf
+yx
+½Ó×ÅÊÇpfm suxin µÄcut, ÎÒÒ²ÈÏÎªcut ÊÇÓ¦¸ÃµÄ
+µ±Ê±µÄgumu µÄÈ·ÒÑ¾­³¬³öÁËÒ»°ãmenpai ËùÄÜµ½´ï
+µÄ¾³½ç¡£
+µ«ËùÎ½¸£ÎÞË«ÖÁ£¬»ö²»µ¥ÐÐ¡£½Ó×ÅÏÂÀ´Ã»ÓÐÒâÎ¶×Å
+gumu µÄÆ½¾²£¬µ±gumu dizi ¿ªÊ¼ÓÐÈËÄÜÓÃqianjun
+µÄÊ±ºò£¬gumu dizi »¹ÊÇÃ»ÓÐÌÓ¹ýcut µÄÃüÔË
+µÄÈ·Ò»¿ªÊ¼qianjun µÄÃüÖÐÊÇºÜ¸ßµÄ(¸ßµ½Ê²Ã´³Ì¶È£¿
+±ÈÈçÎÒÓÃqianjun ×öjob, ×öÁËÒ»¸öÐÇÆÚ´ÓÀ´Ã»ÓÐmiss
+¹ýÒ»´Î)£¬ÕâÑùcut µÄ»°ÎÒÃÇÒ²Ã»»°Ëµ¡£µ«¶àÉÙÈËÓÐÖªµÀ
+qianjun µÄÃüÖÐÒ»¹²¸øcut ÁË¼¸´Î£¬ÏÖÔÚ²»ÉÙÈË¶¼ÖªµÀÁË
+gumu dizi »¹ÓÐË­ÊÇÓÃqianjun ×öjob µÄ(»òÕßfight µÄ)
+ÔøÊÇ@sz no.1 µÄ»¯Ñ§pfm ¾ÓÈ»Âäµ½ÏÖÔÚÃ»ÓÐÈÎºÎÓÃÎä
+Ö®µØµÄµØ²½ÕæµÄ¿ÉÁ¯£¬Ò²¸ÐÌ¾wiz cut µÄ¹¦Á¦¡£
+cut qianjun ºÜ¶àÈËÒ²ÖªµÀ£¬µ«ÓÐ¶àÉÙÈËÖªµÀgumu
+±ðµÄ¸øcut µÄ¶«Î÷£¿ÏÖÔÚ¾ÍÈÃÎÒÁÐ±íÒ»ÏÂ£º
+¿ªÊ¼gumu help ÎÄ¼þÀïÃæËµµÄgumu dizi ·ÅÃÛ·äÄÜÓÐ
+10 ¸öxiang, µ«²»µ½Á½ÌìÊ±¼äwiz ¾Í¸Ä³ÉÁË6 ¸öxiang
+ºóÀ´²»¹»1 ¸öÔÂ°Ñ6 ¸öxiang ¸Ä³ÉÁË5 ¸öxiang, ¶øÔ­À´
+·ÅÃÛ·äµÄÊ±ºòdirect bee ¼ÓexpÒ²±äÁË²»¼Óexp
+gumu ÆäÖÐÒ»¸ö¸£ÀûÃÛ·ä½¬¿ªÊ¼ÊÇºÈÒ»¿Ú¼Ó1 µãmaxjingli
+ºóÀ´¸ÄÁËrandom ´ó¸ÅºÈ10 ¿Ú¼Ó5 µã(ÕâÒ²Ã»Ê²Ã´µÄ,cut µÄ
+ºÏÀí)£¬Ò»¿ªÊ¼@sz µÄdazuo ËÙ¶ÈºÍxkx Ò»Ñù¶øgumu
+µÄº®´²µÄdazuo ËÙ¶ÈÊÇÆ½Ê±dazuo µÄÁ½±¶£¬qi ÏûºÄÊÇÒ»°ë
+µ«ºóÀ´buwu °ÑÕû¸ö@sz dazuo ËÙ¶ÈÌá¸ßÒ»±¶£¬µ«gumu
+µÄº®´²¾ÍÒ»Ö±Í£ÁôÔÚ¿ªÕ¾µÄË®Æ½£¬ÕâÑù²»¾ÍÊÇ±äÏàµÄcut ÁË
+gumu º®´²£¬ºÃÕâÒ²ËãÁË¡£
+Îä¹¦·½Ãæ³öÀ´¸Õ²ÅËµµÄpfm suxin ºÍqianjun ¸øcut ¹ýÖ®Íâ
+pfm jingtao Ò²Ôø¸øcut ¹ý£¬µ«ºóÀ´slow °Ñjingtao
+Õû¸öpfm µÄÐÎÊ½¸Ä±äÁË£¬ÄÇÃ´ÄÇ¸öcut Ò²¾ÍËãÁË¡£
+¶øÔ­À´gumu ÄÐÅ®¿ÉÑ§µÄËØÐÄ½£Ò²¸Ä³ÉÁËÖ»ÓÐÅ®µÄ¿ÉÒÔlian
+ËãÁËÕâÑù¶¼ÊÇ±È½Ï¾ÃµÄÊÂÇé£¬µ«@sz ¿ªÕ¾²»µ½9¸öÔÂ£¬gumu
+Æ½¾ùÆðÀ´Ã¿¸öÔÂ¶¼ÓÐ±»cut, ±È½Ï½ü·¢ÉúµÄcut ¾ÍÊÇ
+yang job, µ±Ê±Ñî¹ýjob µÄ³öÏÖµÄÈ·Áîµ±Ê±µÄgumu
+dizi ÄÜ¹»ÔÚÄÃexp ·½Ãæ¼Ó¿ìºÜ´óµÄËÙ¶È(7k+/h)
+µ«ÕâÑùµÄÊ±¼äÖ»Î¬³ÖÁË²»µ½Ò»¸öÔÂ£¬¸ú×Å¾ÍÊÇ6.4m
+µÄgumu dizi ×öyang job Ö»¼ÓÔ­À´Ò»°ëµÄ¾­Ñé
+¶øyang job µÄËÙ¶ÈÒ²´ÓÔ­À´µÄ700/job cut µ½ÁË450-500/job
+µ«²»µ½Ò»¸öÐÇÆÚ£¬yang job ¾ÍÔÚgumu ÏûÊ§ÁË£¬¶ø±ä³É
+ÁË´ó¼ÒµÄ¹«¹²job (guo job). ËùÈ»buwu Ò²¿¼ÂÇµ½gumu dizi
+¶øÈÃslow °Ñ·ÅÃÛ·äµÄËÙ¶Èµ÷¸ßµ½4k-5k/h µÄËÙ¶È¡£µ«
+Ô­À´gumu Ó¦¸ÃÓÐµÄÁ½¸ömenpai job ¾Í±ä³ÉÁËÒ»¸ö¡£
+ÔÚ¹Ø±ÕËùÓÐµÄpfm Ç°£¬slow Ôø¾­Ä¬ÐíÁËÎª
+gumu dizi Ôö¼ÓÒ»¸öÄÚ¹¦yun µÄ¹¦ÄÜºÍ¼ÓÒ»¸öÄÜ¹»°Ñ
+force ¼Óµ½400lvl µÄµØ·½£¬µ«×òÌìµÄÖØ¿ªpfm µÄpost
+´ó¼ÒÒ²¿´¼ûÁË£¬gumu ÊÇÎ¨Ò»Ò»¸öÃ»ÓÐ¼Ó·´¶øcut µÄmenpai
+ÖÁÓÚslow Ô­À´Ä¬ÐíµÄ¶«Î÷ÏÖÔÚÎÒÒ²²»Çå³þµ½µ×ÓÐÃ»ÓÐ
+»ú»á³öÌ¨£¬±Ï¾¹ÔÚbuwu µÄpost ÉÏ¡°gumu ÒÑ¾­ÊÇºÜ
+Ç¿´ó£¬²»ÓÃ¸üÐÂÁË¡±£¬µ«×÷ÎªÍæ¼ÒÓÐÊ±ºò´ÓÐÄµ×ÏëÖªµÀ
+Ò»¸ömenpai µÄÇ¿Èõ£¬Íæ¼ÒÄÜÆðÊ²Ã´Ð§¹ûÂð£¿
+menpai ÊÇwiz design ³öÀ´µÄ£¬design µÄÇ¿ÎÒÏë
+menpai dizi ÀïÃæÄÜÓ°ÏìµÄÒòËØÓ¦¸ÃºÜÉÙ£¬µ«ÊÇ
+µ±design ¹ýÇ¿(¾ÍÊÇÒ»¿ªÊ¼gumu µÄÎÊÌâ)£¬cut µÄ¶ÔÏó
+·´¶ø¾ÍÊÇÍæ¼Ò£¬µ½Í·À´ÔâÑêµÄ»¹ÊÇÖ»ÓÐÍæ¼Ò¡£
+ÏÖÔÚºÜ¶àÈË¶¼Ëµgumu ÊÇºÜÇ¿µÄmenpai, ¸ßÊÖÈçÁÖ
+µ«´ó¼ÒÒ²²»¿´¿´ÏÖÔÚËùÎ½µÄgumu ¸ßÊÖÓÐÄÇ¼¸¸ö²»ÊÇ´Ó
+Ò»¿ªÕ¾¾ÍÍæµÄ(¶øÇÒgumu Ã»ÓÐ°ì·¨ÅÐ)£¬¶øÇÒ
+ÏÖÔÚºÜ¶àÈË¶¼ÖªµÀÁËsurfb, chacha, leiidian ÆäÊµ
+90% ¾Í¶¼ÊÇleiidian Ò»¸öÈËÔÚ¹Ò£¬misu ºÍpretty ÒÑ¾­
+ÍË³öÁË£¬bye Ò²´òËãÒª×ßÁË£¬¶øleiidian ÏÖÔÚÒ²ºÜÊ§Íû
+ÁË¡£gumu ÏÖÔÚÊÇÔÚÂýÂýµÄ×ßÏÂÆÂÂ·¡£ÄÑµÀÕâÕæµÄÊÇ
+player µÄ²»ÊÇÂð£¿µÄÈ·ÎÒÏÖÔÚ»¹ÊÇ²»ÄÜ·ñÈÏgumu ÊÇ@sz
+ËãÉÏÁ÷µÄmenpai, µ«´ó¼Ò¿´ÏÖÔÚÃ¿¸ömenpai ¶¼ÔÚ¼Ó
+Õâ¼ÓÄÇ£¬µ«gumu »¹ÊÇÔÚ²»Í£µÄcut, ¶øÇÒÒ²Ã»ÓÐÈËÖªµÀ
+Ê²Ã´Ê±ºòwiz ²Å»á¶Ôgumu cut ÐÐ¶¯»®ÉÏ¾äºÅ£¬ÕâÑù
+ºÜÄÑÈÃgumu dizi ÓÐÐÅÐÄÔÙ¼ÌÐøÏÂÈ¥¡£
+´Óµ±³õµÄµÚÒ»´ó£¬Ç¿menpai£¬gumu µÄµØÎ»Ò»¶¨²»¶ÎÏ¢Î¢ÁË¡£
+buwu Ôø¶à´ÎÏògumu dizi Ëµ¹ý»áupdate gumu, »á
+update gumu, µ«ÎÒÃÇµÈÀ´µÄÈ±ÊÇÒ»´ÎÒ»´ÎµÄcut¡£
+ÏÖÔÚÎÒÃÇµÄÌ¬¶ÈÒ²ÂýÂý´Ó¡°Çëupdate gumu"±ä³ÉÁË
+¡°Çë±ðÔÙcut gumu¡±¡£
+wizÄÑµÀ¾ÍÔõÃ´ÌúÊ¯ÐÄ³¦£¿
+SIGH
+
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  re 498                                    ÇïÔÂÎÞ±ß(slow)(Sat May 25)
+¿´ÁËÄãµÄ»°£¬ÕæµÄºÜ¸Ð¶¯£¬Äã²î²»¶àÐ´ÁËÕû¸ö
+gumu ´ÓÀ´¿ªÕ¾µ½ÏÖÔÚµÄÀú³Ì£¬¿´µ½ÕâÐ©»°
+Ò»¼þ¼þÊÂÇé£¬ÎÒ¶¼ÀúÀúÔÚÄ¿£¬ÈÃÎÒºÜÊÇ¸Ð¶¯
+ºÃÏñ£¬ºÃÏñÓÖ»Øµ½ÁË¿ªÕ¾µÄÈÕ×Ó£¬ÎÒºÍ´ó¼Ò
+Ò»Æð·ÅÃÛ·äµÄÈÕ×Ó£¬²»ÅÂgumu µÄÍ¬°ûÂîÎÒ
+ÎÒ¾ÍÊÇmisu,ºÜÏë¸ú´ó¼ÒËµÒ»Éù£¬ÎÒºÜÏëÄî
+´ó¼Ò£¬µ«ÊÇÎÒÒ»Ö±ÔÚgumu Íæ¼ÒµÄÉí±ß£¬ÎÒ
+Ò»Ö±ºÍ´ó¼ÒÔÚÒ»Æð£¬misu ¸Õ¿ªÊ¼ÆäÊµÒ²ºÜÉÙ
+ºÍgumu Íæ¼ÒÁÄÌì£¬ÄÇÊ±ÎÒ¾­³£Ä¬Ä¬µÄ¿ª×Å
+menpai channel ¿´´ó¼ÒÁÄÌì£¬Ò²ºÜÊÇã«Òâ
+ºóÀ´ÎÒÏëÕ¹ÏÖÒ»¸öÕ¸ÐÂµÄgumu µÄÊ±ºò£¬ÎÒ
+²½ÈëÁËwiz ÐÐÁÐ£¬Ò²Ð»Ð»buwu ¸øÕâ¸ö»ú»á
+ËùÒÔÄÇÊ±ºò£¬misu,pretty ¶¼Ã»Áôpost,¾ÍÀë¿ª
+ÁË£¬ÎÒ²»ÓÃpost,ÒòÎªÎÒºÍgumu Íæ¼ÒÒ»Ö±
+ÔÚÒ»Æð£¬¿ÉÒÔËµÎÒºÜÁË½âgumu µÄskill,
+µ«ÊÇÒ»¿ªÊ¼gumu µÄskill ¾Í¹ýÇ¿£¬ÎÒÒ²ÊµÔÚ
+·Å²»¿ªÊÖ½ÅÈ¥¸üÐÂgumu,ÎÒcut qianjun ºó
+È·Êµbye,kstar,»¹ÓÐÃÀÀ±ÃÃµÈÍæ¼Ò±íÊ¾¹ý
+²»Âú£¬µ«ÊÇÎÒÒ²Ã»°ì·¨£¬ÒòÎªÒÔÇ°µÄgumu È·Êµ
+Ì«Ç¿£¬ÓÃbuwu µÄ»°Ëµ£¬qianjun 1 hit
+¿ÉÒÔ´òËÀÒ»Í·´óÏó£¬shrug,ÏÖÔÚbuwu ÒÑ¾­´ðÓ¦
+ÈÃÎÒ·Å¿ªÊÖ½Å¸üÐÂgumu,Èç¹û´ó¼Ò»¹ÏàÐÅ
+ÎÒ£¬»áÓÐÒ»¸öÈ«ÐÂµÄgumu Õ¹ÏÖ¸ø´ó¼Ò£¬
+ÆäÊµºÃ¶à´úÂëÎÒ¶¼´ÓÐ´¹ýÁË£¬qianjun,hubo
+jingtao,»¹ÓÐÒ»Ð©¶«Î÷Ð´ÁËÃ»ÓÐ¿ª·Å
+......................
+×îºó×£Ô¸gumu player ÍæµÃ¿ªÐÄ£¬ÕâÀïÖ»ÊÇ
+Ò»¸öÓÎÏ·£¬Ö÷Òª½»ÅóÓÑ£¬ÁÄÌì£¬ºÍ×Ô¼º¶þÖØ
+ÐÔ¸ñµÄÌåÏÖ£¬¿ªÐÄ¾Í×ã¹»ÁË£¬²»ÊÇÃ´£¿
+
+
+                    -- slow ( misu )
+
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  idea about pfm style                           Áã(xpk)(Sat May 25)
+xkx ·¢Õ¹ÁË6 Äê£¬¿ÉÒÔËµpfm µÄÀàÐÍÄ£Ê½ÒÑ¾­µ½ÁË
+ºÜÄÑÔÚÌá¸ß»òÕß´´ÐÂµÄµØ²½£¬ÕâÒ²Áîµ½µÄºÜ¶àÐÂ³öµÄpfm
+games yeah
+³öÏÖÁËÖØ¸´¹¦ÄÜ»òÕßÖ»ÊÇ¸Ädescribe »ù±¾ÉÏ¹Ç¼Ü»¹ÊÇÀÏ
+Ñù×ÓµÄÇé¿ö³öÏÖ¡£wiz ²»ÏëÇýÄàÓÚ¾Épfm, µ«ÒªÏë³ö
+Ò»ÖÖÐÂµÄpfm ÀàÐÍ»òÕßÄ£Ê½ÊÇÌ¸ºÎÈÝÒ×¡£
+Íæ@sz ÄÇÃ´¾Ã£¬ÎÒ¾õµÃ´´×÷µÄºÃµÄpfm Ö»ÓÐÁ½¸öÒ»¸ö
+¾ÍÊÇyun hua(ÊÇÒ»¸öºÜºÃµÄÖ÷Òâ£¬ºÜÓÐ´´ÒâºÍ·ç¸ñ)
+ÁíÍâÒ»¸öÊÇ¿´Íêbuwu news µÄgb µÄËÄº£(ºÜÓÐ·ç¸ñ£¬ËäÈ»
+´´Òâ²»¼°Ç°Õß£¬µ«Ëû¿ª´´ÁËpfm Ó¦¸ÃµÄ¸ÅÄî-¶Ô²»Í¬Ê¹ÓÃ
+ÕßÀ´Ëµ»á³öÏÖ²»Í¬Ð§¹û)¡£µ«ÕâÒ²ÒâÎ¶×ÅÒÔºóÐÂµÄpfm
+¾ÍÒªÃæÁÙ¸ü¼èÄÑµÄ¾ÖÃæ¡£
+ÎÒÔøÏë¹ýºÜ¶àÖ÷Òâ£¬µ«¶¼²»ÍêÉÆ£¬µ«ÎÒ¾õµÃÏÂÃæÕâÁ½¸ö
+ÐÂÀàÐÍwiz Ó¦¸Ã¿ÉÒÔ³¢ÊÔÔÚÒÔºóµÄÐÂpfm ÖÐ¿¼ÂÇÒ»ÏÂ£º
+1.
+ÄÚ¹¦´¢Á¦½èÁ¦´òÁ¦ÐÍ
+Ö÷ÒâÀ´×Ô"Ð¡ÎÞÏà¹¦¡°ºÍ¡±¶·×ªÐÇÒÆ¡°
+¹¹ÏëµÄpfm Ð§¹ûÊÇ£¬Ã¿µ±µÐÈË¹¥»÷ÉËº¦µ½×Ô¼º
+µÄÊ±ºò¾Í»áÔö¼Ó×ÔÉíÒ»¸öÒþ²ØµÄ¹¥»÷µÄÍþÁ¦
+µ±Õâ¸öÒþ²ØµÄ¹¥»÷µÄÍþÁ¦´ïµ½Ò»¶¨Ë®Æ½
+»òÕßÔÚ×Ô¼ºµÄÑªÒÑ¾­Ã»ÓÐµÄÊ±ºò£¬¾Í×Ô¶¯pfm ³öÀ´
+ÎÞÂÛ×ÔÉíµ±Ê±ÊÇ²»ÊÇ´¦ÓÚbusy ×´Ì¬¶¼ÄÜpfm
+ÕâÑùpfm Ó¦¸Ã¿¼ÂÇÊÇ×ÔÉíÊÜÉËº¦×ª»¯µ½auto-pfm
+Ê±ºòµÄÍþÁ¦ºÍÊÜÉËÕßµ½µ×ÄÜ¼á³Ö¶à¾ÃµÈµÈ.
+
+2.
+ÉíÌå²¿·Ö¹¥»÷ÐÍ
+ÕâÑùµÄpfm ÀàËÆÓÚpxj, µ«²»Í¬µÄÊÇpfm Ö»ÓÐÒ»¸ö
+pfm ºó¿ÉÒÔÑ¡Ôñ¹¥»÷¶Ô·½ÄÇ¸ö²¿Î»£¬ÈçÑÛ£¬½Å£¬
+ÊÖ£¬ÑÛ£¬µ¤Ìï£¬Ñ¨µÀµÈ¡£µ±²»Í¬µÄÎ»ÖÃÓÐ²»Í£µÄ
+Ð§¹û£¬Èçµ¤ÌïµÄ»°¶Ô·½µÄ¹¥»÷Á¦»áÒòÎªµ¤ÌïÊÜÉË
+¶ø´ó¼õ£¬ÊÖ²¿Îª²»ÄÜ¹¥»÷(busy), ½ÅÎªenable dodge
+none(ºÍpxj ÀàËÆ), Í·ÎªÖÂÃü»òÕß´óÉËº¦Ò»»÷
+
+3.
+Á½°Ü½éÉËÐÎ
+ÕâÀïµÄÕâÖÖÄ£Ê½ºÍtonggui »òÕßtongshou ²»Í¬
+pfmÕßÒ»µ«pfm, ³öÕÐÕßºÍÊÜº¦Õß¶¼»áÊÜµ½ÏàÍ¬µÄÉËº¦
+Èç£¬Ë«·½²»ÄÜÔÚfight ÖÐÔÙpfm, Ë«·½¶¼Ô­Æø´óÉË
+»òÕßË«·½¶¼neili ºÄ¾¡µÈµÈÇé¿ö£¬ÕâÑùµÄpfm
+ÄÜºÜºÃµÄÌåÏÖ³öÒÔ×ÔÉímenpai µÄ³¤´¦ÁË¿ËÖÆ±ðÈËµÄ
+ºÃ´¦, ÈçÒ»Ð©menpai µÄÏÈÌì¹¥»÷Á¦¸ß£¬¾Í¿ÉÒÔÓÃ
+Ò»¸öpfm Áîµ½Ë«·½²»ÄÜpfm, È»ºóÖ»ÄÜÓÃÆÕÍ¨¹¥»÷´ò
+(µ±È»ÕâÑùÒ²Ö»ÄÜÔÚbwdh ÓÃ£¬<ÏÖÔÚ´ó¼ÒÁ·ÄÇÃ´ÐÁ¿àÒ²ÊÇ
+ÎªÁËbwdh °É>)
+
+4.
+Îä¹¦¸´ÖÆÐÍ
+ÕâÀàÐÍµÄpfm ÔÚ±ðµÄºÜ¶àmud Ò²³öÏÖÁË£¬µ«¶¼Ö»ÏÞ
+ÓÚcopy ÆÕÍ¨¹¥»÷£¬µ«ÌìÁú°Ë²¿ÀïÃæµÄ¶·×ªÐÇÒÆ
+È±²»ÊÇ¹â¸´ÖÆÆÕÍ¨¹¥»÷ÄÇÃ´¼òµ¥£¬Ò»µ©ÄÇ·½ÓÃÕâpfm
+Á¢¿Ì¸´ÖÆ¶Ô·½µÄskill ºÍskill lvl, ÕâÑùË«·½¾Í
+ÓÐÍ¬ÑùµÄskill ºÍcha, ,ÄÇÃ´Õâ¾ÍµÈÓÚ90% µÄpfm 
+¾ÍÊÇ´ó¼Ò¶¼ÄÜ³ö£¬ÕâÑù¾ÍÊÇ¿´Ë«·½µÄÖÇ»ÛºÍµ½µ×
+Ë­µÄ»ù±¾¹¦ÔúÊµ£¬ÄÚÁ¦ºÍqi ¸ß
+
+
+Ð´ÁËÄÇÃ´¶à£¬ÎÒÖ»ÊÇÏ£Íû@sz ÄÜ¹»¸üÓÐÐÂÒâºÍÓéÀÖÐÔ
+ºÍÄÜ´ø¸ø´ó¼Ò¸ü¶àµÄ»¶ÀÖ
+
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  re xpk                                   [37;0m  Ð¡Ó¥×Ó(knpc)(Sun May 26)
+ÆäÊµÎÒÒÔÇ°¾ÍÊÇ×¨Ö°µÄgm wiz,Ò²Éî°®gm(¿ÉÄÜmm¶à£©shy
+ÎÒ»¨ÁË½ü1¸öÐÇÆÚÊ±¼äÏêÏ¸ÊìÏ¤Í³¼Æ£¬×îºó×öÁËÒ»¸ö±¨±í
+ÎÒÏë£¬ÄãÈç¹û¿´¹ýÄÄ¸ö±¨±í£¬Ò²¾ÍÃ÷È·ÎÒÃÇÎªÊ²Ã´Òª¶Ô
+gm×öµÄfix (wizµÄfixÔÚplayerÑÛÀï99%ÊÇ cut)
+  ÎÒ¼ÇµÃµ±Ê±µÄÎÒÃ»·¨ÏÂÊÖ£¬ÎÒÖ»ºÍguaiºÍbuwu ËµÁËÒ»
+¾ä»°£¬ Èç¹ûÎÒ¸ÄÁË£¬Ã»ÓÐÍæ¼ÒÍæÁËÔõÃ´°ì£¿ 
+  ËäÈ»ËûÃÇÏàÐÅÎÒ£¬Ö§³ÖÎÒ£¬µ«ÊÇÎÒÕ¾ÔÚÒ»¸öwizºÍplayer
+µÄÖÐ¼ä£¬ÊµÔÚÊÇÁ¦²»´ÓÐÄ,ÎÒ¼ÇµÃÎÒµ±Ê±Î¨Ò»ÏëµÄ¾ÍÊÇ
+¼ÓÇ¿3wu£¨ËÆºõÎÒÒ²¾Í¶¨Î»¸øgm mmµÄpfm°É£©£¬ËäÈ»ËüµÄ
+ÍþÁ¦²»¹»¿´£¨µÄÈ·²»´ó£©£¬µ«ÊÇÃüÖÐÎÒ¸ÒËµ£¬¿ÉÒÔºÍwdÏà±È
+Ò²Ðí×öjobºÜ³ÔÁ¦£¬µ«ÊÇ·Ç³£°²È«¡£
+  ÁíÍâÎÒ×öµÄÒ»¸ö±È½Ï´óµÄ¶¯×÷¾ÍÊÇpfm jintao,Õâ¸öÎÒÏëgm
+µÄ¡°³¤ÀÏ¼¶¡°Ó¦¸ÃÇå³þÊÇ¸öÊ²Ã´ÐÔÖÊ¡££¨²»ÊÇ×öjob)
+¿ÉÒÔÓÃÃ»ÓÐ´ò²»ËÀµÄnpcÃ»ÓÐÄÃ²»µ½µÄ±¦Îï£¨Ïà¶ÔÓëµÍexp)
+À´ÐÎÈÝ£¬ÎÒÕ¾ÔÚyang,z3fÃæÇ°£¬¿´ËûÃÇ×Ô²ÐÈ»ºók. 1hit.
+ÎÒmariner ÎÒËµÆÕÍ¨Ò»¸öpfm ÄÜk Äã30kqi Õý³£²»£¿
+ºÇºÇ¡£¡£lnere ºÍÎÒ´ò¶Ä£¬½á¹û¿ÉÏë¶øÖª¡£:)
+  ÁíÍâgmÔÚÉè¼ÆÉÏÒ²ÓÐºÍÆäËûÃÅÅÉµÄ²»Í¬£¬Ô­ÔòÊÇÊ²Ã´sills
+¶¼²î²»¶àÓÐ£¬·Ç³£È«£¬¶øÇÒÁ·¹¦µÄµØµã£¬·¿¼äÒ²ÄÐÅ®·ÖÃ÷£¬ÆëÈ«
+ÎÒÕâÀïÖ»Ëµ2¸öµØ·½£¬1¸ö¾ÍÊÇ¿ÉÒÔÖ±½Ó¼Óynxj 2.throw
+(¶øÇÒÈ«Ã»ÓÐÌõ¼þÒªÇóºÍÉÏÏÞÏÞÖÆ£¬throw¿ÉÔÝÊ±²»¿¼ÂÇ£©
+µ«ÏëÏëynxj? ½ö½ö×÷ÎªÒ»¸öÌØÊâÄÚ¹¦£¬¿ÉÒÔÓÃ¼¸ÖÖ·½Ê½Á·Ï°
+  ºÃÁË£¬ÔÝÊ±´ò×¡£¬Èç¹ûÓÐÐèÒª£¬ÎÒ½¨Òé´ó¼ÒÔÚ·¢ÀÎÉ§Ç°
+ÐèÃ÷°×Ò»¼þÊÂ£º ÎÒÃÇwiz cut gm ÄÑµÀÊÇÏëÈÃ×î¶àÈËÊýµÄÃÅÅÉ²»ÄÜÍæ£¿
+µ±È»²»ÊÇ£¬ËùÒÔËµµ½µ×£¬»¹ÊÇgmÌ«Ç¿£¬Ïà¶ÔÆäËûÃÅÅÉ¶øÑÔÓÐ
+Ì«¶à×ã¹»µÄ±×²¡À´fix.
+    thank all.
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  to buwu                                  [37;0m  ±ÌÂå·ç(biyun)(Fri May 31)
+ÊÂÇé¾­¹ýÊÇÕâÑùµÄ¡£Ê×ÏÈmoybÔÚÖÐÑë¹ã³¡²¼Õó
+ÎÒµÄ»úÆ÷ÈËÒò´Ë¶øÍ£ÁË£¬¿ÉÆøµÄÊÇËû²¼Íêºó»¹quit le.
+ÎÒ»Ø¼ÒÒ»¿´ºÜÉúÆø£¬Ò»locate,ÕÒµ½Ö®ºó¾Í¶þ»°²»Ëµ¿³ÁËmoyb
+È»ºóÔÚÍíÉÏheimoÀ´É±ÎÒ£¬±»leiidian(Ëû±¾ÈË)¿³ÁË¡£
+µÚ¶þÌì£¬ÎÒ¸ÕÉÏÏß²Å¼¸·ÖÖÓ£¬¾ÍÀ´ÁËÒ»¸ö°×ÍÕµÜ×ÓÃÉÃæÀ´shootÎÒ£¬
+ÐÒºÃÎÒµ±Ê±ÔÚÅÔ±ß£¬¼±Ã¦¸ú×ÅËû,²¢ID here,¿ÉÏ§ËûquitÌ«¿ìÁË¡£
+ÎÒÏëÎÒÔÚÕâÀïÍælovesÕâÃ´¾Ã¶¼Ã»ÓÐÈËÉ±¹ýÎÒ£¬¿Ï¶¨ÊÇºÍmoybÓÐ¹Ø£¨Ö÷¹ÛÒÜ¶Ï£©¡£
+Òò´ËÎÒ¾ÍÅÜµ½ÉÙÁÖÈ¥É±ÁËmoyb
+ºóÀ´ÎÒrobotÁË£¬¼¸¸öÐ¡Ê±ºó£¬ÓÖÀ´¸öÃÉÃæÈË(Craft)À´É±ÎÒ£¬leiidian ¸Ï¹ýÀ´°ïÃ¦
+½á¹ûËûÓÖquitÁË¡£
+µ½ÏÖÔÚÎªÖ¹£¬¶¼»¹Ö»ÊÇÕý³£µÄ½­ºþ¶÷Ô¹£¨Èç¹û²»Ëãshare IDµÄ»°£¬²»¹ýÎÒÒ²Ã»Ö¤¾ÝÖ¤Ã÷£©¡£
+µ±ÌìÍíÉÏÎÒlogin leiidian×örobot baohu loves,lovesÔÚÍÂÄÅ¡£
+µÚ¶þÌìÎÒ·¢ÏÖleiidian ºÍloves¶¼ËÀÁË¡£
+leiidianÊÇ±»moybÎ¹ÁË¹·¡£ÎÒºÍleiidian ÕÒ²»³öÆäËû£¨³ýÁËflood£©ÀíÓÉ¿ÉÒÔËµÃ÷moyb
+ÄÜ¹»faint Leiidian.
+Õâ¾ÍÊÇÊÂÇéµÄÈ«²¿¾­¹ý£¬ºÜ¶àÍæ¼Ò¿ÉÒÔ×öÖ¤¡£
+ÎÒÐ´Õâ¸öpostµÄÄ¿µÄ¾ÍÔÚÓÚ£¬ÎÒ²»ÏëÆÆ»µÕâ¸öÓÎÏ·µÄÖÈÐò£¬µ«ÊÇÈç¹ûÓÐÈË±ÆÎÒµÄ»°¡£
+ÈÃÎÒÎÞ·¨Õý³£ÓÎÏ·µÄ»°£¬ÎÒÖ»ºÃ·ÜÆð×ÔÎÀÁË¡£
+                               --Loves--
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  ÇëÇó£¡£¡£¡£¡£¡£¡£¡                       [37;0m  Äªº×·ç(moyb)(Fri May 31)
+×öÎªÒ»¸öÒ»Ö±Ïë°ÑÌÒ»¨ºÃµÄÈË¡£Ò»¸öÒ»¿ªÊ¼¾ÍÍæÌÒ»¨µÄÈË¡£ºÜ¹óº¶µØ½áÊøÁË¼ÌÐøÌÒ»¨µÄÃÎÏë!
+´ÓÒÔÇ°µÄyuseng.pangxie.pangxiez.zpangxie.ÎÞÒ»ÀýÍâµØÁ·×ÅÌÒ»¨¡£¿ÉÊÇÎÒÏÖÔÚÔÙÃ»ÐËºÃµØ¼ÌÐøÍæÏÂÈ¥ÁË¡£
+·Ï»°Ò²¹»¶àÁË¡£ÏÂÃæ¾ÍÊÇÎÒÒªÉêËßµÄÒ»ÄÀÊÂÇé¡£
+ÔÚÇ°¼¸Ìì¡£Ò»¸öÅóÓÑÍæÕâ¸öºÅ¡£ÔÚCS²¼Õó¡£
+µ±Ê±ÓÐºÜ¶àÍæ¼Ò»èÁË¡£ºóÀ´Ëû¾ÍÍËÁË ¡£
+ÔÙ´ÎÉÏÏßµÄÊ±ºò¡£ËûÏòÔÚÏßµÄÅóÓÑÃÇ½âÊÍ¡£µÀÇ¸¡£
+ºÜ¸ßÐË¡£Ã»ÓÐÒ»¸öÍæ¼Ò¶ÔÕâ¼þÊÂÉúÆø¡£Ö»ÊÇÓÐÐ©ÒÅº¶µØËµÁËÐ©Æø»°¡£ ¹ýÁË¼¸·ÖÖÓ¡£Ëû¾Í°ÑÕâ¸öºÅ¸øÎÒÍæÁË¡£ÎÒÒ²°ÑÃÜÂë¸ÄÁË¡£
+µ±ÎÒÕý¿ªÊ¼ÍæµÄÊ±ºò¡£ÔÚCLB¸½½ü¡£LOVES PKÎÒ¡£ÎÒµ±Ê±»¹²»ÖªµÀÊÇÔõÃ´»ØÊÂ¡£ÎÒÒ»Ö±ÔÚÎÊ¡£Ò»Ö±´òÎÊºÅÏëÖªµÀÎªÊ²Ã´¡£µ«ËýÃ»ÓÐ´ð¸´ÎÒ¡£
+ÎÒ¾ÍÕâÑùµÚÒ»´ÎËÀÁË¡£ºóÀ´ËýËµÊÇÒòÎªÎÒÔÚCS²¼Õó¡£°ÑËýµÄ»úÆ÷ÈËÅªÍ£ÁË¡£
+µ«ÎÒ¸æËßËý¡£ÎÒÒÑ¾­½âÊÍ¹ý¡£Ò²µÀ¹ýÇ¸ÁË¡£µ«Ëý²»Ìý¡£ÎÒÃ»ÓÐ°ì·¨¡£µ±Ê±»¹²»ÊÇºÜÏëPKËý¡£
+µÚ¶þÌì¡£ËýÓÖPKÎÒÁË¡£µ«ÊÇÒÑ¾­³¬¹ýÁË¶þÊ®ËÄÐ¡Ê±¡£ÎÒÖªµÀÃ»ÓÃµÄ¡£
+ÄÇÊ±ÎÒ¾ÍÒ»ÐÄÏëPKËý¡£ÎÒ¸ã²»¶®ÎªÊ²Ã´£¿×÷ÎªÌÒ»¨µÜ×Ó¡£²¼ÕóÊÇÒ»¸ö·Ç³£ºÃµÄ¶«¶«¡£Èç¹ûÑ§ÁË²»ÓÃ¡£ ÄÇÑ§×Å¸ÉÂï£¿
+ÄÇ²»ÓÐË­»áÈ¥ÌÒ»¨£¿¶øÇÒ²¼Õó¿Ï¶¨»áÔÚÈË¶àµÄµØ·½¡£CSµ±È»ÊÇ×îºÃµÄÑ¡ÔñÁË¡£
+ÏàÐÅBUWUÒ²ÔÚCS²¼¹ýÕó¡£¾ÍËãÊÇÎÒ²¼Õó´íÁË¡£µ«ÎÒÒ²µÀÇ¸¹ýÁËÍÛ¡£ÄÑµÀËµËý²»ÔÚÏß£¿ÎÒ¾Í°¤×ÅÎÊË­Ã»Ìý¼ûÎÒµÀÇ¸Âð£¿
+ºóÀ´ÎÒ¾ÍÏë°ì·¨PKËý¡£µ«Ëý±ÈÎÒ¸ßºÜ¶à¡£Ã»°ì·¨¡£¶øÇÒËýÒ»Ö±¶ãÔÚºéÆß¹«ÄÇÀï¡£ÎÒÎ¨Ò»µÄÊ¤Ëã¾ÍÊÇPLAY¡£¿´À´Ò²²»ÐÐÀ²¡£
+¾ÍÔÚËýµÚ¶þ´ÎPKÎÒµÄÄÇÌì ¡£ÎÒÒ»ÅóÓÑ°ïÎÒÓÃËûµÄ°×ÍÕµÄÈËPKËû¡£µ«ËûÃ»ËÀ¡£Ëý¾Í½ÐÌìÄ§É±ÁËÎÒÒ»´Î¡£ÕâÊÇµÚÈý´Î¡£
+ÎÒµÄÁíÍâÒ»¸öÅóÓÑHEIMO´òËã°ïÎÒ¡£¾Í´ø×ÅÃæÕÖÈ¥PK LOVES¡£µ«Ò²³É¹¦¡£Ëû±»ÌìÄ§É±ÁË¡£¶øÇÒLOVESºÍÌìÄ§ÊÇÍ¬Ò»¸öÈËÔÚÊ¹ÓÃ¡£
+WIZ¿ÉÒÔ·­¼ÇÂ¼¡£ÏàÐÅÕâÊÇÎ¥·´¹æÔòÁË°É¡£
+ºóÀ´ÖªµÀHEIMOºÍÌìÄ§ÊÇÈÏÊ¶µÄ¡£¾Í´òËãºÍ½â¡£ÎÊÎÒµÄÒâ¼û¡£ÎÒËµÃ»Ê²Ã´¡£Ö»ÒªËýÈÃÎÒÉ±Ò»´Î¡£¾ÍËãÁË¡£´ó¼Ò
+¶¼ÊÇÏëÁ·¹¦¡£
+ºóÀ´Ìõ¼þÊÇËýÈÃÎÒÉ±¡£
+µ«ÊÇHEIMOµÃÈÃLOVESÉ±Ò»´Î¡£ºóÀ´HEIMOÍ¬ÒâÁË¡£µ«ÊÇºóÀ´µÄÇé¿öÍêÈ«ÂÒÁË£¬ËýºóÀ´·´»Ú£¬
+Èç¹ûËýËÀÁËÈÃHEIMOËÀÒ»´ÎÍâ¡£ÎÒÉ±Ëý»¹µÃ±ØÐë¸úËýµ¥Ìô²ÅÐÐ¡£Ëý±»ÎÒ´òËÀ
+¾ÍËãÁË¡£Èç¹ûÎÒËÀÁË¡£Ò²ËãÁË¡£Ìì¡£»¹ÓÐÕâÖÖËÀ£¿£¿£¿£¿£¿£¿£¿£¿£¿Ò»¸ö6MµÄÈË¡£Ò»¸ö2MµÄÈË¡£ÔõÃ´´ò£¿
+µ«ÎÒ
+»¹ÊÇ´ðÓ¦ÁË¡£µ±Ê±ÔÚØ¤°ï×Ü¶æÍâÃæ´ò¡£ÎÒÓÃPLAY°ÑLOVES´µ»èÁË¡£ÕâÊ±ÌìÄ§Ò»ÏÂ´Ü½øÀ´£¬°Ñ»èÁËµÄLOVES±³×ßÁË¡£
+Ìì¡£Õâ»¹½Ðµ¥Ìô£¿»¹µÃÈÃHEIMOËÀÒ»´ÎµÄ´ú¼Û¡£ÎÒÃ»ÓïÁË¡£
+½ñÌì£¬ÎÒÒ»ÉÏÏß¡£¾Í±»ÌìÄ§¸úLOVES PKÁËÒ»´Î¡£¸Õ²ÅÔÚÌ©É½¡£ÎÒÓÖ±»LOVES PKÁËÒ»´Î¡£
+¶øÇÒLOVESÒ»Ö±ÓÃÌìÄ§µÄºÅ±£»¤×Ô¼º¡£¶øÇÒÊÇËý×Ô¼ºÔÚÓÃ¡£Ò»¸öÊÂÇé±»¼¸¸öÈËÓÃ¡£ÕâÊÇÎ¥·´¹æÔòÂð£¿
+Á½¸öÈËÁ¬ÐøPKÎÒ¼¸´Î¡£ÓÈÆäÊÇ½ñÌì¡£Á¬ÐøPKÁ½´Î¡£ÕâÒ²Î¥·´¹æÔòÂð£¿
+ÕâÐ©ÔÝ²»Ëµ¡£½ÐÎÒµ¥Ìô¡£µ«¾¹È»½ÐÌìÄ§°ïÃ¦¡£ÕâËãÊ²Ã´°¡£¿£¿£¿£¿£¿£¿£¿£¿
+MUDÀïÃæ»¹ÓÐÕâÃ´ÎÞ³ÜµÄ¼Ò»ï£¿£¿£¿£¿£¿£¿ÎÒÕæÃ»Ïëµ½¡£ÎÒÊÇ´Ó¿ª·âÍæµ½ÕâÀïµÄ¡£
+ÏàÐÅBUWUÒ²ÖªµÀÎÒµÄID¡£yuseng.ÎÒ¼ÇµÃÎÒÃÇ»¹µ¥¶ÀÌ¸¹ýÒ»´Î»°¡£
+Ð´ÉÏÃæÕâÐ©¡£ÎÒÖ»ÓÐÒ»¸öÄ¿µÄ¡£»¹Íæ¼ÒÒ»¸öÇå¾²µÄÁ·¹¦¿Õ¼ä¡£
+Î¥·´¹æÔò¸ÃÔõÃ´°ì¾ÍÔõÃ´°ì¡£Ò»ÊÓÍ¬ÈÊ¡£
+¾´ÇëWIZ¾¡¿ì´ð¸´£¡
+¸ÐÐ»£¡
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  re last                                  [37;0m  ±ÌÂå·ç(biyun)(Fri May 31)
+Ê×ÏÈ¾ÀÕýÄãµÄ¼¸¸ö´íÎó
+µÚÒ»:ÎÒµÄÁíÍâÒ»¸öÅóÓÑHEIMO´òËã°ïÎÒ¡£¾Í´ø×ÅÃæÕÖÈ¥PK LOVES¡£µ«Ò²³É¹¦¡£Ëû±»ÌìÄ§É±ÁË¡£¶øÇÒLOVESºÍÌìÄ§ÊÇÍ¬Ò»¸öÈËÔÚÊ¹ÓÃ¡£
+ÎÒÓÃleiidian µÄÊ±ºò»ù±¾¶¼ÊÇdazuo ºÍ±£»¤loves
+´ÓÀ´Ã»ÓÐÓÃ¹ýËûÖ÷¶¯pk¹ýÈÎºÎÈË¡£Î×Ê¦¿ÉÒÔ²é¿´¼ÇÂ¼£¬²é¿´leiidian pkµÄÊ±¼äºÍ
+leiidian µ±Ê±µÄip
+Æä´Î£ºÄãËùÎ½µÄµ¥Ìô¾ÍÊÇËµ£¬ÎÒÕ¾ÔÚÄÇÀïÈÃÄãplay?
+¼ÇµÃµ±Ê±»¹ÓÐheimoÔÚ³¡£¬¿ÉÒÔÈÃËûÀ´¶ÔÖÊ£¬ÎÒËµ:fight? moybËµ: shake
+ÎÒËµ:????????? È»ºómoyb¾Í¿ªÊ¼play,ÌìÏÂÓÐÕâÃ´µ¥ÌôµÄÃ´?
+ÎÒµÚÒ»´ÎÌýËµyeah
+ÎÒÒ»Ö±±»´µ»èÁË£¬»¹ÄªÃûÆäÃîÄØ£¬ºóÀ´·´Ó³¹ýÀ´£¬use leiidian get loves
+ÎÒpkÄã×Ü¹²Èý´Î£¬µÚÒ»´ÎclbÄÇÀï£¬µÚ¶þ´Î£¬dmyÄÇÀï£¬µÚÈý´ÎÌ©É½¡£ÖÁÓÚleiidian
+É±Äã£¬ÄÇÒªÎÊÄã×Ô¼º£¬ÈçºÎ½«ËûÎ¹µÄ¹·£¬ºÍÎÒÎÞ¹Ø¡£
+¶øÇÒleiidian pkÄã¶¼ÊÇËû×Ô¼ºÓÃµÄ£¬Î×Ê¦¿ÉÒÔ²éÑ¯log.
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  [37;0m[1;37mto loves and moyb[37;0m                        [37;0m    ²¼Îä(buwu)(Fri May 31)
+Ð»Ð»ÄãÃÇµÄ post£¬¸æËßÁËÎÒÒ»¼þ·Ç³£¸´ÔÓµÄÊÂ¡£
+
+ÓÎÏ·¶ÔÓÚÍæ¼ÒµÄÐÐÎªÓÐ×Å×Ô¼ºµÄºâÁ¿±ê×¼£¬
+Õâ¸ö±ê×¼¾ÍÊÇ¹æÔò£¬¿ÉÒÔÓÃ[37;0m[1;37m help rules [37;0m²éÑ¯µ½¡£
+Íæ¼Ò¶Ô×Ô¼ºÔÚÓÎÏ·ÖÐµÄÐÐÎªÒ²ÓÐ×Ô¼ºµÄÉÆ¶ñ±ê×¼£¬
+ÕâÊÇÍæ¼Ò¸öÈËµÄµÀµÂ±ê×¼¡£
+
+loves µÄÉêËß£¬½¹µãÔÚÓÚÈÏÎª moyb ÓÐ[37;0m[1;37m¶àÌõÎ¥·´¹æÔòµÄÐÐÎª·¢Éú[37;0m¡£
+µ«ÊÇ×Ý¹ÛÕû¸öÊÂ¼þ¹ý³Ì£¬loves ±¾Ó¦ÓÐ¶à´Î»ú»á£¬
+[37;0m[1;37m¿ÉÒÔÇáÒ×µÃµ½Ö±½Ó¾«È·µÄÖ¤¾Ý[37;0m£¬µ«ÊÇ loves È´ÎÞ·¨Ìá½»ÕâÐ©Ö¤¾Ý£¬
+Ö¤Ã÷ moyb È·ÊµÓÐ¹ýÎ¥¹æÐÐÎª£¬
+ËùÒÔÎÞ·¨¸ù¾Ý loves µÄ¾Ù±¨£¬´¦·£ moyb µÄÎ¥¹æÐÐÎª¡£
+
+ÖÁÓÚ moyb£¬´ÓÉêËßµÄÇé½ÚÉÏÀ´¿´£¬
+ËÆºõ¸üÆ«ÏòÓÚµÀµÂ»ò¸ÐÇéÉÏµÄÇ´Ôð£¬
+µ«Õâ²¢²»ÊÇÓÎÏ·µÄ±ê×¼£¬
+[37;0m[1;37mÓÎÏ·²»ÄÜÒÔÕâÐ©¸öÈËµÄ±ê×¼È¥´¦·£ÈÎºÎÒ»¸öÍæ¼Ò¡£[37;0m
+
+ÔÚÄãÃÇµÄ post ÒÔºó£¬moyb [37;0m[1;37mÒÀÈ»Ö÷¶¯[37;0m PK ÁË loves£¬
+¼ÈÈ» moyb Ñ¡ÔñÁËÒÔÇ¿ÕßµÄ×ËÌ¬È¥ÌôÕ½ loves£¬
+Õû¸öÊÂ¼þ£¬[37;0m[1;37m¼´±ãÔ­ÏÈ²»ÊÇ[37;0m£¬ÏÖÔÚÒ²[37;0m[1;37mÒÑ¾­[37;0m³ÉÎªÁË[37;0m[1;31m½­ºþ¶÷Ô¹[37;0m¡£
+¼ÈÈ»Íæ¼ÒÑ¡ÔñÁË¹«Æ½µÄ·½Ê½À´½â¾ö±Ë´ËÖ®¼äµÄÕù¶Ë£¬
+Î×Ê¦ÊÇ²»ÔÊÐí´òÆÆÕâÖÖÄ¬ÆõµÄ¡£
+
+ÖÁÓÚÏà»¥Ö¸Ôð¶Ô·½¹²Ïí ID µÄÎÊÌâ£¬
+ÎÒÈÏÎªÏÖÔÚÖ»ÊÇÅ¼¶û¿ÉÄÜ´æÔÚ£¬»¹²»ÄÜÐÎ³É¹æÂÉ£¬
+¸ü²»ÄÜ³ÉÎªÓ°ÏìÊÂÌ¬½á¹ûµÄ±ØÈ»Íâ½çÒòËØ£¬
+ËùÒÔÏÖÔÚ»¹²»µ÷²éÕâ·½ÃæµÄÎÊÌâ¡£
+ÐèÒª¾¯¸æË«·½µÄÊÇ£¬¹²ÏíÕÊºÅ½øÐÐ PK µÄÐÐÎª£¬ÒÑ¾­ÒýÆðÁËÎ×Ê¦µÄ¹Ø×¢¡£
+
+×îºó´Ó³¤Ô¶´¦¿¼ÂÇ£¬ÎÒÐèÒªÇ¿µ÷µÄÁ½µãÊÇ£¬
+moyb ÓÐ¼ÌÐøÓÎÏ·µÄÈ¨Àû£¬Èç¹û PK µÄÐÐÎª³ÉÎªµ¥·½ÃæµÄÍÀÉ±£¬
+¶ø·ÇË«·½»¥¶¯µÄ½­ºþ¶÷Ô¹µÄ»°£¬¼´±ãÃ¿Á½ÌìÖ»É±Ò»´Î£¬
+Î×Ê¦Ò»Ñù»áÈÏÎªÓÐÍæ¼ÒÐîÒâ×è°­ moyb µÄÕý³£ÓÎÏ·È¨Àû£¬
+²¢ÒÔÆÆ»µÐÔ PK ÂÛ´¦¡£
+Í¬Ê±£¬Èç¹ûÒ»¸öÍæ¼Ò²»ÔÙ¼ÌÐø³É³¤£¬
+ËûÒ²¾ÍÃ»ÓÐ×Ê¸ñÆÆ»µÆäËûÍæ¼Ò¼ÌÐø³É³¤µÄ×Ê¸ñ¡£
+¼òµ¥µØËµ£¬PK ±ðÈË¶ø±ðÈËÃ»ÓÐ PK ÄãµÄ»ú»á£¬
+
+
+Õâ¾ÍÊÇ [37;0m[1;31mÆÆ»µ[37;0m¡£
+
+
+-buwu
+[37;0m
+¡õ±¾ÆªÍê¡õ

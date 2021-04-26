@@ -1,0 +1,320 @@
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  »ªÉ½Ñ²É½ µÄ ÀëÏß»úÆ÷ÈË[37;0m             ¿´¾»¿´(looklook)(Tue Aug 20)
+Ê×ÏÈ,²»ÏëÕë¶ÔÈÎºÎÈË
+Ð´»úÆ÷ÊÇÎÒÍæmudµÄÒ»´óÔ­¶¯Á¦
+±¾ÎÄÖ¾ÔÚÅ××©ÒýÓñ,·´Õýrobot¸ßÊÖÓÐµÄÊÇ
+µ«¿Ïpost³öÀ´µÄ¾ÍÉÙµÄ¶à
+²»·Ï»°ÁË
+
+
+Ê×ÏÈ,ÇÃscheme stop;scheme clear;scheme edit
+z;p;zz;dt
+z;p;zz;dt;x
+o;n;n;e;w;nu;nu;nu;enter;out;sd;sd;sd;wd;sd;w;e;nu;eu;dt
+nd;eu;wd;nu;wu;ed;eu;wd;nd;nd;wd;nd;wd;nd;ne;sw;nw;dt
+w;w;w;se;w;s;s;e;e;ne;nw;sw;nw;n;dt
+w;ne;w;nw;ne;e;n;s;e;ne;e;w;sw;s;w;se;w;w;w;dt
+w;s;n;w;n;s;w;s;e;w;n;n;w;sw;nw;sw;ne;nw;w;n;s;e;ne;sw;se;se;dt
+s;e;e;w;w;s;w;nw;se;e;s;e;w;w;e;s;s;dt
+n;n;n;n;n;e;e;e;e;e;e;e;e;e;se;su;eu;su;eu;su;su;sd;su;s;s;save;z;p;zz;dt
+
+¸ú×Å,ÇÃ .
+ÕâÑùschemeÕâ²¿·Ý¾ÍÍê³É
+ÕâÀï¿©Ö¨Ò»¾ä,ºÃµÄÀëÏß»úÆ÷ÈËÊÇalias+trigger+scheme
+ÏÂÃæÊÇalias
+alias zz xue yue ziyin-yin 10
+alias z xue yue ziyin-yin 20
+alias x ask yue about job
+alias dt dazuo 90
+alias o yun refresh
+alias p yun regenerate
+
+»¹ÓÐtrigger
+
+trigger ÄãÔË¹¦Íê±Ï£¬ÉîÉîÎüÁË¿ÚÆø£¬Õ¾ÁËÆðÀ´¡£ z
+
+ºÃÁË,µ±ÄãÈ«Ð´ºÃ,ÇÃscheme start,trigger,alias
+Ò»¶¨ÒªÔÚÇÃÍêscheme startºó ÇÃtrigger ¸ú alias,
+ÕâÑùÏµÍ³²Å»áÓÃÄÇÐ©trigger¸úalias
+»úÆ÷ÈËµÄÆðµãÊÇÔÚyueÄÇÀï
+
+ºÃÁË,enjoy ÓÐÎÊÌâµÄ¿ÉÒÔÎÊÎÒ
+ÏëÒªÊ²Ã´¹¤×÷µÄÀëÏß»úÆ÷ÈËÒ²¿ÉÒÔÎÊÎÒ
+ÔÚtrigger+alias+schemeµÄ¹¦ÄÜÏÂ
+»ù±¾ÔÚzmudÄÜ×öµ½µÄ»úÆ÷ÏÖÔÚÒ²¿É
+µ±È»,Ð´²»Ð´¾Í¿´ÄãµÄ³ÏÒâÁË£¬ºÙºÙ
+
+
+                            -=WD=-Youtiao
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  [1;32mÇó    »é[37;0m                      ÏãË®(dior)(Thu Aug 22)
+    ¶ÏÇÅÕýºÃÔÚÍâºþºÍÀïºþµÄ·ÖË®µãÉÏ¡£ÕâÀïÍ¤Ðù´íÂä£¬ÑÚÓ³ÔÚÂÌÊ÷¼ÑÒñÖ®ÏÂ¡£
+¡°É½Ã÷Ë®ÐãÐùìéÆô£¬ÂäÈÕÓæ¸è¹ýÀïºþ¡±£¬¾ÍÊÇÃèÊöÕâÀï°øÍíµÄ¾°É«¡£ÔÚ¶ÏÇÅ
+ÉÏ¿Éä¯ÀÀ»·ºþÖîÉ½ºÍºþÖÐÖîµºµÄ·ç¹â¡£Ã¿µ±Ñ©áá£¬Õ¾ÔÚÇÅÍ·£¬Ö»¼ûÒ»ÇÐ¶¼±»
+¸²ÉÏ°×Ñ©£¬Óñ×ÁÒøÂ¥µÄºþÉ½·çÃ²¾ÍÊÇÎ÷ºþÊ®¾°Ö®Ò»µÄ¡°¶ÏÇÅ²ÐÑ©¡±¡£Ãñ¼äÉñ
+»°¡°°×Éß´«¡±ÖÐµÄ°×ÄïÄïºÍÐíÏÉ¾ÍÔÚÕâÀïÏà»áµÄ¡£
+¹ýÇÅÍùÎ÷×ß±ãÊÇ°×µÌÁË¡£¶«±±±ß¿ÉÍ¨ÍùÇàÊ¯´óµÀ¡£
+    Ì«ÑôÕý¸ß¹ÒÔÚ¶«·½µÄÌì¿ÕÖÐ¡£
+    ÕâÀïÃ÷ÏÔµÄ³ö¿ÚÊÇ west ºÍ northeast¡£
+·çÒ×¸øÒÂÒÂÒ»Ìõ°×É´ÌôÏßÏâ±ßÈ¹¡£
+ÒÂÒÂ¶ªÏÂÒ»¼þ°Ù¼ÒÒÂ¡£
+ÒÂÒÂ´©ÉÏÒ»Ìõ°×É´ÌôÏßÏâ±ßÈ¹¡£
+·çÒ×¸øÒÂÒÂÒ»¸ö×êÊ¯½äÖ¸¡£
+ÒÂÒÂ´÷ÉÏÒ»¸ö×êÊ¯½äÖ¸¡£
+·çÒ×¸øÒÂÒÂÒ»Ë«Ð¡³¯Ñ¥¡£
+ÒÂÒÂ´©ÉÏÒ»Ë«Ð¡³¯Ñ¥¡£
+ÄãÆËÍ¨Ò»Éù£¬Ë¤ÁË¸öËÄ½Å³¯Ìì¡£
+·çÒ×ËµµÀ£ºÄã×îÏ²»¶µÄ¡£¡£¡£
+·çÒ×ÉíÉÏµÄºûµûÀ¼´«³öÒ»ÕóÕóÃÔÈËµÄÓÄÏã¡£
+ÄãËµµÀ£º·çÒ×¸øÒÂÒÂÒ»Ë«Ð¡³¯Ñ¥¡£
+·çÒ×¸øÒÂÒÂÒ»¶ÔÔÂÑÀ¶ú×¹¡£
+·çÒ×µÍÏÂÍ·°ÚÅªÒÂ½Ç£¬ÂúÁ³ºìÔÎ¡£
+ÒÂÒÂ´÷ÉÏÒ»¶ÔÔÂÑÀ¶ú×¹¡£
+ÄãËµµÀ£ºÓÐÃ»¸ã´í°¡,ÂòË«Ðå»¨Ð¬¶àÆ¯ÁÁ°¡
+ÒÂÒÂÍ»È»¼ä±»ÈËÃÉ×¡ÁËË«ÑÛ£¬ÕöÑÛÒ»¿´£¬·çÒ×Õ¾ÔÚËýµÄÃæÇ°£¬ÊÖÀïÅõ×ÅºÃ´óÒ»´ØÃµ¹å£¡
+ÒÂÒÂÓÖ¾ªÓÖÏ²£¬½ÐµÀ£º¡¸ÍÛ£¡ºÃÀ÷º¦Å¶£¡¡¹
+ÒÂÒÂÇáÇáµØÅõÆð·çÒ×µÄÁ³£¬¸øÁËËûÒ»¸öÎÞÏÞÎÂÈáµÄÎÇ¡£
+·çÒ×ËµµÀ£ºeida ....¼Þ¸øÎÒ°É¡£¡£¡£
+·çÒ×ÏòÒÂÒÂÇó»é¡£
+·çÒ×¡¸ÎûÎûÎû¡¹ÉµÐ¦ÁË¼¸Éù¡£
+ÒÂÒÂÐß´ð´ðµØµãµãÍ·, ´ðÓ¦¼Þ¸ø·çÒ×¡£
+·çÒ×¸ßÐËµØÌø½øÁËÒÂÒÂµÄ»³Àï¡£
+ÒÂÒÂËµµÀ£º©§¡¾Î´»é·ò¡¿·çÒ×            
+ÒÂÒÂ¡¸ÎûÎûÎû¡¹ÉµÐ¦ÁË¼¸Éù¡£
+Äã¹þ¹þ´óÐ¦£¬ËµµÀ£º¡¸¹§×£¶þÎ»ÔçÉú¹ó×Ó£¬°×Í·ÙÉÀÏ£¡¡¹
+ÒÂÒÂÌÕ×íÔÚ³¤ÎÇµÄÌðÎ¶Ö®ÖÐ£¬µÇÊ±ÍüÈ´ÁËÉíÍâÌìµØ¡£
+·çÒ×¸øÒÂÒÂÒ»¶äÃµ¹å»¨¡£
+ÒÂÒÂÒ»Í·×²ÔÚÇ½ÉÏ£¬¶ÙÊ±Á½ÑÛ·¢Ö±£¬Ã£Ã£²»ÖªËù´ë¡£
+ÒÂÒÂÌÕ×íÔÚ³¤ÎÇµÄÌðÎ¶Ö®ÖÐ£¬µÇÊ±ÍüÈ´ÁËÉíÍâÌìµØ¡£
+·çÒ×¸øÒÂÒÂÒ»¶äÃµ¹å»¨¡£
+ÒÂÒÂÒ»Í·×²ÔÚÇ½ÉÏ£¬¶ÙÊ±Á½ÑÛ·¢Ö±£¬Ã£Ã£²»ÖªËù´ë¡£
+·çÒ×ËµµÀ£ºÕâÒ»¶äÊÇÆÕÍ¨µÄºìÃµ¹å¡£
+ÒÂÒÂËµµÀ£ººìÃµ¹å°¡
+·çÒ×ÉíÉÏµÄºûµûÀ¼´«³öÒ»ÕóÕóÃÔÈËµÄÓÄÏã¡£
+·çÒ×ËµµÀ£ºÊÇÎÒÂòµÄµÚ4¶ä²ÅÊÇºìÉ«µÄÃµ¹å
+·çÒ×µÍÏÂÍ·°ÚÅªÒÂ½Ç£¬ÂúÁ³ºìÔÎ¡£
+ÒÂÒÂÓÖ¾ªÓÖÏ²£¬½ÐµÀ£º¡¸ÍÛ£¡ºÃÀ÷º¦Å¶£¡¡¹
+·çÒ×¸øÒÂÒÂÒ»¶ä¶¡Ïã¡£
+·çÒ×ËµµÀ£ºÕâ¸ö²ÅÊÇÄãÏ²»¶µÄ
+ÒÂÒÂÇáÇáµØÅõÆð·çÒ×µÄÁ³£¬¸øÁËËûÒ»¸öÎÞÏÞÎÂÈáµÄÎÇ¡£
+·çÒ×¡¸ÎûÎûÎû¡¹ÉµÐ¦ÁË¼¸Éù¡£
+ÒÂÒÂÓÖ¾ªÓÖÏ²£¬½ÐµÀ£º¡¸ÍÛ£¡ºÃÀ÷º¦Å¶£¡¡¹
+·çÒ×Ö¸×ÅÒÂÒÂÔÞÌ¾µÀ£º¡°ÒÂÒÂÊÇÎäÁÖµÚÒ»¸ßÊÖ£¡¡±
+·çÒ×Ö¸×ÅÒÂÒÂÔÞÌ¾µÀ£ºÒÂÒÂÊÇÎäÁÖ¾øÊÀÎÞÆ¥µÄÃÀÅ®£¡
+> l eida
+ ÇÀÒ»ÇÐÄÜÇÀµÄ£¬Æ­Ò»ÇÐÄÜÆ­µÄ£¬°þÏ÷Ò»ÇÐÄÜ°þÏ÷µÄ
+Ëý¿´ÆðÀ´Ô¼Ê®¶àËê¡£
+ËýÏÖÔÚÍðÈçÓñµñ±ùËÜ£¬ËÆÃÎËÆ»Ã£¬ÒÑ²»ÔÙÊÇ·²¼äÈËÎï
+Ëý¿´ÆðÀ´ÆøÑª³äÓ¯£¬²¢Ã»ÓÐÊÜÉË¡£
+ËýÉíÉÏ´øÖø£º
+  ¡õÔÂÑÀ¶ú×¹(Yueya erzhui)
+  ¡õÐ¡³¯Ñ¥(Chao xue)
+  ¡õ×êÊ¯½äÖ¸(Diamond ring)
+  ¡õ°×É´ÌôÏßÏâ±ßÈ¹(Xiangbian qun)
+  ¡õÒ»¸ö²¼´ü(Bu dai)
+ÒÂÒÂÒ»Í·×²ÔÚÇ½ÉÏ£¬¶ÙÊ±Á½ÑÛ·¢Ö±£¬Ã£Ã£²»ÖªËù´ë¡£
+·çÒ×ÂúÐÄ»¶ÔÃ£¬Ì§ÆðÍ·À´£¬ÑöÍû×ÅÒÂÒÂµÄË«Ä¿£¬µãÁËµãÍ·¡£
+ÒÂÒÂÕý¶¢ÖøÄã¿´£¬²»ÖªµÀ´òÐ©Ê²Ã´Ö÷Òâ¡£
+·çÒ×ËµµÀ£ºÒªÊÇxtear ¾Í¿ÉÒÔºÏ×àÁË
+ÒÂÒÂËµµÀ£ººÙºÙ
+·çÒ×ÉìÊÖÔÚÒÂÒÂ¼çÉÏÇáÇá¸§Ãþ£¬´Õ¹ýÓ£ÌÒÐ¡¿Ú£¬ÎÇËýµÄÁ³¼Õ£¬½¥½¥´ÓÍ·¾±¶øÎÇµ½¼çÉÏ£¬¿ÚÖÐßíßíßíµÄÄåÉùÇáºß£¬Ëµ²»¾¡µÄÇ×Á¯ÃÜ°®¡£
+ÒÂÒÂÂúÁ³·Éºì£¬½¿ÐßÎÞÏÞ£¬ÉìÊÖÍÆ¿ªÁË¡£
+ÄãËµµÀ£ºÎÒ±ÕÑÛ
+ÒÂÒÂÒ»Í·×²ÔÚÇ½ÉÏ£¬¶ÙÊ±Á½ÑÛ·¢Ö±£¬Ã£Ã£²»ÖªËù´ë¡£
+ÄãËµµÀ£ºÃ»¿´¼û
+·çÒ×ËµµÀ£ºdior ÔÚ£¬ÎÒ¾Í²»Ì«ÈâÂéÁË
+·çÒ×ËµµÀ£ºÍíÉÏÃ»ÈË£¬ÔÙÈâÂé
+·çÒ×¡¸¹þ¹þ¹þ¡¹´óÐ¦¼¸Éù¡£
+ÒÂÒÂ¶Ô×Å·çÒ×´ó½Ð£º¡°·çÒ×£¬ÄãÕâ¸ö³ôÁ÷Ã¥£¡¡±
+ÒÂÒÂÉíÉÏµÄ¶¡Ïã´«³öÒ»ÕóÕóÃÔÈËµÄÓÄÏã¡£
+·çÒ×¸ß¾Ù¾ÆÕµ£¬´óÉùËµµÀ£º½ñÌìÏÂ¹ÙÎÒÌØ±ð¸ßÐË£¬¸÷Î»ÔÚ×ù¼Î±ö£¬ÇÆµÃÆðÎÒµÄ¾Í¸ÉÁËÕâÒ»±­£¡
+·çÒ×¸ß¾Ù¾ÆÕµ£¬´óÉùËµµÀ£º½ñÌìÏÂ¹ÙÎÒÌØ±ð¸ßÐË£¬¸÷Î»ÔÚ×ù¼Î±ö£¬ÇÆµÃÆðÎÒµÄ¾Í¸ÉÁËÕâÒ»±­£¡
+·çÒ×ÉíÉÏµÄºûµûÀ¼´«³öÒ»ÕóÕóÃÔÈËµÄÓÄÏã¡£
+·çÒ×¡¸¹þ¹þ¹þ¡¹´óÐ¦¼¸Éù¡£
+·çÒ×ËµµÀ£ºÄã´øding xiang ÎÒ´ø ºûµûÀ¼ ÕýºÃÏàÅä
+·çÒ×¿´×ÅÒÂÒÂ£¬Á³¡¸à§¡¹µÄÒ»ÏÂºìÁËÆðÀ´¡£
+ÒÂÒÂËµµÀ£ºÎÒ×î°®µÄ
+·çÒ×ÂúÐÄ»¶ÔÃ£¬Ì§ÆðÍ·À´£¬ÑöÍû×ÅÒÂÒÂµÄË«Ä¿£¬µãÁËµãÍ·¡£
+ÒÂÒÂËµµÀ£ºÎÒ×î°®µÄ»¨
+·çÒ×¶ÔÒÂÒÂÉì³öÁ½¸ùÊÖÖ¸µÃÒâµÄ×÷³öÊ¤ÀûµÄÊÖÊÆ! ¡¸£Ö¡¹ ¹þ¹þ¹þ...
+ÒÂÒÂÉíÉÏµÄ¶¡Ïã´«³öÒ»ÕóÕóÃÔÈËµÄÓÄÏã¡£
+ÒÂÒÂËµµÀ£º¶¡ÏãÊÇÎÒËÍÅóÓÑµÄ
+·çÒ×ËµµÀ£º¶÷£¬Äã¸øÎÒ´÷°É
+ÒÂÒÂËµµÀ£ºÎûÎû£¬ºûµûÀ¼ÊÇÏ£ÍûÎÒÏ²»¶µÄÈËËÍÎÒµÄ
+ÒÂÒÂµÃÒâµÄ×÷³öÊ¤ÀûµÄÊÖÊÆ! ¡¸£Ö¡¹ ¹þ¹þ¹þ...
+·çÒ×µãÁËµãÍ·£¬ËµµÀ£º¡¸ÎÒÖªµÀ¡£¡¹
+·çÒ×ÈÌ²»×¡¸©ÏÂÍ·È¥£¬ÔÚÒÂÒÂÎ¢Î¢²ü¶¯µÄÓ£´½ÉÏÒ»ÎÇ£¬µÀ£º¡¸ºÃÃÃÃÃ£¬Äã¶ÔÎÒÕæºÃ¡£¡¹ 
+
+
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  ¶ÔqzwdµÄ½¨Òé[37;0m                       ÌìÏÉ×Ó(tianxz)(Thu Aug 22)
+hp
+ÎÒ¾õµÃqzwdÕâÃ´ÄÑÁ·£¬Ö»ÓÐÒ»¸öpfm£¬ÕæµÄÓÐµã¿ÉÏ§£¬ÎªÁË¸üºÃÍæ£¬
+ÈÃÍæ¼ÒÓÐ¸ü¶àµÄÐËÈ¤ÐÞÁ¶qzwd£¬Ò²ÊÇ¶ÔÐÞÁ¶qzwdµÄÍæ¼ÒµÄÒ»¸ö°²Î¿£¬
+ÎÒ¾õµÃÓ¦¸Ã¼ÓÒ»¸öpfm£¬Õâ¸öpfm ¿ÉÒÔÔÚtuxiÖ®Ç°£¬Ò²¿ÉÔÚtuxiÖ®ºó
+×îºÃÊÇÖ®Ç°£¬ÔÚtuxiÖ®Ç°£¬ÔòÍþÁ¦µ±È»±ÈtuxiÐ¡£¬µ«ÊÇËûÓ¦¸Ã¿ÉÒÔ
+ÖÁÉÙ¿ÉÒÔÁ¬³ö2 finger and 2 hand£¬¶øÇÒÃüÖÐÂÊµ±È»±ÈÆÕÍ¨¹¥»÷Òª¸æ£¬
+Í¬Ê±±»´òÖÐÁË£¬±ÈÆÕÍ¨¹¥»÷ÖÐ¶¾ÒªÉîÒ»ÏÂ£¬¼ÓÕâ¸öpfm£¬Ö÷ÒªÊÇºÃdo job
+²»È»do jobÓÃtuxi£¬»¹µÃµÈËû¶¾·¢ÉíÍö²ÅÐÐ¡£ÎÒÏ£ÍûÕâ¸ö¼ÓµÄpfmÅªµÄºÃ¿´µã
+´øÉÏÑÕÉ«£¬Í¬Ê±Ï£Íûpfm tuxiÒ²¼ÓÉÏÑÕÉ«£¬ÑÕÉ«¿ÉÒÔºÍ¶¾µÄÑÕÉ«ÏàÊ¶£¬±ÈÈç
+ÉîÀ¶É«»òÔð ÉîÂÌÉ«£¬»òÕßÍÁ»ÆÉ«£¬¶¼¿ÉÒÔ£¬ÏÂÃæÎÒËµËµËûµÄÃèËÙ£¬µ±È»ÊÇÎÒ
+×Ô¼ºÏëµÄ£¬wiz¿ÉÒÔ¸ù¾ÝÐèÒª²Î¿¼
+ÐÂÔöqzwd µÄpfm£º(Õ½¶·ÖÐÊ¹ÓÃ£©
+perfrom bingyong (ÊÖÖ¸²¢ÓÃ£© £¨¿ÉÒÔÓÃ±ðµÄ£¬ÎÒÏë²»µ½ºÃµÄÃû×Ö£©
+ÄãÍ»È»ÒõÐ¦Ò»Éù£¬¶¾ÆøÔËÓÚÊÖÖ¸£¬Ïòxxx£¨¶ÔÊÖ£©Ñ¸ËÙÎÞ±ÈµÄ·¢³öÁ½Ö¸ÈýÕÆ£¬£¨´øÑÕÉ«£©
+ÏÂÃæ¾ÍÊÇ½ô¸ú×Å³öÀ´5ÕÐ£¨²»Í¬µÄÃèÊö£¬²»Í¬µÄÑÕÉ«×îºÃ£©
+³öÕÐ¡¢ÖÐÕÐºÍ·ÀÓù·½Ê½¿ÉÒÔ²Î¿¼±ðµÄÁ¬³öµÄpfm£¬Ö»ÊÇÑÕÉ«ºÍÃèÊö¸Ä±ä
+hp
+ÎÒ·Ç³£Ï£ÍûwizÄÜ¼ÓÒ»¸öqzwdµÄpfm£¬Çëwiz³éµãÊ±¼ä£¬ºÃºÃ¿¼ÂÇÒ»ÏÂ£¬ÈçÄÜ¼ÓÉÏ
+ÎÒ½«²»Ê¤¸Ð¼¤£¬ÔÊÐíÎÒ´ú±íÐÞÁ¶qzwdµÄÍæ¼ÒÃÇÏòwizËµÉùÐ»Ð»£¡bow
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  ÓÐ¸ÐÓÚ¸÷¸öÃÅÅÉµÄjob[37;0m                Î´Ëª·ç(foreseee)(Thu Aug 22)
+Ê×ÏÈÏëËµ£¬ËäÈ»yapuÊÇ¸ö·Ç³£Î£ÏÕµÄjob£¬µ«Æä»Ø±¨Ò²µÄÈ·ºÜ¸ß£¬
+Ò»¸öÐ¡Ê±15kÒ²ÊÇ³£ÊÂ£¬µ±È»Ç×ÎÇËÀÉñÒ²ÊÇ³£ÊÂ£¬Ïó¸Õ²ÅÄÇÃ´ºÃÔË
+ÓÖÄÜÓÐ¼¸»Ø¡£ÕæµÄºÜÏ£ÍûÌÒ»¨ÓÐ¸ö3K/hµÄrobot job£¬ÄÄÅÂ2k£¬
+Õ¼²·ËäÈ»ÄÜµÃµ½200%×óÓÒµÄpot,µ«Ò²×î¶à1k/h¡£·Ç³£ÏÛÄ½È«Õæ
+Á·Õó£¬Îäµ±ÊØÃÅ£¬Ø¤°ïËÍÐÅ£¬¹ÅÄ¹·Å·ä£¬À¥ÂØ¡¢°×ÍÕ¡¢ÉÙÁÖ
+µÄ¹¤×÷Ò²easy robot£¬Á·ÌÒ»¨Ö»ÊÇÒòÎªÏ²»¶ÌÒ»¨£¬¸øÌÒ»¨Ò»¸ö
+ºÃµãµÄrobot job°É£¬²»Èç¾Í×ö¸öÔÚÌÒ»¨µºÉÏ²¼Õó¿¹µÐµÄ¹¤×÷°É
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  Ò»Ð©¸ÐÊÜ[37;0m                             µÓÇà(foru)(Thu Aug 22)
+×Ü¸Ð¾õÓÐÐ©±äÎ¶£¬¼ÇµÃÔÚ98Äê´óÖÚÈí¼þÔö¿¯µÄ½éÉÜÖÐµÚÒ»´ÎÖªµÀÁËÓÐmud
+Õâ¸öÓÎÏ·£¬ÓÃ33.6µÄÐ¡Ã¨¿ªÊ¼ÁËmudÉúÑÄ£¬Ñ¡ÔñxkxÊÇÒòÎª½éÉÜËµÕâ¸ömud
+ÓÎÏ·×îÄÑ¡£¶øÏÖÔÚÍæÉñÖÝÐÂÕ¾×Ü¸Ð¾õ¹Ö¹ÖµÄ£¬ÎªÐÂÊÖ×ÅÏëÒ»µã¶¼Ã»´í£¬µ«
+ÓÐÐ©µØ·½Ò²¸ÄµÃÌ«ÀëÆ×ÁË£¬Æ½ºâÓÖÔì³ÉÁËÐÂµÄ²»Æ½ºâ£¬Ò»Ïëµ½ÏÖÔÚÍÚÒ©¾Ó
+È»Á¬Ö»ºï×Ó¶¼²»´Ü³öÀ´£¬Á·ÕóÃ»npc£¬Ø¤°ïËÍÐÅ±£Ö¤ËÍµ½£¬Îäµ±ÊØÃÅ¾ÍÊÇ
+ÔÚÃÅ¿Ú·¢·¢´ô£¬´µ´µ·ç£¬µÈµÈ£¬»¹ÓÐÄÇ¸öÃ»×ö¹ýµÄscheme job£¬¿ÉÒÔËµ´ó
+Á¿µÄ¹¤×÷Á¬Ò»µãÒâÍâ¶¼²»»á·¢Éú£¬Ã»ÓÐ¾ªÏ²£¬Ò²Ã»ÓÐµÄ¾ÚÉ¥£¬¸ù±¾¼¤²»Æð
+Ò»µãÐÄÇéµÄ²¨¶¯£¬ÆðÂëÎÒÊÇ¸Ð¾õÄÍÍæ¶ÈÔÚÏÂ½µ,µ±È»ºÃ´¦¾ÍÊÇÁ·´óÃ×·½±ã
+ÁË¡£Ò»°ã½²×îÓÐÓÃµÄ´óÃ×ÎÞ·ÇÊÇÎäµ±lifesave£¬ÌÒ»¨zhanbu´óÃ×£¬ÕâÔÚÐÂ
+Õ¾µ¹ÊÇ³¬¼¶µÄºÃÁ·¡£
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  ¹ØÓÚcutÃÅÅÉjobÊÕÒæµÄ²»ºÏÀíÐÔ[37;0m       ÆòÌÖ(jiaohua)(Sun Aug 25)
+ÎÒ²»ÖªµÀÎ×Ê¦ÊÇ³öÓÚºÎÖÖ¿¼ÂÇ³ö·¢µÄÒªcutÃÅÅÉjobµÄÊÕÒæ£¬
+¾ÝÎÒ¹À¼Æ¿ÉÄÜÓÐÒÔÏÂÒ»Ð©Ô­Òò¡£
+1£¬Ò»Ð©Íæ¼Ò£¨¼¸ÉÙÊý£©Íæ¼Ò¿ÉÒÔ24Ð¡Ê±ÉÏÏß¹Ò»ú×öÃÅÅÉjob,Ê¹Ô­±¾ÊÕÒæ²»ÊÇºÜ¸ßµÄÃÅÅÉjob,ÔÚ24Ð¡Ê±µÄÁ¬Ðø¹Ò»úÏÂ³ÉÁË¸ßÊÕÒæjobÁË¡£
+2£¬Ò»Ð©ÀÏÊÖÍæ¼Ò¿ÉÒÔscheme×öÃÅÅÉjob,ÀÏÊµÊÕschemeµÄ¹¦ÄÜÊÇÓÐÏÞµÄ¼´Ê¹ÄÜscheme×öÃÅÅÉjobÐ§ÂÊÒ²ÊÇºÜµÍµÄ¡£
+3£¬Î×Ê¦¿ÉÄÜ³öÓÚ¹ÄÀøÍæ¼ÒÊÖ¶¯×öjob²ÅÒªcutÃÅÅÉjobÊÕÒæµÄ¡£
+Èç¹ûÎ×Ê¦´óÈËÕæÊÇÒÔ´ËÎªÀíÓÉÏ÷¼õÃÅÅÉjobµÄÊÕÒæ£¬ÎÒÈÏÎªÊÇ²»ºÏÀíµÄ¡£
+ÒòÎªÕâ´ÎÏ÷¼õÐÐ¶¯ºÃÏóÊÇÕë¶ÔÒ»Ð©ÀÏÍæ¼Ò£¬µ«ÕæÕýÊÜº¦»¹ÊÇÎÒÃÇÕâÐ©¸Õ¸Õ½øÈëÉñÖÝµÄÐÂÍæ¼Ò¡£
+24Ð¡Ê±ÉÏÏß¶Ô´ó¶àÊýÍæ¼ÒÀ´ËµÊÇ²»¿ÉÄÜµÄ£¬ËùÒÔÃ»cutÇ°µÄÊÕÒæ¶ÔÎÒÃÇÕý³£Íæ¼ÒÀ´Ëµ»¹ÊÇºÏÀíµÄ¡£
+scheme×öjob¶ÔÓÚÒ»Ð©ÐÂÊÖÀ´ËµÒ²ÊÇ²»ÏÖÊµµÄ£¬schemeÄÜ×öµÄ×îÓÐÐ§µÄÊÂ¾ÍÊÇtunaºÍdazuo.
+ÊÖ¶¯×öguo-job ftb clbÎÒÒ²¿ÊÍû¿ÉÊÇÄÇÊÇÐèÒªÒ»Ð©expºÍskillÎª»ù´¡µÄ£¬ÃÅÅÉjobÊÕÒæ²ÒÔâcutÏÞÖÆÁËÐÂÊÖµÄ³É³¤£¬Ê¹ÐÂÊÖ½øÈëÊÖ¶¯jobµÄ½Å²½²»µÃ²»·ÅÂú¡£
+ËùÒÔÕâ´Îµ÷ÕûÊÜº¦×î´óµÄÊÇÐÂÊÖÍæ¼Ò£¬¶ÔÄÇÐ©×Ô¿ªÕ¾À´¾ÍÁ¬Ðø¹ÒµÄÀÏÍæ¼ÒÀ´Ëµ¿ÉÒÔËµÃ»ÓÐÈÎºÎÓ°Ïì
+£¬ËûÃÇ¾­Ñé£¬Ç±ÄÜ¶¼ÄÃ¹»ÁË£¬ÏÖÔÚ¿ÉÒÔfull skills×ö±ðµÄjobÁË¡£
+Î×Ê¦ÕâÖÖÒ»µ¶ÇÐµÄ×ö·¨£¬¶ÔÓÚÐÂÊÖÊÇºÜ²»¹«Æ½µÄ£¬¼ä½ÓÔì³ÉÁËÉñÖÝÆ¶¸»²î¾àµÄÀ­´ó¡£
+Î×Ê¦ÃÇ¿ÉÒÔÓÐ¸üºÏÀí¸üÀíÐÔµÄ·½·¨À´´¦Àí±ÈÈçÃÅÅÉjob¿ÉÒÔÏÞÖÆÖ»ÄÜ×öµÄ500k,500kºóÈç¹ûÔÙ×öÊÕÒæÒª¼õ°ë¡£
+ÒÔÉÏÊÇÎÒ¸öÈËµÄ¿´·¨£¬ÎÒÊÇ¸Õ¸Õ½øÈëÉñÖÝµÄÍæ¼ÒÒÔÇ°ÊÇÍæxkxµÄ£¬xkxµÄË¥°ÜÎÒ²»Ï£ÍûÔÚszÔÙ¿´µ½¡£
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  ´óÀíÐèÒª¸Ä¸ï£¡ÕâÑùÏÂÈ¥²»ÐÐÑ½£¡[37;0m       ÄþÓê(ning)(Sun Aug 25)
+WIZÒª´óÀíµÄ×Ü½áÒ»ÏÂÕâ¸öÃÅÅÉµÄÈ±µã£¬ÒÔ±ã¼ÓÒÔ¸Ä½ø¡£ÎÒ×ÐÏ¸·ÖÎöÁËÒ»ÏÂ£¬µÃ³ö
+ÒÔÏÂ¹Ûµã£º
+´óÀíÔÚËùÓÐSZµÄÃÅÅÉÀïÅÅÃûÔÚµ¹Êý1¡¢2£¬¾ø¶Ô²»»á³¬¹ýµ¹ÊýµÚ3µÄ£¡Õâµã´Ó´óÀí
+Íæ¼Ò¾­³£±»ÉÙÓÚ×Ô¼ºEXPµÄ±ðÅÉ´òµÃ²Ò°Ü¿ÉÒÔ¿´³ö¡£ÔÚÍ¬ÑùEXPµÄÇé¿öÏÂ£¬´óÀíºÍ
+ÈÎºÎÃÅÅÉ´òµÄÊ¤ÂÊ²»»á³¬¹ý30%¡£
+ÕâÊÇÒòÎª´óÀíSKILLSÀúÀ´²»ÐÐ£¬¶øXKX»òSZµÄWIZÒ»Ö±ÔÚ¼ÓÇ¿´óÀíµÄSKILLS£¬¿ÉËûÃÇ
+¼ÓÇ¿µÄÊÇÊ²Ã´ÄØ£¿ÇåÑÌÕÆ£¡µÄÈ·Õâ¸öÕÆ·¨ÊÇÔÚÔ­ÓÐ»ù´¡ÉÏ±»´ó´óµÃ¼ÓÇ¿ÁË£¬¿ÉËüµÄÇ¿¶È
+ºÍYYZ²î²»ÁË¶àÉÙ£¡¾ÍËãÓÐ100¸öºÍYYZ²î²»¶àµÄSKILLSÓÖÓÐÊ²Ã´ÓÃ£¬ÄãºÍ±ðÈË´òµÄÊ±ºò
+ÄÑµÀÄÜÍ¬Ê±ÓÃÕâ100¸öSKILL£¿±ðÈËÖ»ÒªÓÃ1¸öPFM¾ÍÄÜ¸ã¶¨ÄãÁË£¬ÄãÄÄÀïÓÐ»ú»áÔÙÓÃ
+ÆäËûSKILLSÈ¥´ò±ðÈËÄØ£¿
+ÔÙËµÁË£¬ÔÚ½ðÓ¹Ð¡ËµÀï£¬ÇåÑÌÕÆÊÇ¶ÎÕý´¾Õâ¸ö¶þÁ÷¸ßÊÖµÄ¶þÁ÷Îä¹¦£¬ÊÇÓÃÀ´Æ­Å®ÈËµÄ¡£
+°ÑÕâÖÖÎä¹¦×öµÃºÜÇ¿ÔõÃ´Ò²Ëµ²»¹ýÈ¥£¨ÆäÊµÒ»µãÒ²²»Ç¿£©¡£ÎªÊ²Ã´WIZ²»×¨ÐÄ°ÑYYZÅª
+µÃºÃÐ©£¬¶øÈ¥»°Ê±¼ä×öÆäËûµÄÎä¹¦ÄØ£¿XKXµÄÎóÇøÇ§Íò±ð´«µ½ÁËSZÀïÀ´£¡¾¯Ìè£¡
+ÔÙËµËµ´óÀíµÄJOB°É£¡
+´óÀíJOB£¬ÎÒÈÏÎªÊÇSZËùÓÐJOBÖÐ·Ç³£ºÃµÄÒ»¸öJOB£¬ÓÐÈ¤£¬´Ì¼¤¡£¿´¿´Õû¸öSZ£¬ÓÐÄÄ¸ö
+JOBµÄNPCÊÇ×Ô¼ºEXPµÄ2.5±¶£¡
+¶øÕâÑùºÃ¡¢²¢ÇÒÄÑ×öµÄÒ»¸öJOB£¬ÊÕÒæÈ´µÍµÃ¾ªÈË£¡ÎÒ¸Õ¸ÕÔÚÐÂÕ¾ÀïÓÃÐÄµÃ×öÁË¼¸¸ö
+ask fan about ÖÎ°² JOB¡£»ù±¾ÊÇÕâÑùµÄ£º6·Ö30Ãë£¨²»ÊÇ6·ÖÖÓ£©²ÅÄÜ×ö1´ÎJOB£¨ÓÐBASY TIME£¬FAN
+»á²»ÈÃÄã×ö£©£¬×ö1´ÎJOBÊÕÒæÊÇ£º200-220EXP£¬65-80POT¡£Ò²¾ÍÊÇËµ£¬ÄãÒ»¿Ì²»Í£
+µÃ×ö1Ð¡Ê±Ò²²»µ½2K£¬¶øÇÒÔÚ×öJOBµÄÊ±ºò»¹»áºÜÎ£ÏÕ£¬100KºóÅöµ½ÐÇËÞµÄNPC¼«ÈÝÒ×
+ÖÐ¶¾£¬»¨Ê±¼äAO 8DAN£¬µÈ¶¾ÐÔ¹ýµôÓÐÒª»¨ºÜ¶àÊ±¼ä£¬ÕâÑù×öÕâ¸öJOBµÄÊÕÒæ¸üÉÙÁË£¡
+¼ÈÈ»ÊÕÒæÕâÑù²î£¬ÎªÊ²Ã´²»×öÆäËûPUBLIC JOBÄØ£¿ÆäÊµÎÒÒ²Ïë×öÑ½£¡
+¹ù¾¸µÄJOBÀ´»Ø1´ÎÓÐ1KµÄEXP£¬POTÈ«Âú¡£ÎÒÅóÓÑ×öµÄ»°2·ÖÖÓ×óÓÒÄÜÍê³É¡£
+FML JOBÓÐ700¶àEXP£¬POTÒ²ÊÇ600-700¡£Õâ¸öJOB²»ÓÃ5·ÖÖÓÒ²¿Ï¶¨ÄÜÍê³É¡£
+»¹ÓÐQUEST JOB£¬ÎÒºÜÄÃÊÖ£¬Èç¹ûÃ»ÈËºÍÎÒÇ¿µÄ»°£¬ÎÒ1´ÎÄÜÕÒµ½3-4¸ö¶«Î÷£¬1´Î¾ÍÄÜ
+µÃµ½4000EXP£¨20·ÖÖÓÒÔÄÚ£©¡£
+±ðµÄÃÅÅÉ¿ÉÒÔ×öÕâÐ©£¬¶ø´óÀí²»ÄÜ£¡Ö»ÓÐ´óÀí²»ÄÜ£¡
+ÒòÎªÃ»ÓÐÒ»¸öÃÅÅÉÏó´óÀíÄÇÑù£¬×Ô¼ºµÄÃÅÅÉJOBÓë×Ô¼ºµÄÀûÒæÈç´ËÏà¹Ø£¡
+Ã¿¸öÃÅÅÉ¶¼ÓÐ×Ô¼º·Ü¶·µÄÄ¿±ê£º»ªÉ½Ñ§¶À¹Â¾Å½££¬È«ÕæÑ§ÉñÍ¨£¬¶ðÃ¼Ñ§9Òõ¡£´óÀíÒ²ÓÐ
+´óÀíµÄÄ¿±ê¾ÍÊÇ×öºòÒ¯£¡¿É¿´¿´ºòÒ¯µÄÒªÇó°É£º10KµÄ×¥Ôô¹¦ÀÍµã£¬8KµÄÖÖ»¨¹¦ÀÍµã£¡
+Èç¹û²»°ÑËùÓÐÊ±¼ä¶¼ÓÃÔÚ×öFAN JOBÉÏÀ´ÄÃ¹¦ÀÍµãµÄ»°£¬ÔõÃ´¿ÉÄÜ´ïµ½ÕâÑùµÄÄ¿±ê£¿
+´ó¼Ò¶¼Ëµ´óÀíµÜ×ÓEXP±È²»¹ý±ðÈË¡£´óÀíÈËÆø±È²»¹ý±ðÈËÊÇ1·½Ãæ£¬¶øÕûÌì×öµÄJOBÃ»ÓÐ
+±ðÈËÊÕÒæºÃÊÇÁíÒ»¸ö·½Ãæ¡£µ±ÄêSHADOWÕûÌìÔÚÏß×öJOB£¬ÈÔÈ»Ã»ÓÐÆäËûÃÅÅÉ¿ì£¡
+ÏÖÔÚËùÓÐÃÅÅÉÊÕÒæ¶¼¼õÁË£¬±ðµÄÃÅÅÉ´ó²»ÁËÈ¥×öPUBLIC JOB£¬¶ø´óÀíÄØ£¿´óÀí¾¿¾¹
+Ó¦¸Ã°Ñ×Ô¼º·ÅÔÚÊ²Ã´Î»ÖÃÄØ£¿
+Èç¹ûWIZÄÜÈÃ´óÀíµÜ×ÓÔÚ×öPUBLIC JOBÊ±Ò²ÄÜÄÃµ½×¥Ôô¹¦ÀÍµãµÄ»°£¬ÎÒÏëÃ»ÓÐÒ»¸ö´óÀí
+µÜ×ÓÏÖÔÚ»áÂñÔ¹°É¡£
+×ÚÉÏËùÊö£¬ÎÒÏ£ÍûWIZÄÜ³¹µ×¸Ä¸ï´óÀí£¬CUT ÇåÑÌÕÆ£¬¼ÓÇ¿YYZ£¬¿ª·Å6MAI¡£ÎüÒý¸ü¶àµÄ
+µÜ×ÓÍ¶Èë´óÀíÃÇÏÂ£¡
+ÎÒÖÔÐÄÏ£ÍûSZÄÜÔ½À´Ô½ºÃ£¬ÎÒÒ²¿´µ½SZ WIZËù×öµÄÅ¬Á¦£¬ÎÒÖªµÀWIZ×öµÄÒ»ÇÐ¶¼ÊÇÎªÁËSZ
+µÄ·¢Õ¹£¬µ«Ï£ÍûWIZÔÚÒ»Î¶ÇóÐÂµÄÊ±ºò£¬Ò»¶¨Òª°ÑÃÅÅÉÆ½ºâ·ÅÔÚµÚÒ»Î»£¡·ñÔòÈËÈË¶¼
+È¥Í¬Ò»¸öÃÅÅÉ£¬ÄÇÓÎÏ·»¹ÓÐÊ²Ã´ÒâË¼ÄØ£¿
+»¹ÓÐÊ²Ã´ÎÒÃ»Ïëµ½µÄÇëROMANCEºÍKULI²¹³ä£¡
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  to dali[37;0m                            ÀËÂþ(romance)(Sun Aug 25)
+ÎÒÏëËµÏÖÔÚµÄ´óÀí¾ø¶ÔÊÇÕû¸öszµÄ×îÄ©Á÷µÄÃÅÅÉÖ®Ò»ÁË
+save
+´ÓËûµÄskillsÉÏ£¬jobÉÏ¿ÉÒÔÀ´ËµÃ÷.
+daliµÄskillsÏÖÔÚ¿¿µÄÊÇpmºÍqk
+pmÇ°Ò»Õó×ÓÂùºÃÓÃµÄ£¬µ«ÊÇÂíÉÏ¾ÍcutÁË£¬µ¼ÖÂÃüÖÐ±¬µÍ£¬
+É±Ò»¸öfm job£¬ÎÒÓÐÊ±ºòÒªÓÃ4¸öpm,ÏûºÄÒ²²»µÍ¡£ÖÁÓÚqkÊÇ
+daliµÄ¿´¼Òpfm,µ«ÊÇËûµÄÃüÖÐ¸ú±ðµÄÃÅÅÉµÄpfm¸ù±¾Ã»·¨±È£¬²»ÒªËµ×ö
+±ðµÄ,×öÒ»¸öfan job,ÓÃqkµÄ»°£¬exp¸ßµÄ£¬Ã»ÓÐ¸ö¼¸Ê®¸öpfmÏÂÀ´£¬¸ù±¾
+´ò²»µ½npc,Ò»³¡ÕÌÃ»ÓÐ10·ÖÖÓÊÇ¸ã²»¶¨µÄ¡£ËùÒÔÏÖÔÚµÄdali skills
+£¬ÎÒ¾õµÄÒÑ¾­²»ÊÇ¹«µÀÁË£¬¶øÊÇ¿ì³É¸¾µÀÁË¡£
+dali jobÊÇÒ»¸ö·Ç³£³öÉ«£¬·Ç³£ÓÐÈ¤µÄjob,ÊÕÒæ²»¸ß£¬µ«Ò²²»ÊÇºÜµÍ£¬
+ÖÐµÈ×óÓÒ°É¡£µ«ÊÇ½ñÌìbuwuÎªÁËÆ½¾ùÃÅÅÉjob,¶øÍ³Í³cutÁËÒ»°ë£¬ÕâÑù×ö
+ÊÇ²»ÊÇÓÐÐ©Ì«²ÝÂÊÁË£¬dali cut Ò»°ë£¬ÐÂÊÖ»òÕßµÍÊÖ(ÏÖÔÚ´óÀíÒ²Ã»ÓÐ¸ßÊÖ)
+×öjob,±¾À´¾ÍÒòÎª×ÔÉíforce£¬×öjobËÙ¶ÈÂý¶ø¸üÂý¡£¾ÍningËµµÄ£¬×öÒ»¸ö
+200×óÓÒexp,ÓÐ6·ÖÖÓ°ëÖÓµÄbusy time,¾ÍÕâÑù£¬Âú´òÂúËãÒ»¸öÐ¡Ê±Ò²²»¹ý
+2k,ÖÐ¼ä»¹²»ÅÅ³ýjobÊ§°Ü£¬»òÕß±»job npc´òËÀµÈÒòËØ¡£ÕâÑùµÄËÙ¶È¸ú±ÈµÄÃÅÅÉ
+±ÈÆðÀ´ÓÐ¶àÉÙÇø±ð£¬ÎÒ»¹²»ÖªµÀ£¬µ«ÎÒÖªµÀÈç¹ûÊÇÕâÑùµÄ»°£¬ÄÇ´óÀí½«»áÊÇ
+³¹µ×µÄ·ÏÁË¡£ÆäËûÃÅÅÉ²»×ö±¾ÃÅjobÃ»¹ØÏµ£¬ËûÃÇ»¹¿ÉÒÔ¿¼ÂÇ×öÊÖ¶¯job,
+µ«ÊÇ´óÀíµÜ×Ó²»ÐÐ£¬ÎªÁËÉý¹Ù£¬ÎªÁË×öºîÒ¯£¬±ØÐëÒª×ö¡£
+×ÜÉÏËùÊö£¬ÎÒÏëÌá¼¸µã½¨Òé£¬±£³Ö´óÀíjob±¾À´µÄ±¨³êÊÕÒæ,ÁíÍâ¼ÓÇ¿yyz£¬»òÕß
+¼Óyyz pfm
+¶ÔÓÚÊ²Ã´cuff strike,ÕâÐ©skillsÆäÊµ¶¼²»ÊÇ´óÀíµÄ±¾À´µÄ¾«Ëè£¬¸ù±¾¾ÍÊÇÃ»
+±ØÒªµÄ£¬»¹ÓÐ¿ªµã¿ª·Å6msj°É£¬Õâ²ÅÊÇ´óÀíÕæÕýµÄÖÕ¼«skills¡£
+ÇëÖ÷¹Ü´óÀíµÄwiz´óÈËºÃºÃ¿¼ÂÇ´óÀíµÜ×ÓµÄ¿àÖÔ°É
+[37;0m
+¡õ±¾ÆªÍê¡õ
+¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡¾¡°ÉñÖÝ¡±ÎÄÑ¡¡¿¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù¡ù
+¡õ001  ¹ØÓÚÐÞ¸Ä´óÀíµÄ½¨Òé[37;0m                   ÄþÓê(ning)(Sun Aug 25)
+Ë­²»ÏëÈÃ×Ô¼ºÏ²»¶µÄÃÅÅÉ³ÉÎª×îÇ¿£¬µ«ÍùÍùÊÂ²»ÈçÔ¸¡£ÎÒÏ²»¶ÁËÒ»¸ö×îÈõµÄÃÅÅÉ£¬ËäÈ»
+ÊÇ×îÈõ£¬¿ÉÎÒÈÔÈ»Ï²»¶£¡ËùÒÔ¶ÑÆðÐ¦Á³ÇóWIZ°ïÃ¦¼ÓÇ¿£¬ÎÒ²»ÇóÎÒµÄÅ¬Á¦ÄÜÊ¹´óÀí
+ÐËÍú¶àÉÙ£¬µ«ÎÒÏ£ÍûÏ²»¶Õâ¸öÃÅÅÉµÄÈËÄÜºÍÏ²»¶±ðµÄÃÅÅÉµÄÈËÒ»Ñù¿ªÐÄ£¡
+ÎÒÏ²»¶´óÀí£¬ºÜ´ó³Ì¶ÈÉÏÊÇÊÜ¡¶ÌìÁú°Ë²¿¡·µÄÓ°Ïì£¬ÕâÊÇÎÒÔÚÐ¡Ñ§6Äê¼¶¿´µÄµÚÒ»²¿
+Îä´òÐ¡Ëµ£¬´Ó´Ë¿ªÊ¼°®ÉÏ½ðÓ¹µÄÐ¡Ëµ£¬¶øÕâÌìÁú°Ë²¿Ò²¿´ÁË5±ßÒÔÉÏ£¬¶Ô¶ÎÓþÕâ¸öÈËÎï
+·Ç³£Ï²»¶£¬¶øÎÒÒ²ÈÏÎªÁùÂöÉñ½£¾õ²»±È¶À¹Â¾Å½£²î¡£
+ÔÚ¿´¿´ÓÎÏ·ÖÐµÄ´óÀí°É£¬Õâ¸öÃÅÅÉÒÑ¾­¼¸ºõÍêÈ«Ã»ÓÐÐ¡ËµÖÐµÄÑù×ÓÁË£¡´óÀíµÄÎä¹¦ÊÇ
+ÒÔÄÚÁ¦ÇýÖ¸¾¢£¬²»¹ýÊÇÒ»µÆ´óÊ¦»¹ÊÇ¶ÎÓþ¶¼ÊÇÒÔÄÚÁ¦¼û³¤µÄÈËÎï£¬¶øÓÎÏ·ÖÐµÄ´óÀí
+ÆøÊÇÕâÑù¶Ì£¡
+Ò»ÑôÖ¸ÊÇ¿ËÖÆ°×ÍÕµÄ×îºÃÎä¹¦£¬¿É¿´¿´ÏÖÔÚ£ºÍ¬µÈEXPÅöµ½°×ÍÕ±ØËÀ£¡¾ÍËãEXP±È°×ÍÕ
+¸ßÒ»µã£¬Ê¤ÂÊÒ²ºÜµÍ£¨ÆäÊµ´óÀíºÍÈÎºÎÃÅÅÉ´ò¶¼Ã»ÓÐÊ¤ÂÊ¿ÉÑÔ£©¡£
+Ç°ÃæµÄPOSTËµÁË´óÀíÎªÊ²Ã´Ö»ÄÜ×öARREST JOB¡£ÕâÀïÔÙÖØÉêÒ»±ß£º´óÀí×öARREST JOB
+µÄÔ­ÒòÊÇÒªÉý¹Ù£¡±ðµÄÃÅÅÉ¿ÉÄÜ²»Ã÷°×´óÀíµÜ×ÓÎªÊ²Ã´ÒªÕâÃ´¿´ÖØÉý¹Ù£¬ÄÇÊÇÒòÎª
+Éý¹ÙºóµÄ¸£ÀûÒÔ¼°Éý¹ÙËù´ø¸øÎÒµÄÈÙÓþ¸Ð£¬ÕâÖÖ¸Ð¾õºÍÔÚTOP EXPÖÐÅÉÃûµÚÒ»ÊÇÒ»ÑùµÄ
+ÎÒ¶Ô´óÀíµÄ½¨ÒéÈçÏÂ£º
+°ÑDALI JOB¸Ä³ÉPUBLIC JOB£¬ÊÕÒæºÍ±ðµÄPUBLIC JOB²î²»¶à£¬ÔÊÐíÆäËûÃÅÅÉ¶¼À´×ö£¬
+È¡ÏûÍ¶ÉíµÄÃÅÅÉÏÞÖÆ¡£¿ÉÒÔÊÊµ±¸ø´óÀíµÜ×ÓÒ»Ð©ÓÅ»Ý¡£
+ÐÞ¸ÄÒ»ÑôÖ¸Õâ¸öSKILL¡£ÎÒ¿´¹ýºÜ¾ÉÒÔÇ°YYZµÄCODE£¬¶ÔÆäÃüÖÐÂÊµÄËã·¨ºÜ²»ÔÞÍ¬£¬
+Èç¹ûÐèÒªÎÒ¿ÉÒÔÉè·¨ÏëÒ»¸öºÃÐ©µÄËã·¨³öÀ´¡£ÔöÇ¿YYZµÄPFM£¬»òÔö¼ÓÐÂµÄYYZ PFM
+¶Ô´óÀíÐÄ·¨BUDDHISMµÄ¹¦Ð§Ôö¼Ó£¬¼õ¾«¼ÓÆø¡£
+¿ª·Å6MAI£¬Ñ§6MAIÐèÒª¸ßWXºÍ¸ßGG¡£
+ÎÒÖªµÀÕâÐ©Ïë·¨ºÜÄÑÊµÏÖ£¬¿ÉÄÜ1¸ö¶¼²»ÄÜ£¬µ«ÎÒ»¹ÊÇÒªËµ³öÀ´£¬ÊÇ¸Ã´óÀí¸Ä¸ïµÄÊ±ºòÁË
+[37;0m
+¡õ±¾ÆªÍê¡õ
