@@ -13,7 +13,7 @@ void clear_dumudian();
 void self_destruct();
 
 
-static string *menpai_names1 = ({
+nosave string *menpai_names1 = ({
     "华山派",
     "峨嵋派",
     "武当派",
@@ -21,7 +21,7 @@ static string *menpai_names1 = ({
     "丐帮",
 });
 
-static string *menpai_names2 = ({
+nosave string *menpai_names2 = ({
     "华山",
     "峨嵋",
     "武当",
@@ -29,7 +29,7 @@ static string *menpai_names2 = ({
     "丐帮",
 });
 
-static int random_id;
+nosave int random_id;
 
 void create()
 {
@@ -66,8 +66,8 @@ int set_random_name()
     my_name = menpai_names2[random_id] + "弟子";
     set_name(my_name, ({"dizi"}));
     set("long", "他看起来是一个年轻的"+menpai_names1[random_id]+"弟子。\n");
-    
-    return random_id;   
+
+    return random_id;
 }
 
 int setup_robber(int exp_level)
@@ -76,14 +76,14 @@ int setup_robber(int exp_level)
 
     menpai = random_id;
 
-//    printf("exp_factor = %f.\n",exp_factor); 
+//    printf("exp_factor = %f.\n",exp_factor);
 
     exp = exp_level*(random(50)+130)/100;
 
     if (exp < 0 ) return;
-    
+
     level = pow(10*exp, 0.333334);
-    
+
 //    level = level - 5;
 
     if (level < 20) level = 20;
@@ -125,7 +125,7 @@ int setup_robber(int exp_level)
         set_skill("zixia-gong", level);
         set_skill("pishi-poyu", level);
         set_skill("hunyuan-zhang", level);
- 
+
         map_skill("force", "zixia-gong");
         map_skill("dodge", "huashan-shenfa");
         map_skill("parry", "huashan-jianfa");
@@ -133,10 +133,10 @@ int setup_robber(int exp_level)
         map_skill("cuff", "pishi-poyu");
         map_skill("sword", "huashan-jianfa");
         map_skill("blade", "liangyi-dao");
-        
+
         prepare_skill("cuff", "pishi-poyu");
         prepare_skill("strike", "hunyuan-zhang");
-        
+
         set("default_weapon", "/clone/weapon/gangjian");
 
         break;
@@ -167,13 +167,13 @@ int setup_robber(int exp_level)
         set_skill("taiji-jian", level);
         set_skill("tiyunzong", level);
         set_skill("taiji-quan", level);
- 
+
         map_skill("force", "taiji-shengong");
         map_skill("parry", "taiji-jian");
         map_skill("cuff", "taiji-quan");
         map_skill("dodge", "tiyunzong");
         map_skill("sword", "taiji-jian");
-        
+
         prepare_skill("cuff", "taiji-quan");
         set("default_weapon", "/clone/weapon/gangjian");
         break;
@@ -187,7 +187,7 @@ int setup_robber(int exp_level)
         set_skill("hunyuan-yiqi", level);
         set_skill("yizhi-chan", level);
         set_skill("banruo-zhang", level);
- 
+
         map_skill("force", "hunyuan-yiqi");
         map_skill("dodge", "shaolin-shenfa");
         map_skill("parry", "damo-jian");
@@ -197,7 +197,7 @@ int setup_robber(int exp_level)
         map_skill("staff", "wuchang-zhang");
         map_skill("finger", "yizhi-chan");
         map_skill("strike", "banruo-zhang");
-        
+
         prepare_skill("finger", "yizhi-chan");
         prepare_skill("strike", "banruo-zhang");
         set("default_weapon", "/clone/weapon/gangjian");
@@ -205,18 +205,18 @@ int setup_robber(int exp_level)
 
     // gaibang
     case 4:
-    default:    
+    default:
         set_skill("liuhe-dao", level);
         set_skill("xiaoyaoyou", level);
         set_skill("huntian-qigong", level);
         set_skill("shexing-diaoshou", level);
- 
+
         map_skill("force", "huntian-qigong");
         map_skill("dodge", "xiaoyaoyou");
         map_skill("parry", "liuhe-dao");
         map_skill("blade", "liuhe-dao");
         map_skill("hand", "shexing-diaoshou");
-        
+
         prepare_skill("hand", "shexing-diaoshou");
         set("default_weapon", "/clone/weapon/gangdao");
         break;
@@ -235,8 +235,8 @@ void start_checking(object target)
 
 void self_destruct() {
     object me = this_object();
-    
-    clear_dumudian(); 
+
+    clear_dumudian();
     message("vision", name(1)+"急急忙忙地离开了.\n", environment(me), me);
     destruct(me);
 }
@@ -253,7 +253,7 @@ void start_job(object target)
         self_destruct();
         return;
     }
-    if ( !me->is_fighting() && !me->query_temp("disabled") ) 
+    if ( !me->is_fighting() && !me->query_temp("disabled") )
     {
         // only check if I am not fighting
        if (present(target->query("id"), environment(me))) {
@@ -264,20 +264,20 @@ void start_job(object target)
        else
        {
            target_obj = present("zhiri lama", environment(me));
-           if (target_obj) 
+           if (target_obj)
            {
 //               EMOTE_D->do_emote(this_object(), vb, emote_arg, 0, 0);
 
                command("hehe "+target_obj->query("id"));
                kill_ob(target_obj);
            }
-           else    
+           else
            {
-               if (gang->query_current_liquid() > 0) 
+               if (gang->query_current_liquid() > 0)
                {
                     // set gang on fire.
                     command("say "+"老子看死秃驴们还怎么做法事");
-                    message_vision(HIR"$N从怀中掏出一支火折，点燃了铜缸中的酥油。\n"NOR, me);               
+                    message_vision(HIR"$N从怀中掏出一支火折，点燃了铜缸中的酥油。\n"NOR, me);
 //                    gang->burn_out_gang();
                }
                self_destruct();
@@ -304,4 +304,3 @@ void die()
     clear_dumudian();
     ::die();
 }
-

@@ -7,9 +7,9 @@
 #include <dbase.h>
 #include <origin.h>
 
-// Let command path be static, thus we can make sure no one can get command
+// Let command path be nosave, thus we can make sure no one can get command
 // path directly from restore_object().
-static string *path;
+nosave string *path;
 
 // Leave this to allow other objects can search your commands such as
 // help, which...
@@ -29,7 +29,7 @@ string remove_leading_space(string arg)
 
 // This is the add_action hook handling movement, commands, emotes and
 // channels. Optimization is needed.
-private nomask int command_hook(string arg)
+protected nomask int command_hook(string arg)
 {
 	string verb, file;
 
@@ -47,13 +47,13 @@ private nomask int command_hook(string arg)
         if ((verb = remove_leading_space(verb)) == "")
                 return 0;
 
-	if( !arg 
+	if( !arg
 	&&	(environment() && stringp(environment()->query("exits/" + verb)))
 	&&	stringp(file = find_command("go"))
 	&&	call_other(file, "main", this_object(), verb))
 		;
-	
-	else if( stringp(file = find_command(verb)) 
+
+	else if( stringp(file = find_command(verb))
 	&& call_other(file, "main", this_object(), arg))
 		;
 
@@ -163,4 +163,3 @@ nomask void disable_player(string type)
 			    // marked living again. block command in alias.c
 			    // instead of here.
 }
-

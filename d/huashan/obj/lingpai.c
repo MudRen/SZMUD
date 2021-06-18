@@ -1,7 +1,7 @@
 // Code of ShenZhou
 // lingpai.c Ğ°ÅÉµÜ×ÓÁîÅÆ
 inherit ITEM;
-static int amount;
+nosave int amount;
 
 void set_amount(int v)
 {

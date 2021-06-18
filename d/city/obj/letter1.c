@@ -9,7 +9,7 @@
 #include <localtime.h>
 
 inherit ITEM;
-static string *sym_di = ({ "子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥" });
+nosave string *sym_di = ({ "子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥" });
 string chinese_time(int date)
 {
 	mixed *local;
@@ -21,12 +21,12 @@ string chinese_time(int date)
                 chinese_number(local[LT_MON] + 1),
                 chinese_number(local[LT_MDAY]),
                 sym_di[((local[LT_HOUR] + 1) % 24) / 2],
-		i?chinese_number((local[LT_HOUR]+1) % 2 * 2 + 
+		i?chinese_number((local[LT_HOUR]+1) % 2 * 2 +
 		local[LT_MIN] / 30 ) + "刻":"正");
 }
 
 void create()
-{       
+{
         set_name("信", ({"letter","xin"}));
 		set("long", "一封已经写好的信，你可用读(read)来看它的内容。\n");
 		set_weight(5);
@@ -58,7 +58,7 @@ int do_read(string arg)
                 return notify_fail("你身上好像并没有这封信件？\n");
         if(!ob_letter->query("can_read_letter1"))
                 return notify_fail("对不起！你无法从这里面读到任何东西。\n");
-	
+
 		letter=ob_letter->query("letter");
         printf("【书信标题】：%s\n【收信人】：%s\n【信件内容】：\n%s\n\t\t%s写于%s\n\n\n",
         letter["title"],
@@ -69,4 +69,3 @@ int do_read(string arg)
 		);
 		 return 1;
 }
-

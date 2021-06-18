@@ -5,9 +5,9 @@ inherit F_DBASE;
 #include <ansi.h>
 #define MAX_TIMES 20
 
-private static mapping task_list=([]);
-private static object *task_ob=({});
-private static mapping ok_dir=([
+private nosave mapping task_list=([]);
+private nosave object *task_ob=({});
+private nosave mapping ok_dir=([
 	"/d/baituo/"   : "西域白驼山",
 	"/d/changbai/" : "关外长白山",
 	"/d/city/"     : "扬州",
@@ -90,12 +90,12 @@ void update_task()
 	npc_list=explode(file2,"\n");
 	for(int j=0;j<sizeof(npc_list);j++)
 	{
-		
+
 		if(sscanf(npc_list[j],"%s:%s",npc_s,room_s)!=2) continue;
 		tmp[npc_s]=room_s;
 	}
 	key=keys(tmp);
-	
+
 	for(int i=0;i<sizeof(task);i++)
 	{
 		int num;
@@ -110,9 +110,9 @@ void update_task()
 		{
 		where=random_place();
 		if(where==this_object()) continue;
-		if((num=member_array(ob->query("task_owner"),key))!=-1)	
+		if((num=member_array(ob->query("task_owner"),key))!=-1)
 		{
-		
+
 			if(!objectp(room=load_object(tmp[key[num]]))) continue;
 			if(!objectp(npc=present(key[num],room))) continue;
 	//		log_file("task_obj",npc->name()+ob->name()+num+key[num]+tmp[key[num]]+"\n");
@@ -120,7 +120,7 @@ void update_task()
 //                    npc->set("task_object",1);
                     ob->set("task_object",1);
 		}
-		
+
 		if(!move_to(ob,where)) {log_file("task_obj","cannt move"+ob->name()+"to "+base_name(where)+"\n");continue;}
 		task_list[npc->name()+"的"+ob->query("name")]=HIY"(无人理会)"NOR;
 		task_ob+=({ob});
@@ -165,7 +165,7 @@ object random_place()
 			output->set("main_dir",main_dir);
 			return output;
 		}
-		
+
 	}
 //	log_file("task","cannt find correct where\n");
 	return this_object();
@@ -214,13 +214,13 @@ void task_done(object ob)
 	int num;
 	key=keys(task_list);
 	if(num=member_array(ob->query("task_owner_cname")+"的"+ob->query("name"),key)!=-1
-	&&member_array(ob,task_ob)!=-1) 
+	&&member_array(ob,task_ob)!=-1)
 	{
 		string index=ob->query("task_owner_cname")+"的"+ob->query("name");
 		task_list[index]=HIR"(恩怨了结)"NOR;
 		task_ob-=({ob});
 	}
-	
+
 	return;
 }
 
@@ -268,9 +268,9 @@ int task_give(object me,object who,object ob)
 	return 1;
 	}
 	return 0;
-	
+
 }
-	
+
 object random_npc(object me)
 {
 	object output;
@@ -297,10 +297,10 @@ object do_clone(object output,object me)
 
     seteuid( geteuid(output) );
     lvl=me->query_temp("task_level");
-      
+
         exp=me->query("combat_exp");
-	if (exp < 750000){ 
-		lvlx = 85 + random(5); 
+	if (exp < 750000){
+		lvlx = 85 + random(5);
 		lvlxx = 85 + random(5);
 	}else{
 		lvlx = 80 + random(5);
@@ -332,7 +332,7 @@ object do_clone(object output,object me)
         output->set("jiali",     to_int(sqrt(to_float(output->query("max_neili")))));
         output->set("gender",    hp_status["gender"]);
         output->set("combat_exp",hp_status["combat_exp"] * lvlx / 100);
-        
+
 
 	level = pow(10*output->query("combat_exp"), 0.333334);
 	if (level < 20) level = 20;
@@ -358,7 +358,7 @@ object do_clone(object output,object me)
 	        output->set_skill("zixia-gong", level);
 		output->set_skill("pishi-poyu", level);
 		output->set_skill("hunyuan-zhang", level);
-	 
+
 	        output->map_skill("force", "zixia-gong");
 	        output->map_skill("dodge", "huashan-shenfa");
 	        output->map_skill("parry", "huashan-jianfa");
@@ -366,13 +366,13 @@ object do_clone(object output,object me)
 		output->map_skill("cuff", "pishi-poyu");
 	        output->map_skill("sword", "huashan-jianfa");
 	        output->map_skill("blade", "liangyi-dao");
-	        
+
 	        output->prepare_skill("cuff", "pishi-poyu");
 	        output->prepare_skill("strike", "hunyuan-zhang");
-		
+
 		output->set("default_weapon", "/clone/weapon/gangjian");
 		break;
-	
+
 	    case 1:
 		output->set_skill("huifeng-jian", level);
 		output->set_skill("yanxing-dao", level);
@@ -380,7 +380,7 @@ object do_clone(object output,object me)
 		output->set_skill("tiangang-zhi", level);
 		output->set_skill("linji-zhuang", level);
 		output->set_skill("zhutian-bu", level);
-	
+
 		output->map_skill("force", "linji-zhuang");
 		output->map_skill("sword", "huifeng-jian");
 		output->map_skill("blade", "yanxing-dao");
@@ -388,29 +388,29 @@ object do_clone(object output,object me)
 		output->map_skill("finger", "tiangang-zhi");
 		output->map_skill("dodge", "zhutian-bu");
 		output->map_skill("parry", "huifeng-jian");
-	
+
 	        output->prepare_skill("finger", "tiangang-zhi");
 	        output->prepare_skill("strike", "jinding-zhang");
 		output->set("default_weapon", "/clone/weapon/gangdao");
 		break;
-	
+
 	    case 2:
 	        output->set_skill("taiji-shengong", level);
 	        output->set_skill("taiji-jian", level);
 	        output->set_skill("tiyunzong", level);
 		output->set_skill("taiji-quan", level);
-	 
+
 	        output->map_skill("force", "taiji-shengong");
 	        output->map_skill("parry", "taiji-jian");
 		output->map_skill("cuff", "taiji-quan");
 	        output->map_skill("dodge", "tiyunzong");
 	        output->map_skill("sword", "taiji-jian");
-	        
+
 	        output->prepare_skill("cuff", "taiji-quan");
 		output->set("default_weapon", "/clone/weapon/gangjian");
 	        output->set("chat_chance_combat", 50);
 		break;
-	
+
 	    case 3:
 	        output->set_skill("damo-jian", level);
 	        output->set_skill("xiuluo-dao", level);
@@ -420,7 +420,7 @@ object do_clone(object output,object me)
 	        output->set_skill("hunyuan-yiqi", level);
 		output->set_skill("yizhi-chan", level);
 		output->set_skill("banruo-zhang", level);
-	 
+
 	        output->map_skill("force", "hunyuan-yiqi");
 	        output->map_skill("dodge", "shaolin-shenfa");
 	        output->map_skill("parry", "damo-jian");
@@ -430,44 +430,44 @@ object do_clone(object output,object me)
 	        output->map_skill("staff", "wuchang-zhang");
 	        output->map_skill("finger", "yizhi-chan");
 	        output->map_skill("strike", "banruo-zhang");
-	        
+
 	        output->prepare_skill("finger", "yizhi-chan");
 	        output->prepare_skill("strike", "banruo-zhang");
 		output->set("default_weapon", "/clone/weapon/gangjian");
 		break;
-	
+
 	    case 4:
 	        output->set_skill("liuhe-dao", level);
 	        output->set_skill("xiaoyaoyou", level);
 	        output->set_skill("huntian-qigong", level);
 		output->set_skill("shexing-diaoshou", level);
-	 
+
 	        output->map_skill("force", "huntian-qigong");
 	        output->map_skill("dodge", "xiaoyaoyou");
 	        output->map_skill("parry", "liuhe-dao");
 	        output->map_skill("blade", "liuhe-dao");
 	        output->map_skill("hand", "shexing-diaoshou");
-	        
+
 	        output->prepare_skill("hand", "shexing-diaoshou");
 		output->set("default_weapon", "/clone/weapon/gangdao");
 		break;
-	
+
 	    case 5:
 	        output->set_skill("hamagong", level);
 	        output->set_skill("lingshe-zhang", level);
 		output->set_skill("chanchubu", level);
 		output->set_skill("poison", level);
-	 
+
 	        output->map_skill("force", "hamagong");
 	        output->map_skill("dodge", "chanchubu");
 	        output->map_skill("parry", "lingshe-zhang");
 	        output->map_skill("strike", "hamagong");
 	        output->map_skill("staff", "lingshe-zhang");
-	        
+
 	        output->prepare_skill("strike", "hamagong");
 		output->set("default_weapon", "/clone/weapon/shezhang");
 		break;
-	
+
 	    case 6:
 	        output->set_skill("bitao-xuangong", level);
 	        output->set_skill("canglang-bian", level);
@@ -475,19 +475,19 @@ object do_clone(object output,object me)
 		output->set_skill("luoying-shenjian", level);
 		output->set_skill("xuanfeng-saoye", level);
 		output->set_skill("qimen-dunjia", level);
-	 
+
 	        output->map_skill("force", "bitao-xuangong");
 	        output->map_skill("dodge", "luoying-shenfa");
 	        output->map_skill("parry", "canglang-bian");
 	        output->map_skill("strike", "luoying-shenjian");
 	        output->map_skill("kick", "xuanfeng-saoye");
 	        output->map_skill("whip", "canglang-bian");
-	        
+
 	        output->prepare_skill("strike", "luoying-shenjian");
 	        output->prepare_skill("kick", "xuanfeng-saoye");
 		output->set("default_weapon", "/clone/weapon/changbian");
 		break;
-	
+
 	    case 7:
 	        output->set_skill("longxiang-banruo", level);
 	        output->set_skill("xue-dao", level);
@@ -495,7 +495,7 @@ object do_clone(object output,object me)
 		output->set_skill("huoyan-dao", level);
 		output->set_skill("xueshitiao", level);
 		output->set_skill("mingwang-jian", level);
-	 
+
 	        output->map_skill("force", "longxiang-banruo");
 	        output->map_skill("dodge", "xueshitiao");
 	        output->map_skill("parry", "xue-dao");
@@ -503,11 +503,11 @@ object do_clone(object output,object me)
 	        output->map_skill("sword", "mingwang-jian");
 	        output->map_skill("strike", "huoyan-dao");
 	        output->map_skill("staff", "jingang-chu");
-	        
+
 	        output->prepare_skill("strike", "huoyan-dao");
 		output->set("default_weapon", "/clone/weapon/gangdao");
 		break;
-	
+
 	    case 8:
 	    default:
 	        output->set_skill("huagong-dafa", level);
@@ -516,14 +516,14 @@ object do_clone(object output,object me)
 	        output->set_skill("sanyin-zhua", level);
 	        output->set_skill("tianshan-zhang", level);
 	        output->set_skill("poison", level);
-	
+
 		output->map_skill("force", "huagong-dafa");
 		output->map_skill("strike", "chousui-zhang");
 		output->map_skill("claw", "sanyin-zhua");
 		output->map_skill("dodge", "zhaixinggong");
 		output->map_skill("parry", "sanyin-zhua");
 		output->map_skill("staff", "tianshan-zhang");
-	
+
 		output->prepare_skill("strike", "chousui-zhang");
 		output->prepare_skill("claw", "sanyin-zhua");
 		output->set("default_weapon", "/clone/weapon/gangzhang");
@@ -536,15 +536,15 @@ object do_clone(object output,object me)
 	} else if(exp<300000) {
 	    exp_reward=600+exp/800;
 	    pot_reward=40+exp/12000;
-	    
+
 	} else if(exp<3000000) {
 	    exp_reward=1200+exp/6000;
 	    pot_reward=80+exp/120000;
-	    
+
 	} else {
 	    exp_reward=3000+random(500);
 	    pot_reward=100+random(50);
-	    
+
 	}
 	pot_reward=pot_reward*(lvl+1)/6;
 	exp_reward=exp_reward*(lvl+1)/6;
@@ -563,7 +563,7 @@ void give_reward(object me,object ob)
 	pot_r=100+random(150);
 	me->add("combat_exp",exp_r);
 	me->add("potential",pot_r);
-	if( ob->query("potential") > ob->query("max_potential") ) 
+	if( ob->query("potential") > ob->query("max_potential") )
 	ob->set("potential",ob->query("max_potential") );
        	log_file("quest_new",sprintf("%s(%s) get %d exp and %d pot from task job on %s. \n",
 			me->name(), getuid(me), exp_r, pot_r, ctime(time())));
@@ -593,7 +593,7 @@ mixed query_location(string arg)
 		"’",
 		"‘",
 	});
-	
+
 	string *key,*owner,*name,ow,na,des,*ch=({});
 	string output=arg+"在一个有着";
 	object ob,where;
@@ -607,14 +607,14 @@ mixed query_location(string arg)
 		{
                         if(undefinedp(task_ob[i])||!objectp(task_ob[i])) continue;
 			if(arg==task_ob[i]->query("task_owner_cname")+"的"+
-			task_ob[i]->query("name")) 
+			task_ob[i]->query("name"))
 			{
 				index=i;
 				flag=1;
 				break;
 			}
-			
-			
+
+
 		}
 		if(flag)
 		{
@@ -626,7 +626,7 @@ mixed query_location(string arg)
 				if(!where) return -1;
 				if(!where->is_character()&&!clonep(where)) break;
 			}
-			
+
 			exits=where->query("exits");
 			if(sizeof(exits)>0)
 			{
@@ -652,16 +652,16 @@ mixed query_location(string arg)
 						ch+=({des[i..i+1]});
 					}
 					i++;
-					
+
 				}
-				
+
 			}
 			if(sizeof(ch)==0) return output;
 			if(sizeof(ch)==1) {
 				output+="这个地方的描述只有一个字："+ch[0]+"\n";
 				return output;
 			}
-			
+
 			tmp=random(sizeof(ch));
 			if(tmp+1==sizeof(ch)) tmp=0;
 			output+="这个地方的描述中含有这样的字眼："+ch[tmp]+ch[tmp+1];
@@ -670,20 +670,7 @@ mixed query_location(string arg)
 			output+=","+ch[tmp]+ch[tmp+1]+"\n";
 			return output;
 		}
-		
+
 		return -2;
 	}
 }
-
-			
-			
-			
-			
-			
-			
-		
-
-
-
-
-

@@ -12,7 +12,7 @@ object connect()
 {
 	object login_ob;
 	mixed err;
-   
+
 	err = catch(login_ob = new(LOGIN_OB));
 
 	if (err) {
@@ -40,7 +40,7 @@ mixed compile_object(string file)
 // This is called when there is a driver segmentation fault or a bus error,
 // etc.  As it's static it can't be called by anything but the driver (and
 // master).
-static void crash(string error, object command_giver, object current_object)
+protected void crash(string error, object command_giver, object current_object)
 {
 	efun::shout("œµÕ≥∫À–ƒ∑¢≥ˆ“ª…˘≤“Ω–£∫Õ€°™¡®°™ﬂ÷°™\n");
 	efun::shout("œµÕ≥∫À–ƒ∏ÊÀﬂƒ„£∫“™µ±ª˙¡À£¨◊‘º∫±£÷ÿ∞…£°\n");
@@ -61,7 +61,7 @@ static void crash(string error, object command_giver, object current_object)
 // Arguements:      file: a string that shows what file to read in.
 // Return:          Array of nonblank lines that don't begin with '#'
 // Note:            must be declared static (else a security hole)
-static string *update_file(string file)
+protected string *update_file(string file)
 {
 	string *list;
 	string str;
@@ -105,7 +105,7 @@ void preload(string file)
 		write(" -> Error " + err + " when loading " + file + "\n");
 	else
 		write(".... Done.\n");
-		
+
 }
 
 // Write an error message into a log file. The error occured in the object
@@ -113,7 +113,7 @@ void preload(string file)
 void log_error(string file, string message)
 {
 	string name, home;
-   
+
 	if( find_object(SIMUL_EFUN_OB) )
 		name = file_owner(file);
 
@@ -121,7 +121,7 @@ void log_error(string file, string message)
 	else home = LOG_DIR;
 
 	if(wizardp(this_player(1))&&(strsrch(message,"Warning:")==-1)) efun::write("±‡“Î ±∂Œ¥ÌŒÛ£∫" + message+"\n");
-//if(wizardp(this_player(1))) efun::write("±‡“Î ±∂Œ¥ÌŒÛ£∫" + message+"\n");	
+//if(wizardp(this_player(1))) efun::write("±‡“Î ±∂Œ¥ÌŒÛ£∫" + message+"\n");
 
 //  ≤ª“™œÚlog¿Ô√Ê–¥¡À,œµÕ≥“™±¿¿£¡À
 //	efun::write_file(home + "log", message);
@@ -133,7 +133,7 @@ void log_error(string file, string message)
 int save_ed_setup(object who, int code)
 {
 	string file;
-  
+
     if (!intp(code))
         return 0;
     file = user_path(getuid(who)) + ".edrc";
@@ -147,7 +147,7 @@ int retrieve_ed_setup(object who)
 {
    string file;
    int code;
-  
+
     file = user_path(getuid(who)) + ".edrc";
     if (file_size(file) <= 0) {
         return 0;
@@ -237,7 +237,7 @@ string error_handler( mapping error, int caught )
     string bugs =  standard_trace(error, caught);
     object ob = new ( CHANNEL_D );
     ob->set( "channel_id", "Bugs");
-    CHANNEL_D->do_channel( ob, "sys", bugs);   
+    CHANNEL_D->do_channel( ob, "sys", bugs);
     destruct( ob );
     if (this_player(1)) {
 		tell_object(this_player(1), "[1;33mƒ„∑¢œ÷ ¬«È≤ª¥Û∂‘¡À£¨ø… «”÷Àµ≤ª…œ¿¥°£[2;37;0m\n");
@@ -324,7 +324,7 @@ int valid_save_binary( string filename )
 }
 
 // valid_write: write privileges; called with the file name, the object
-//   initiating the call, and the function by which they called it. 
+//   initiating the call, and the function by which they called it.
 int valid_write( string file, mixed user, string func )
 {
 	object ob;

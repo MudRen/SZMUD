@@ -5,7 +5,7 @@
 #include <dbase.h>
 #include <origin.h>
 
-static object leader, lord, *team;
+nosave object leader, lord, *team;
 
 int set_leader(object ob)
 {
@@ -103,7 +103,7 @@ int set_team(object *t)
 varargs int dismiss_team(object ob)
 {
 	if( !arrayp(team) ) return 0;
-	
+
 	if( !ob ) {
 		if( this_object()->is_team_leader() )
 			map_array(team, (: $1->set_team(0) :));

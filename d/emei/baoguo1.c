@@ -30,7 +30,7 @@ LONG
 
 int valid_leave(object me, string dir)
 {
-	if ( me->query("family/family_name") != "峨嵋派" && dir == "west" ) 
+	if ( me->query("family/family_name") != "峨嵋派" && dir == "west" )
 		return notify_fail("保国寺禅房只接待峨嵋弟子，你要是诚心礼佛，在此多进几注香吧。\n");
 
 	if ( me->query("gender") == "女性" && dir == "west" )
@@ -39,8 +39,8 @@ int valid_leave(object me, string dir)
 
 	return ::valid_leave(me, dir);
 }
-static string current_id = "";
-static int current_job = 0;
+nosave string current_id = "";
+nosave int current_job = 0;
 
 int introduce_robber(object current_player);
 int reset_to_normal();

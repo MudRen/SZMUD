@@ -44,9 +44,10 @@
 #define CHANNEL_D	"/adm/daemons/channeld"
 #define CHAR_D		"/adm/daemons/chard"
 #define CHINESE_D	"/adm/daemons/chinesed"
-#define CLUB_D        "/adm/daemons/clubd" 
+#define CLUB_D        	"/adm/daemons/clubd"
 #define COMBAT_D	"/adm/daemons/combatd"
 #define COMMAND_D	"/adm/daemons/commandd"
+#define EDITOR_D	"/adm/daemons/editord"
 #define EMOTE_D		"/adm/daemons/emoted"
 #define FINGER_D	"/adm/daemons/fingerd"
 #define FTP_D		"/adm/daemons/ftpd"
@@ -143,7 +144,7 @@
 #define F_SKILL			"/feature/skill.c"
 #define F_TEAM			"/feature/team.c"
 #define F_TREEMAP		"/feature/treemap.c"
-#define F_TRIGGER 		"/feature/trigger" 
+#define F_TRIGGER 		"/feature/trigger"
 #define F_VENDOR		"/feature/dealer.c"
 #define F_SSERVER		"/feature/sserver.c"
 #define F_UNIQUE		"/feature/unique.c"
@@ -210,7 +211,7 @@
 #define TOP_IDS       300
 // Profiling switches
 //
-// If you changed any of these defines, you'll need reboot to make it 
+// If you changed any of these defines, you'll need reboot to make it
 // in effect.
 
 #undef PROFILE_COMMANDS

@@ -6,8 +6,8 @@ inherit F_MASTER;
 #include <ansi.h>;
 #include "/d/hengshan/npc/roomdb.h"
 #include "/d/hengshan/npc/npc_setup.h"
-static string *chnnumber=({"一","二","三","四","五","六","七","八","九","十","零"});
-static int mancount=10;
+nosave string *chnnumber=({"一","二","三","四","五","六","七","八","九","十","零"});
+nosave int mancount=10;
 
 int setnpcstat(object npcob);
 int giveexp(int maxman,int i);
@@ -90,7 +90,7 @@ string ask_job()
                         j++;
         }
         i=0;
-        if (sizeof(ob->query("jobendtime") ) && ob->query("jobendtime")<time() ) 
+        if (sizeof(ob->query("jobendtime") ) && ob->query("jobendtime")<time() )
                 ob->set("hengshan/job",2);
         if (sizeof(ob->query("hsnpc") ) == j && ob->query("hsnpc") &&j>0)
                 ob->set("hengshan/job",3);
@@ -105,13 +105,13 @@ string ask_job()
 				case "明教":
                         return "我恒山派纵然一败涂地，尽数覆灭，也不与你等同流合污!\n";
         }
-        if (ob->query("shen") <0 ) 
-                return ("施主已堕入魔道，贫尼岂敢劳烦。\n");            
+        if (ob->query("shen") <0 )
+                return ("施主已堕入魔道，贫尼岂敢劳烦。\n");
         if (ob->query("PKS")>0 && ob->query("PKS")>=((ob->query("MKS")+ob->query("PKS"))/100*10 ) ){
                 return ("施主杀人无数，岂是我辈中人所为，贫尼奉劝施主苦海无边回头是岸!\n");
         }
-		if (mancount < 1) 
-		if ( !ob->query("hengshan/job") && me->query("mancount") < 1 ) 
+		if (mancount < 1)
+		if ( !ob->query("hengshan/job") && me->query("mancount") < 1 )
                 return "已有人在援助我派了，施主请回吧！贫尼祷祝施主福体康健，万事如意了。";
         if (!ob->query("hengshan/job")) {
                         i=2+random(3);
@@ -180,7 +180,7 @@ void make_npc(int i)
 //                              write("Update Npc Name: "+npc[knpc] +"\n");
                                 ci++;
                          }
-                         if (j==0) { 
+                         if (j==0) {
                                 fnpcob=new ("/d/hengshan/npc/"+npc[knpc]);
                                 fnpcob->set("combat_exp",this_player()->query("combat_exp")/3*2);
                                 setnpcstat(fnpcob);
@@ -190,7 +190,7 @@ void make_npc(int i)
                                 ob->set("hsnpc/"+j,fnpcob->query("name"));
                                 bnpc=knpc;
                                 broom=kroom;
-                 } else 
+                 } else
                          {
                                 npcob=new ("/d/hengshan/npc/"+npc[knpc]);
                                 npcob->set("combat_exp",this_player()->query("combat_exp")/3*2);
@@ -224,7 +224,7 @@ int setnpcstat(object npcob)
         int player_exp;
         ob=this_player();
         player_exp=ob->query("combat_exp");
-        set_skills("hengshan",player_exp/3*2,100,npcob);        
+        set_skills("hengshan",player_exp/3*2,100,npcob);
         set_hp(npcob->query_skill("force",1),npcob);
         npcob->set("player_id",ob->query("id"));
 }
@@ -299,8 +299,7 @@ int giveexp(int maxman,int i)
         ob->add("potential", givepotential);
         if ( ob->query("potential") > ob->query("max_potential") )
                 ob->set("potential", ob->query("max_potential") );
-        
+
         return 1;
 }
 #include "/d/hengshan/npc/npc_setup.c"
-

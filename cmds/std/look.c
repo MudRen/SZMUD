@@ -41,7 +41,7 @@ int look_room(object me, object env)
         }
         str = sprintf( "%s - %s\n    %s%s",
                 env->query("short"),
-                wizardp(me)? file_name(env): "",
+                wizardp(me)? file_name(env): "[mud.ren]",
                 (file_name(env) == "/d/wizard/meeting_room" )?env->update_here():env->query("long"),
                 env->query("outdoors")? NATURE_D->outdoor_room_description() : "" );
 
@@ -129,15 +129,15 @@ int look_living(object me, object obj)
 
         str = obj->long();
   per = obj->query_per();
-		
+
         pro = (obj==me) ? gender_self(obj->query("gender")) : gender_pronoun(obj->query("gender"));
 
-        if( objectp(obj->query("rided")) ) 
+        if( objectp(obj->query("rided")) )
                 str += sprintf(pro +  "骑在" + (obj->query("rided"))->name() + "上。\n");
 
         if( (string)obj->query("race")=="人类"
         &&      intp(obj->query("age")) )
-                str += sprintf("%s看起来约%s多岁。\n", pro, 
+                str += sprintf("%s看起来约%s多岁。\n", pro,
                         chinese_number(
                         (obj->query("age")-SKILL_D("beauty")->reduce_age(obj)) / 10 * 10));
 
@@ -145,7 +145,7 @@ int look_living(object me, object obj)
         {
 				if(wizardp(obj))
 						str+=sprintf(HIY"%s全身散发着耀眼的金光，看来是万物之尊的神类。\n"NOR,pro);
-                if (per >=40) 
+                if (per >=40)
                         str +=pro+ HIG"现在一派神人气度，仙风道骨，举止出尘。\n";
                 if (per <= 39 && (per > 38))
                         str +=pro+ HIG"现在神清气爽，骨格清奇，宛若仙人。\n";
@@ -212,7 +212,7 @@ int look_living(object me, object obj)
         {
             if ((string) obj->query("gender") == "女性")
             {
-                if (per >=40) 
+                if (per >=40)
                         str +=pro+ HIW"现在宛如玉雕冰塑，似梦似幻，已不再是凡间人物\n"NOR;
                 if (per <= 39 && (per > 38))
                         str +=pro+ HIG"现在美若天仙，不沾一丝烟尘。\n"NOR;
@@ -272,7 +272,7 @@ int look_living(object me, object obj)
                         str +=pro+ RED"生得八字眉，三角眼，鸡皮黄发，让人一见就想吐。\n"NOR;
                 if (per <= 11 && (per > 10))
                         str +=pro+ RED"生得歪鼻斜眼，脸色灰败，直如鬼怪一般。\n"NOR;
-				if (per <=10) 
+				if (per <=10)
                         str +=pro+ RED"生得丑如无盐，状如夜叉，女人长成这样真是人生悲剧。\n"NOR;
             }
             else
@@ -291,9 +291,9 @@ int look_living(object me, object obj)
         if( obj!=me
         &&      mapp(fam = obj->query("family"))
         &&      environment(me) == environment(obj)
-        &&      mapp(my_fam = me->query("family")) 
+        &&      mapp(my_fam = me->query("family"))
         &&      fam["family_name"] == my_fam["family_name"] ) {
-        
+
                 if( fam["generation"]==my_fam["generation"] ) {
                         if( (string)obj->query("gender") == "男性" ||
                                 (string)obj->query("gender") == "无性")
@@ -343,7 +343,7 @@ int look_living(object me, object obj)
 ////////////////////////////////////////////////////////////////////////////add jiebai list by lisser
         if( obj->is_spouse_of(me) )
                 str += pro + "是你的" + me->query("spouse/title") + "。\n";
-                
+
         if( obj->query("max_qi") )
                 str += pro + COMBAT_D->eff_status_msg((int)obj->query("eff_qi") * 100 / (int)obj->query("max_qi")) + "\n";
 
@@ -358,11 +358,11 @@ int look_living(object me, object obj)
 
         message("vision", str, me);
 
-        if( obj!=me && !obj->is_spouse_of(me) 
+        if( obj!=me && !obj->is_spouse_of(me)
         &&      living(obj)
         &&      random(-(int)obj->query("shen")) > (int)me->query("int") * 10 ) {
                 write( obj->name() + "突然转过头来瞪你一眼。\n");
-              if ((int)me->query("combat_exp") > 100000) COMBAT_D->auto_fight(obj, me, "berserk"); 
+              if ((int)me->query("combat_exp") > 100000) COMBAT_D->auto_fight(obj, me, "berserk");
         }
 
         return 1;
@@ -397,7 +397,7 @@ int look_room_item(object me, string arg)
                         write(item[arg]);
                 else if( functionp(item[arg]) )
                         write((string)(*item[arg])(me));
-                        
+
                 return 1;
         }
         if( mapp(exits = env->query("exits")) && !undefinedp(exits[arg]) ) {
@@ -416,9 +416,9 @@ int help (object me)
 {
         write(@HELP
 指令格式: look [<物品>|<生物>|<方向>]
- 
+
 这个指令让你查看你所在的环境、某件物品、生物、或是方向。
- 
+
 HELP
 );
         return 1;

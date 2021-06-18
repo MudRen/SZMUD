@@ -1,6 +1,6 @@
 //job_system 的一些附加函数
 
-static string *cleanup_filename=({"job_data","job_menpai",});
+nosave string *cleanup_filename=({"job_data","job_menpai",});
 
 void clean_up_job_object()
 {
@@ -21,7 +21,7 @@ void clean_up_job_object()
       reset_eval_cost();
 //	if( wizardp(this_player()) && (string)this_player()->query("env/job_system")=="open" )
 //printf("删除%O\n",JOB_DIR+cleanup_filename[j],ob_list[i]);
-      
+
       destruct(ob_list[i]);
     }
 	}
@@ -61,7 +61,7 @@ void job_tell_player(object player)
 		{
 		if(objectp(master = present(master_id,room_master)))
 		{
-			
+
 			job_data_message = ([
 				"job_menpai":menpai_name,
 				"job_player": player->query("id"),
@@ -86,13 +86,13 @@ void job_tell_player(object player)
 		}
 		else
 			return;
-        
+
 		}
 	//if master not in that place, return.
 	if(!objectp(master = present(master_id,room_master)))
 		return;
 	msg=HIW"\n一个"+menpai_name+"弟子走了过来,对$N报拳道：“";
-	
+
 	if(area_name==menpai_place)
 		msg += master_name+"有事召见，请你速去"+room_master->query("short")+"”。\n";
 	else
@@ -102,7 +102,7 @@ void job_tell_player(object player)
 	message_vision(msg, player);
 
 	//set_player_var(job_player,strategy_produce,master_id,family_master_place[menpai_name],state,master_name);
-	
+
 	//////////////////////////////////////////////
 	//add a menber in job_player_list
 	job_data_message = ([
@@ -129,11 +129,11 @@ void assign_job(object master,object player,mapping map)
 	job_calss=map["job_strategy"];
 	switch(job_calss)
 	{
-	case "oppose_pker":  
+	case "oppose_pker":
 			oppose_pker(master,player,map);
-		
+
 		break;
-		default  : 
+		default  :
 			oppose_pker(master,player,map);
 			//break;
 			return;
@@ -141,17 +141,17 @@ void assign_job(object master,object player,mapping map)
 
 /*		switch(job_calss)
 	{
-	case "protect":  
+	case "protect":
 			protect_job(master,player,map);
-		
+
 		break;
-		default  : 
+		default  :
 			protect_job(master,player,map);
 			//break;
 			return 0;
 	}
 
-*/	
+*/
 	return;
 }
 void finish_job(object player)
@@ -181,25 +181,25 @@ void master_tell_player(object player)
 
 	object master,place;
 	string mname,pname,msg_room,msg_player;
-	
+
 	job_map=get_mapping(player->query("id"),"job_player",job_data->query_job_data());
 	msg_room="";
 	msg_player="";
-	
+
 	if(!(place=find_object(job_map["job_master_place"])))
 		place=load_object(job_map["job_master_place"]);
 
 	if(!objectp(place))
 		return;
-	
-	
+
+
 	if(!objectp(master = present(job_map["job_master"],
 						 place
 						 )))
                 return;
 	mname=master->query("name");
 	pname=player->query("name");
-	
+
 	if(job_map["job_master_prompt_time"]+900<time())
 	{
 		master_msg(master,player,"time_over",job_map["job_command_mode"]);
@@ -256,11 +256,11 @@ void award_job(int exp_lim,int pot_lim,int time1,int time2,int luck,
 		//award exp and pot
 		case "oppose_pker":
 			{
-				
+
 			exp_lim=exp_lim+(exp_lim/(10-luck));
 
 			pot_lim=pot_lim+(pot_lim/(10-luck));
-			
+
 			if((pot_lim+pot)>max_pot)
 			{
 				player->set("potential",player->query("max_potential"));
@@ -293,13 +293,13 @@ void award_job(int exp_lim,int pot_lim,int time1,int time2,int luck,
 		"最大精力"+jingli+
 		" on " 	+ ctime(time()) + "。\n" );
 			adjust_menpai_job_data(player,"oppose_pker");
-			
+
 			}
 
 			break;
 	}
-	
-	
+
+
 	return;
 }
 void job_punish(object player,string job_kind)
@@ -324,7 +324,7 @@ void job_punish(object player,string job_kind)
 		}
 		break;
 	case "mastercall_in":
-		
+
 		if(player->query("job_system_fail/mastercall_in")!=1002)
 		{
 			//tell_object(player,"你的经验下降了"+MASTER_CALL_IN_EXP+"点。\n");
@@ -361,7 +361,7 @@ void job_punish(object player,string job_kind)
 
 void del_job(object player,string kind)
 {
-		
+
 		if(!job_data=find_object(JOB_DIR+"job_data"))
 			job_data=new(JOB_DIR+"job_data");
 		if(!objectp(job_data)) return;

@@ -1,7 +1,7 @@
 // random_name.c 随机姓名库。
 //版权为〖神州〗巫师公会高级巫师所有。
 
-static mixed xing = ({
+nosave mixed xing = ({
 ({"赵","zhao"}),({"钱","qian"}),({"孙","sun"}),({"李","li"}),({"周","zhou"}),({"吴","wu"}),({"郑","zhen"}),({"王","wang"}),
 ({"冯","feng"}),({"陈","chen"}),({"褚","zhu"}),({"卫","wei"}),({"蒋","jiang"}),({"沈","shen"}),({"韩","han"}),({"杨","yang"}),
 ({"朱","zhu"}),({"秦","qing"}),({"尤","you"}),({"许","xu"}),({"何","he"}),({"吕","lv"}),({"施","shi"}),({"张","zhang"}),
@@ -25,7 +25,7 @@ static mixed xing = ({
 ({"长孙","zhangsun"}),({"幕容","murong"}),({"司徒","situ"}),({"西门","ximen"}),({"俞","yu"}),({"莫","mo"}),
 });
 
-static mixed name = ({
+nosave mixed name = ({
 ({"忠","zhong"}),({"孝","xiao"}),({"礼","li"}),({"义","yi"}),({"智","zhi"}),({"勇","yong"}),({"仁","ren"}),({"匡","kuang"}),
 ({"宪","xian"}),({"令","ling"}),({"福","fu"}),({"禄","lu"}),({"大","da"}),({"小","xiao"}),({"晓","xiao"}),({"高","gao"}),
 ({"可","ke"}),({"阿","a"}),({"金","jin"}),({"世","shi"}),({"克","ke"}),({"叔","shu"}),({"之","zhi"}),({"公","gong"}),
@@ -36,7 +36,7 @@ static mixed name = ({
 ({"德","de"}),({"",""}),({"",""}),({"",""}),({"",""}),({"",""}),({"",""}),({"",""}),({"",""}),({"",""}),({"",""}),
 });
 
-static mixed name_e = ({
+nosave mixed name_e = ({
 ({"霸","ba"}),({"白","bai"}),({"班","ban"}),({"斌","bin"}),({"宾","bin"}),({"昌","chang"}),({"超","chao"}),({"诚","chen"}),
 ({"川","chuan"}),({"鼎","ding"}),({"定","ding"}),({"法","fa"}),({"飞","fei"}),({"风","feng"}),({"锋","feng"}),({"钢","gang"}),
 ({"罡","gang"}),({"贯","guan"}),({"光","guang"}),({"海","hai"}),({"虎","hu"}),({"华","hua"}),({"浩","hao"}),({"宏","hong"}),
@@ -60,7 +60,7 @@ static mixed name_e = ({
 ({"炳","bing"}),({"雪","xue"}),({"忌","ji"}),({"靖","jing"}),
 });
 
-static mixed name_w = ({      //女性专用
+nosave mixed name_w = ({      //女性专用
 ({"爱","ai"}),({"春","chun"}),({"丹","dan"}),({"芳","fang"}),({"芬","fen"}),({"凤","feng"}),({"姑","gu"}),({"红","hong"}),
 ({"虹","hong"}),({"娇","jiao"}),({"娟","juan"}),({"菊","ju"}),({"兰","lan"}),({"岚","lan"}),({"丽","li"}),({"莉","li"}),
 ({"莲","lian"}),({"玲","ling"}),({"琳","lin"}),({"娜","na"}),({"琴","qin"}),({"芹","qin"}),({"倩","qian"}),({"萍","ping"}),
@@ -74,7 +74,7 @@ void set_random_name(string gender)
 {
 	string l_c, l_e, f_c, f_e, f_c_e, f_e_e;
 	int    i, j, k;
-	
+
 	i = random(sizeof(xing));
 	if (stringp(gender) && gender == "女性"){
 		j = random(sizeof(name_w));

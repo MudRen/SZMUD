@@ -6,7 +6,7 @@
 #include <room.h>
 inherit ROOM;
 
-varargs static void
+varargs protected void
 create_food(string nmstr, string* idlist, string longstr)
 {
         object obj;
@@ -20,7 +20,7 @@ create_food(string nmstr, string* idlist, string longstr)
         obj->move(this_object());
 }
 
-varargs static void
+varargs protected void
 create_water(string nmstr, string* idlist, string cup, string longstr)
 {
         object obj;
@@ -35,7 +35,7 @@ create_water(string nmstr, string* idlist, string cup, string longstr)
         obj->move(this_object());
 }
 
-varargs static void
+varargs protected void
 create_wine(string nmstr, string* idlist, string cup, string longstr)
 {
         object obj;
@@ -101,7 +101,7 @@ void init()
         {
             add_action( "admSet", "mset" );
             add_action( "admYao", "myao" );
-        }    
+        }
 }
 
 int do_broadcast(string arg)
@@ -121,7 +121,7 @@ int do_broadcast(string arg)
         } else if (type == "player") {
                 mesg = me->name() + "现在在醉仙楼芙蓉厅宴请各路英雄豪杰  !!!\n";
        }
-        message("channel:chat", HIY+"【通告】"+mesg+NOR, users() );  
+        message("channel:chat", HIY+"【通告】"+mesg+NOR, users() );
         return 1;
 }
 int admSet( string arg )
@@ -321,4 +321,3 @@ int valid_leave(object me, string dir)
                 return 1;
         return notify_fail(HIY + "先用 order end 结束宴会后才能离开。\n" + NOR);
 }
-

@@ -6,7 +6,7 @@
 #define TIME_TICK (time()*60)
 #include <ansi.h>
 
-static int current_day_phase;
+nosave int current_day_phase;
 mapping *day_phase;
 
 string *weather_msg = ({
@@ -45,7 +45,7 @@ void init_day_phase()
 	current_day_phase = (i==0? sizeof(day_phase)-1: i - 1);
 
 	// Since in our time scale, 1 minute == 1 second in RL, so we don't need
-	// any conversion before using this number as call_out dalay, if you 
+	// any conversion before using this number as call_out dalay, if you
 	// changed the time scale, be sure to convert it.
 
 	call_out("update_day_phase",
@@ -55,9 +55,9 @@ void init_day_phase()
 void update_day_phase()
 {
 	int synchronize = 0;
-	
+
 	remove_call_out("update_day_phase");
-	
+
 	if(current_day_phase==0)
 	{
        		init_day_phase();
@@ -86,84 +86,84 @@ void event_night()
 	object room;
         if (random(12) == 0)
         {
-		if(objectp(room=load_object("/d/city/xiaotulu")) && 
+		if(objectp(room=load_object("/d/city/xiaotulu")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "扬州城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 1)
         {
-		if(objectp(room=load_object("/d/beijing/dianmen")) && 
+		if(objectp(room=load_object("/d/beijing/dianmen")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "北京城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 2)
         {
-		if(objectp(room=load_object("/d/kaifeng/tingyulou")) && 
+		if(objectp(room=load_object("/d/kaifeng/tingyulou")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "开封城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 3)
         {
-		if(objectp(room=load_object("/d/changan/xiaoyanta")) && 
+		if(objectp(room=load_object("/d/changan/xiaoyanta")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "长安城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 4)
         {
-		if(objectp(room=load_object("/d/beijing/tianqiao")) && 
+		if(objectp(room=load_object("/d/beijing/tianqiao")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "北京城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 5)
         {
-		if(objectp(room=load_object("/d/foshan/street3")) && 
+		if(objectp(room=load_object("/d/foshan/street3")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "佛山城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 6)
         {
-		if(objectp(room=load_object("/d/quanzhou/tumen")) && 
+		if(objectp(room=load_object("/d/quanzhou/tumen")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "泉州城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 7)
         {
-		if(objectp(room=load_object("/d/hangzhou/road13")) && 
+		if(objectp(room=load_object("/d/hangzhou/road13")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "杭州城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 8)
         {
-		if(objectp(room=load_object("/d/changan/center")) && 
+		if(objectp(room=load_object("/d/changan/center")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "长安城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 9)
         {
-		if(objectp(room=load_object("/d/quanzhou/yuanhe")) && 
+		if(objectp(room=load_object("/d/quanzhou/yuanhe")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "泉州城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 10)
         {
-		if(objectp(room=load_object("/d/hangzhou/road31")) && 
+		if(objectp(room=load_object("/d/hangzhou/road31")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "杭州城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
 	}
         if (random(12) == 11)
         {
-		if(objectp(room=load_object("/d/hangzhou/road78")) && 
+		if(objectp(room=load_object("/d/hangzhou/road78")) &&
 		objectp(badguy = new("/task/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"【官府快报】"HIR + "杭州城中今夜有飞贼出没，城内百姓须小心提防。\n"NOR,users() );
@@ -175,7 +175,7 @@ void event_dawn()
 	object *ob_list;
 	int i;
 	ob_list = children("/task/feizei/feizei");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 			message_vision("$N阴笑道：天亮了，今晚收获可真不小。哈哈，老子先撤了！\n",ob_list[i]);
@@ -189,7 +189,7 @@ void event_sunrise()
 	int i;
 
 	ob = users();
-	for(i=0; i<sizeof(ob); i++) 
+	for(i=0; i<sizeof(ob); i++)
 	if( objectp(link_ob = ob[i]->query_temp("link_ob")) )
 	{
 		link_ob->save();
@@ -204,7 +204,7 @@ void event_common()
 	int i, count;
 	object *ob;
         object where;
-        
+
 	ob=livings();
         i = sizeof(ob);
         while (i--) {
@@ -235,7 +235,7 @@ void event_common()
 //	count = 1+random(sizeof(ob));
 	count = sizeof(ob);
 	i = random(sizeof(ob));
-	
+
 	while (count-- > 0) {
 		if( environment(ob[i]) )
 		  UPDATE_D->inventory_check(ob[i]);

@@ -10,22 +10,22 @@
 inherit NPC_TRAINEE;
 inherit "/d/wanshou/inherit/animal_inherit.c";
 
-static int do_protect = 0;
-static int do_follow = 0;
-static int food_tick = 0;
-static int animal_exp = 0;
+nosave int do_protect = 0;
+nosave int do_follow = 0;
+nosave int food_tick = 0;
+nosave int animal_exp = 0;
 
 // private functions
-static void special_check();
-static void animal_follow_check();
-static void animal_combat_check();
-static void animal_special_init(object owner);
-static void animal_add_power();
-static void animal_is_hungry();
-static void animal_very_hungry();
-static void animal_super_hungry();
+nosave void special_check();
+nosave void animal_follow_check();
+nosave void animal_combat_check();
+nosave void animal_special_init(object owner);
+nosave void animal_add_power();
+nosave void animal_is_hungry();
+nosave void animal_very_hungry();
+nosave void animal_super_hungry();
 
-void init() 
+void init()
 {
 	::init();
    add_action("do_show", "show");
@@ -57,7 +57,7 @@ int heal_up()
 	 int food, exp1, exp2;
      object ob = this_object();
      food = ob->query("food");
-     if (food > 5) 
+     if (food > 5)
 	 {
 	     //reset the food tick
 		 food_tick = 0;
@@ -70,7 +70,7 @@ int heal_up()
      	     animal_add_power();
 		 }
 	 }
-	 else 
+	 else
 	 {
 		 food_tick++;
      }
@@ -95,7 +95,7 @@ int do_show(string arg)
 	mixed *data1;
 	int i;
 
-	if( !arg || sscanf(arg, "%d", i)!=1 ) 
+	if( !arg || sscanf(arg, "%d", i)!=1 )
 	   return notify_fail("type: show #\n");
 	setup_animal(i);
 
@@ -188,16 +188,16 @@ int do_protect(string arg)
 		return 1;
 }
 
-// special function to follow master 
+// special function to follow master
 // sort like heart_beat() function
 
-static void special_check()
+protected void special_check()
 {
 /* debug code */
 /* object owner;
    owner = query_lord();
-   if (wizardp(owner))  
-        tell_object(owner, sprintf("check\n")); */ 
+   if (wizardp(owner))
+        tell_object(owner, sprintf("check\n")); */
    // start the next tick
    call_out("special_check", 1 );
 
@@ -218,7 +218,7 @@ static void special_check()
    }
 }
 
-static void animal_combat_check()
+protected void animal_combat_check()
 {
 	object target, owner;
 	object me = this_object();
@@ -237,7 +237,7 @@ static void animal_combat_check()
 	}
 }
 
-static void animal_follow_check()
+protected void animal_follow_check()
 {
 	object owner;
 	object me = this_object();
@@ -254,7 +254,7 @@ static void animal_follow_check()
 	}
 }
 
-static void animal_add_power()
+protected void animal_add_power()
 {
 	object ob = this_object();
 	switch (random(4))
@@ -275,19 +275,19 @@ static void animal_add_power()
 	}
 }
 
-static void animal_is_hungry()
+protected void animal_is_hungry()
 {
    object ob = this_object();
    message_vision(HIG"$N许久未曾进食，躁动不安，绕着你不停地踱来踱去，不时发出一生哀嚎。\n"NOR, ob);
 }
 
-static void animal_very_hungry()
+protected void animal_very_hungry()
 {
    object ob = this_object();
    message_vision(HIG"$N不安地围着你绕来绕去，两眼发出贪婪的光，似乎要择人而噬。\n"NOR, ob);
 }
 
-static void animal_super_hungry()
+protected void animal_super_hungry()
 {
    object ob = this_object();
    message_vision(HIG"$N饥饿难耐，低嚎一声，有气无力地看了你一眼，一溜小跑不见了。\n"NOR, ob);

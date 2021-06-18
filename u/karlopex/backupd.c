@@ -8,7 +8,7 @@ inherit F_DBASE;
 
 #define BACKUP_DATE     7               // the oldest's backup (days)
 
-static int state;
+nosave int state;
 
 #define SLEEPING        0
 #define GET_READY       1
@@ -26,8 +26,8 @@ string log_time()
               msg[20..23] + " " + msg[11..18];
         return msg;
 }
-static int *tlist = ({ 0, 2225, 2226, 2227 });
-static int *hlist = ({ 45, 1, 1, 1 });
+nosave int *tlist = ({ 0, 2225, 2226, 2227 });
+nosave int *hlist = ({ 45, 1, 1, 1 });
 
 // 通知一次准备的时间：凌晨5:50分
 // 通知再次准备的时间：凌晨5:59分

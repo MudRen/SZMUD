@@ -14,25 +14,25 @@
 
 inherit F_DBASE;
 
-static int httpSock;
-static int persistent;
-static int accesses;
+nosave int httpSock;
+nosave int persistent;
+nosave int accesses;
 
-static mapping sockets;
-static mapping resolve_pending;
+nosave mapping sockets;
+nosave mapping resolve_pending;
 
-static string *months;
+nosave string *months;
 
-static mapping bad_cmd = BAD_CMD;
-static mapping access_denied = ACCESS_DENIED;
-static mapping not_found = NOT_FOUND;
-static mapping bad_gateway = BAD_GATEWAY;
+nosave mapping bad_cmd = BAD_CMD;
+nosave mapping access_denied = ACCESS_DENIED;
+nosave mapping not_found = NOT_FOUND;
+nosave mapping bad_gateway = BAD_GATEWAY;
 
 
-static string common_date(int t);
+protected string common_date(int t);
 
 void create();
-static void setup();
+protected void setup();
 void remove();
 
 void write_data(int fd, mixed data);
@@ -52,7 +52,7 @@ int query_accesses()
 }
 
 void create()
-{ 
+{
         seteuid( ROOT_UID );
         set("channel_id","ÏµÍ³¾«Áé");
         accesses = 0;
@@ -97,7 +97,7 @@ varargs string query_hostname(int fd, int t)
         return 0;
 }
 
-static void setup()
+protected void setup()
 {
         if ((httpSock =
                 socket_create(STREAM, "read_callback", "close_callback")) < 0)
@@ -371,7 +371,7 @@ void close_connection(int fd)
 
 // respond to a client request for a file.
 //
-    
+
 void do_get(int fd, string file, string line0)
 {
         string dir;
@@ -504,6 +504,6 @@ int file_exists(string str)
 {
    if (file_length(str)>0)
      return 1;
-   else 
+   else
      return 0;
 }

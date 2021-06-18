@@ -12,9 +12,9 @@ void create ()
 【神州】的世界去闯荡冒险吧！如果你是新手，请使用"HIY"help"NOR"指令熟悉这里的
 新环境。在里面还有很多的基本知识让你学习，快去(enter)学习吧。
 
-        输入"HIY" newbie "NOR"指令，立刻回答你满脑子的疑问！
-        
-        
+        输入"HIY" help newbie "NOR"，立刻回答你满脑子的疑问！
+
+
 ");
 
 	set("exits", ([ /* sizeof() == 2 */

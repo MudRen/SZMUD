@@ -8,13 +8,13 @@ inherit ITEM;
 /************************************************************************************/
 //job_proudce中的变量，数据。
 
-static string menpai_name;//产生任务的门派 
-static string strategy_produce;//选择门派产生的策略名称。
-static string menpai_area_power;//选择门派产生任务的区域。
+nosave string menpai_name;//产生任务的门派
+nosave string strategy_produce;//选择门派产生的策略名称。
+nosave string menpai_area_power;//选择门派产生任务的区域。
 //执行任务的人物姓名
 //object job_player;
-static object job_data;
-static mapping job_map;
+nosave object job_data;
+nosave mapping job_map;
 
 /********************************************************************************/
 
@@ -63,10 +63,10 @@ int do_check_user(object ob,string menpai_name)
 		 ||ob->query("combat_exp")<100000
 		 //||query_idle(ob)
 		 ||ob->query("family/family_name")!=menpai_name
-		 
+
 		 )
 	 {
-		 
+
 		 //printf("门派选择了%s\tplayer\t%s的门派是%s\n",menpai_name,ob->query("name"),ob->query("family/family_name"));
 		 return 0;
 	 }
@@ -95,7 +95,7 @@ int do_check_user(object ob,string menpai_name)
 			strsrch(room_name, "/d/wudang/liangongfang")==0 ||
 			strsrch(room_name, "/d/baituo/base1")==0 ||
 			strsrch(room_name, "/d/bwdh")==0
-			) 
+			)
 		{
 			write("player在非法地点\n");
 		return 0;
@@ -133,22 +133,22 @@ void check_assess_award()
 	string player_name;
 	object player,place,master;
 	mapping *family_assess,family_map;
-	
-	
+
+
 	if(!job_data=find_object(JOB_DIR+"job_data"))
 		job_data=new(JOB_DIR+"job_data");
 	if(!objectp(job_data)) return;
 	job_data->restore();
 
 	//check very family number.
-	
+
 	family=job_data->is_familyassess_full();
-	
+
 	//write(family);
 	family_assess=job_data->query_family_assess_data();
 	if(!family)
 		return;
-	
+
 
 	family_map=get_mapping(family,"family",family_assess);
 	//If family meeting . return.
@@ -158,17 +158,17 @@ void check_assess_award()
 	player_name=get_award_player(family);
 	if(!player_name)
 		return;
-	
+
 	//send all menpai player award messgae.
 	if(!(place=find_object(family_master_place[family])))
 		place=load_object(family_master_place[family]);
 	if(!objectp(place))
 		return;
-	
-		
+
+
 	if(!master=find_object(family_master_basefile[family]))
 		master=new(family_master_basefile[family]);
-	
+
 	if(!objectp(master)) return;
 	//write("send message");
 	send_assess_msg(master,family);
@@ -240,7 +240,7 @@ void check_assess_player_place()
 	object *ob_player,room_master,master;
 	mapping assess_player,player_map;
 	state="";
-	
+
 	if(!job_data=find_object(JOB_DIR+"job_data"))
 		job_data=new(JOB_DIR+"job_data");
 	if(!objectp(job_data)) return;
@@ -254,7 +254,7 @@ void check_assess_player_place()
 	ob_player=filter_array(users(), "do_check_job_player", this_object(),player_list);
 	if(!sizeof(ob_player))
 		return;
-	
+
 	for(i=0;i<sizeof(ob_player);i++)
 	{
 		//write(ob_player[i]->query("name"));
@@ -287,12 +287,12 @@ void check_finishjob_place()
 	int player_num,i;
 	object *ob_player;
 	state="";
-	
+
 	if(!job_data=find_object(JOB_DIR+"job_data"))
 		job_data=new(JOB_DIR+"job_data");
 	if(!objectp(job_data)) return;
 	job_data->restore();
-	
+
 	/*****get job player list from job data.*******/
 	player_list=job_data->query_list("finish_job");
 	//write("get player_list\n");
@@ -306,7 +306,7 @@ void check_finishjob_place()
 		{
 		write(player_list[i]+"\n");
 	}
-*/	
+*/
 	/***************filtrate online user ,only choose the player that on job_player_list.*/
 	write("ok here now");
 	ob_player=filter_array(users(), "do_check_job_player", this_object(),player_list);
@@ -317,9 +317,9 @@ void check_finishjob_place()
 
 		return;
 	}
-	
-	
-	
+
+
+
 	for(i=0;i<sizeof(ob_player);i++)
 	{
 
@@ -346,13 +346,13 @@ void check_finishjob_place()
 		}
 		else
 		{
-			
+
 			finish_job(ob_player[i]);
 		if( wizardp(ob_player[i]) && (string)ob_player[i]->query("env/job_system")=="open" )
 			tell_object(ob_player[i],"finish_job");
 
 		}
-		
+
 	}
 	return;
 }
@@ -364,7 +364,7 @@ void check_askjob_place()
 	int player_num,i;
 	object *ob_player;
 	state="";
-	
+
 	if(!job_data=find_object(JOB_DIR+"job_data"))
 		job_data=new(JOB_DIR+"job_data");
 	if(!objectp(job_data)) return;
@@ -413,7 +413,7 @@ void check_askjob_place()
 		{
 			master_tell_player(ob_player[i]);
 		}
-		
+
 	}
 	return;
 }
@@ -425,7 +425,7 @@ void check_oppose_pker_place()
 	int player_num,i;
 	object *ob_player;
 	state="";
-	
+
 	if(!job_data=find_object(JOB_DIR+"job_data"))
 		job_data=new(JOB_DIR+"job_data");
 	if(!objectp(job_data)) return;
@@ -447,7 +447,7 @@ void check_oppose_pker_place()
 		if(!sizeof(ob_player))
 		return;
 
-	
+
 	for(i=0;i<sizeof(ob_player);i++)
 	{
 		job_map=get_mapping(ob_player[i]->query("id"),"job_player",job_data->query_job_data());
@@ -497,7 +497,7 @@ void check_oppose_pker_place()
 	int player_num,i;
 	object *ob_player;
 	state="";
-	
+
 	if(!job_data=find_object(JOB_DIR+"job_data"))
 		job_data=new(JOB_DIR+"job_data");
 		if(!objectp(job_data)) return;
@@ -519,11 +519,11 @@ void check_oppose_pker_place()
 		if(!sizeof(ob_player))
 		return 1;
 
-	
+
 	for(i=0;i<sizeof(ob_player);i++)
 	{
 		job_map=get_mapping(ob_player[i]->query("id"),"job_player",job_data->query_job_data());
-		
+
 		if(file_name(environment(ob_player[i]))!=
 			get_mapping(ob_player[i]->query("id"),"job_player",job_data->query_job_data())["job_protect_place"]
 			)
@@ -579,8 +579,8 @@ void check_player_place()
 	check_finishjob_place();
 	check_assess_player_place();
 
-	
-	
+
+
 
 	return ;
 }
@@ -598,12 +598,12 @@ void create()
 //产生任务
 string query_save_file()
 {
-        return DATA_DIR + "job_system/produce"; 
+        return DATA_DIR + "job_system/produce";
 }
 //产生任务的主函数
 void produce_job(string p_name)
 {
-	
+
 	int job_succeed,ret;
 	object obj_temp,job_player;
 	string produce_report,job_player_name;
@@ -611,7 +611,7 @@ void produce_job(string p_name)
 	if(!objectp(obj_temp=new(JOB_DIR+"job_menpai")))
 	return;
 	obj_temp->restore();
-	
+
 	if(!job_data=find_object(JOB_DIR+"job_data"))
 		job_data=new(JOB_DIR+"job_data");
 	if(!objectp(job_data)) return;
@@ -622,12 +622,12 @@ void produce_job(string p_name)
 	produce_report += HIC"门派选择:\t"NOR;
 	while ( ret < 10 && !objectp(job_player)) {
    	ret++;
-    
+
 	if(!choose_menpai())
 		produce_report += HIR"错误\n"NOR;
 	else
 		produce_report += HIW+menpai_name+"\n"NOR;
-	
+
 	produce_report += HIC"门派策略选择:\t"NOR;
 
 	if(!choose_strategy(menpai_name))
@@ -642,17 +642,17 @@ void produce_job(string p_name)
 	else
 		produce_report += HIW+menpai_area_power+"\n"NOR;
 	produce_report += HIC+"执行者为"+"\t"+NOR;
-	
+
 	job_player=choose_user(menpai_name);
 
 	//*****************************************************
 	if(p_name)
 		{
 		job_player=find_player(p_name);
-		
+
 /*		if(!do_check_user(job_player,job_player->query("family/family_name")))
 			return;
-*/		
+*/
 		if(is_attr_mapping(job_player->query("id"),"job_player",job_data->query_job_data()))
 			return;
 	}
@@ -707,7 +707,7 @@ int choose_menpai()
 	return 0;
 	obj_temp->restore();
 	menpai=obj_temp->get_random_menpai();
-	
+
 
 	while(menpai_name==menpai)
 	menpai=obj_temp->get_random_menpai();
@@ -732,9 +732,9 @@ int choose_strategy(string menpai)
 	obj_temp->restore();
 	strategy_produce=obj_temp->random_get_menpai_strategy(menpai);
 
-	
+
 	//write("策略选择了:\t"+strategy_produce+"\n");
-	
+
 	if(!obj_temp->have_strategy(obj_temp->con_name(menpai,1),strategy_produce,0))
 		return 0;
 	save();
@@ -760,4 +760,3 @@ int choose_area_power(string menpai)
 	destruct(obj_temp);
 	return 1;
 }
-

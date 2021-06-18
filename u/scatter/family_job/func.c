@@ -4,19 +4,19 @@
 文件名称:
 	job_family_master.h  //定义master的描述信息.
 变量:
-	static mapping family_master 			//	每个门派master的称号
-	static mapping family_master_place		//    每个门派 master的地点
-	static mapping *wudang_message
-	static mapping *xingxiu_message
-	static mapping *huashan_message        //，每个门派master说的话
-	static mapping *taohua_message
-	static mapping *gaibang_message
-	static mapping *emei_message
-	static mapping *baituo_message
-	static mapping *quanzhen_message
-	static mapping *xueshan_message
-	static mapping *dali_message
-	static mapping *shaolin_message
+	nosave mapping family_master 			//	每个门派master的称号
+	nosave mapping family_master_place		//    每个门派 master的地点
+	nosave mapping *wudang_message
+	nosave mapping *xingxiu_message
+	nosave mapping *huashan_message        //，每个门派master说的话
+	nosave mapping *taohua_message
+	nosave mapping *gaibang_message
+	nosave mapping *emei_message
+	nosave mapping *baituo_message
+	nosave mapping *quanzhen_message
+	nosave mapping *xueshan_message
+	nosave mapping *dali_message
+	nosave mapping *shaolin_message
 
 文件名称:
 	job_area.h			//地域定义文件
@@ -33,7 +33,7 @@
 	int judge_room(string room_name)//鉴定所选取的房间是否合乎条件(比如是否是nofight room...)
 	string get_room(string area)//从一个区域中获得做任务的房间
 
-	
+
 文件名称:
 	oppose_pker.h				//产生oppose_pker类型任务的文件
 函数:
@@ -46,7 +46,7 @@
 	job_produce.h   //任务产生器的基本函数定义文件
 
 函数:
-	
+
 	int assign_job(object master,object player,mapping map) //根据map指派任务
 	int finish_job(object player)//任务完成的函数
 	int master_tell_player(object player)//master向player下达任务的函数
@@ -59,13 +59,13 @@
 文件名称:
 	produce.c //产生任务的主函数
 变量:
-	string menpai_name;//产生任务的门派 
+	string menpai_name;//产生任务的门派
 	string strategy_produce;//选择门派产生的策略名称。
 	string menpai_area_power;//选择门派产生任务的区域。
-	static object job_data;	//这个任务的相关数据文件
-	static mapping job_map;		
+	nosave object job_data;	//这个任务的相关数据文件
+	nosave mapping job_map;
 
-	
+
 
 函数:
 	object choose_user(string menpai_name)//从在线的用户中选择任务的执行者
@@ -89,33 +89,3 @@
 	int job_oppsse_pker_prompt(object player)//提示执行者去完成oppsse_pker任务.
 	int master_msg(object master,object player,string state,string command_mode)
 	//从数据库中获得massage并进行名称替换
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

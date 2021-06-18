@@ -11,11 +11,11 @@
 #include "/inherit/save/data.c"
 #include "/inherit/save/existence.c"
 
-private static int persistent;
+nosave int persistent;
 
 // set_persistent only callable by this_object() (including inheritors)
 
-static void
+protected void
 set_persistent(int which)
 {
    persistent = which;

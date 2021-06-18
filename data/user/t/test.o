@@ -1,0 +1,3 @@
+#/clone/user/user.c
+dbase (["qi":100,"jiajin":1,"per":18,"newbie":"yes","env":(["prompt":"None",]),"shen":0,"str":22,"title":"普通百姓","kar":17,"shen_type":0,"max_jingli":100,"language":"GB","con":22,"behavior_exp":0,"water":319,"eff_qi":100,"death_count":0,"death_times":0,"max_qi":100,"registered":"yes","int":18,"quest_exp":140,"month":1,"race":"人类","mud_age":13,"jingli":100,"name":"测试","dex":19,"food":319,"eff_jing":100,"potential":99,"channels":({"chat","rumor","jiaoyi","menpai",}),"pighead":0,"actions":,"id":"test","default_actions":,"jing":100,"gender":"女性","combat_exp":0,"max_jing":100,"neili":0,"birthday":1624018690,"balance":0,"max_neili":1,"max_potential":97,"age":14,])
+autoload ({})

@@ -1,5 +1,5 @@
 //update by troy 2002.1.1 add ¹ÅÄ¹
-static int luck;
+nosave int luck;
 void set_killer_name(string kind)
 {
 	switch(kind){
@@ -54,7 +54,7 @@ void Set_Npcattrib(int Basic_Attrib,int Random_var,
 				   int Maxjingli,int Random_Maxjingli,
 				   int Maxneili,int Random_Maxneili,
 				   int Exp,int Random_Exp)
-				  				  
+
 {
 	int Mneili=Maxneili+random(Random_Maxneili),max;
 	set("str", Basic_Attrib+random(Random_var));
@@ -67,7 +67,7 @@ void Set_Npcattrib(int Basic_Attrib,int Random_var,
 	set("max_jingli", Maxjingli+random(Random_Maxjingli));
 	set("max_neili", Mneili);
 	set("combat_exp", Exp+random(Random_Exp));
-	
+
 	  max =query("max_jing");
 	  set("eff_jing",max);
 	  set("jing",max);
@@ -87,7 +87,7 @@ void Set_Npcskills(int Basic_skill,int Random_skill,mapping S_skills)
 {
 	int i,jiali ;
 	mixed S_name;
-	
+
 	if(i=sizeof(S_skills))
 	{
 		S_name=keys(S_skills);
@@ -118,7 +118,7 @@ void skills_setup(string kind,int skill,int r_s)
 	case "È«Õæ½Ì":
 		{
 			ran=random(4);
-			
+
 			switch(ran){
 			case 0://xingxiu
 				S_skills["dodge"]="luoying-shenfa";
@@ -131,17 +131,17 @@ void skills_setup(string kind,int skill,int r_s)
 				prepare_skill("kick","xuanfeng-saoye");
 				 set("chat_msg_combat", ({
 							(: perform_action, "strike.kuangfeng" :)
-								
+
 					}));
-				 
+
 				 set("jiali",query("jiali")/5);
-				
+
 /*				S_skills["dodge"]="feixing-shu";
 				S_skills["parry"]="chousui-zhang";
 				S_skills["force"]="huagong-dafa";
 				S_skills["claw"]="sanyin-zhua";
 				S_skills["strike"]="chousui-zhang";
-			
+
 			Set_Npcskills(skill,r_s,S_skills);
 
 			prepare_skill("claw","sanyin-zhua");
@@ -165,7 +165,7 @@ void skills_setup(string kind,int skill,int r_s)
 						(: perform_action, "strike.puji" :)
 				}));
 			set("jiali",query("jiali")/5);
-			break;		
+			break;
 			case 2://xueshan
 				S_skills["dodge"]="shenkongxing";
 				S_skills["parry"]="huoyan-dao";
@@ -177,9 +177,9 @@ void skills_setup(string kind,int skill,int r_s)
 						(: perform_action, "strike.fen" :)
 				}));
 
-			
+
 			set("jiali",query("jiali")/5);
-			break;		
+			break;
 			case 3://gaibang
 				S_skills["dodge"]="xiaoyaoyou";
 				S_skills["parry"]="xianglong-zhang";
@@ -191,10 +191,10 @@ void skills_setup(string kind,int skill,int r_s)
 						(: perform_action, "strike.leiting" :),
 							(: perform_action, "strike.sanhui" :)
 				}));
-				
+
 				set("jiali",query("jiali")/5);
 
-			break;		
+			break;
 			case 4://taohua
 					S_skills["dodge"]="luoying-shenfa";
 					S_skills["parry"]="luoying-shenjian";
@@ -206,12 +206,12 @@ void skills_setup(string kind,int skill,int r_s)
 				prepare_skill("kick","xuanfeng-saoye");
 				 set("chat_msg_combat", ({
 							(: perform_action, "strike.kuangfeng" :)
-								
+
 					}));
 				 set("jiali",query("jiali")/5);
-			break;		
+			break;
 			}
-		
+
 		}
 		break;
 
@@ -248,7 +248,7 @@ void skills_setup(string kind,int skill,int r_s)
 				set("chat_msg_combat", ({
 							(: perform_action, "strike.leidong" :)
 //								(: perform_action, "strike.wuji" :)
-								
+
 					}));
 				set("jiali",query("jiali")/10);
 				break;

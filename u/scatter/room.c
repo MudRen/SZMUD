@@ -12,7 +12,7 @@
 inherit F_DBASE;
 inherit F_CLEAN_UP;
 
-static mapping doors;
+nosave mapping doors;
 
 int query_max_encumbrance() { return 100000000000; }
 
@@ -100,7 +100,7 @@ void reset()
 		}
 		return;
 	}
-	
+
 	if( !mapp(ob = query_temp("objects")) )
 		ob = allocate_mapping(sizeof(ob_list));
 	list = keys(ob_list);

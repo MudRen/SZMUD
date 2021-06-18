@@ -11,7 +11,7 @@ inherit ITEM;
 inherit F_SAVE;
 mapping *letters;
 mapping letter;
-static string *sym_di = ({ "子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥" });
+nosave string *sym_di = ({ "子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥" });
 int set_owner(string id)
 {
         set("owner_id", id);
@@ -29,7 +29,7 @@ string chinese_time(int date)
                 chinese_number(local[LT_MON] + 1),
                 chinese_number(local[LT_MDAY]),
                 sym_di[((local[LT_HOUR] + 1) % 24) / 2],
-		i?chinese_number((local[LT_HOUR]+1) % 2 * 2 + 
+		i?chinese_number((local[LT_HOUR]+1) % 2 * 2 +
 		local[LT_MIN] / 30 ) + "刻":"正");
 }
 
@@ -108,8 +108,8 @@ void check(object me,object obj)
                 {
                                 case 1:
                                 {
-                                        
-										ob->set("long", 
+
+										ob->set("long",
 "这是一封已经封好的信函。上面写着：\n"
 +me->query("name")+"      亲启。\n"+
 ob->query("letter/from")+"托扬州驿站转。\n"
@@ -122,7 +122,7 @@ ob->query("letter/from")+"托扬州驿站转。\n"
                                                   break;
                                 case 2:
                                         {
-                                        
+
                                         ob->set_name(YEL"信函"NOR, ({"xin han","letter"}));
 										ob->set("long",
 "这是一封已经封好的信函。其背面沾着三根羽毛。上面写着\n"
@@ -138,7 +138,7 @@ ob->query("letter/from")+"托扬州驿站转。\n"
                                 case 3:
 									{
                                         ob->set_name(HIR"信函"NOR, ({"xin han","letter"}));
-                                       	ob->set("long", 
+                                       	ob->set("long",
 "这是一个已经封好的帛囊，里面装有书函。其背面沾着五根羽\n"
 "毛。上面写着：\n"
 +me->query("name")+"      亲启。\n"+
@@ -187,7 +187,7 @@ void create()
         else {
                 set("long", "一封已经写好的信，你可用读(read letter)来看它的内容。\n");
                 set("unit", "封");
-                
+
 		        set("can_read_letter",1);
 
                 }
@@ -204,21 +204,21 @@ int do_read(string arg)
      object ob,ob_letter;
       int i;
      ob=this_object();
-     
+
 	 if(!arg) return notify_fail("你要读什么信件？\n");
-	 
+
 	 ob_letter = present(arg, this_player());
-	 
+
 	 if(!ob_letter)
             return notify_fail("你身上好像并没有这封信件？\n");
         if(!ob_letter->query("can_read_letter"))
                 return notify_fail("对不起！你无法从这里面读到任何东西。\n");
-		
+
 
 
         if(!i=sizeof(letters))
                 return notify_fail("读取失败。\n");
-		
+
         printf("【书信标题】：%s\n【收信人】：%s\n【信件内容】：\n%s\n\t\t%s写于%s\n\n\n",
         letters[i-1]["title"],
 		letters[i-1]["to"],
@@ -229,4 +229,3 @@ int do_read(string arg)
 
         return 1;
 }
-

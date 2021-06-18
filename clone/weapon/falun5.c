@@ -4,7 +4,7 @@
 #include <weapon.h>
 #include <ansi.h>
 inherit HAMMER;
-static int amount;
+nosave int amount;
 
 void set_amount(int v)
 {
@@ -79,7 +79,7 @@ void create()
 	setup();
 }
 
-int wield() 
+int wield()
 {
 	object me = environment();
 	if (query_amount() > 1){
@@ -92,5 +92,3 @@ int wield()
 
 	return ::wield();
 }
-
-

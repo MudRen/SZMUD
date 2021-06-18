@@ -12,8 +12,8 @@
 #define MAX_OPPONENT	4
 #define S_COMBAT_D 	"/adm/daemons/s_combatd"
 
-static object *enemy = ({});
-static string *killer = ({});
+nosave object *enemy = ({});
+nosave string *killer = ({});
 
 // prototypes
 
@@ -43,7 +43,7 @@ void fight_ob(object ob)
 
 	set_heart_beat(1);
 
-	if( member_array(ob, enemy)==-1 ) 
+	if( member_array(ob, enemy)==-1 )
 		enemy += ({ ob });
 }
 /////////////////////////////This check add by lisser from protect cmds///////////////////////////
@@ -62,10 +62,10 @@ void check_guard(object ob)
 				message_vision(HIC"$N对着$n冷笑一声说道：居然在我的面前伤我妻子的性命！\n"NOR,guard_ob,this_object());
 			else message_vision(HIC"$N对着$n大喝一声说道：居然在我的面前伤我妻子的性命！\n我的武功虽不及你，我和你拼了！\n"NOR,guard_ob,this_object());
 			message_vision(HIC"$N说着冲上前去挡住了$n的攻击。\n"NOR, guard_ob, this_object());
-			guard_ob->set_temp("protect/fighting",this_object());		
+			guard_ob->set_temp("protect/fighting",this_object());
 		}
 		fight_ob(guard_ob);
-		
+
 	}
 
 	if( ob->query_temp("protected")
@@ -90,7 +90,7 @@ void kill_ob(object ob)
 	// Marz added no_fight check here
 	if (environment()->query("no_fight")) return;
 	if ( !objectp( ob ) ) return;
-	
+
 	if( member_array(ob->query("id"), killer)==-1 )
 		killer += ({ ob->query("id") });
 
@@ -185,18 +185,18 @@ void reset_action()
 
         me = this_object();
 	prepare = query_skill_prepare();
-	
+
 	if( ob = query_temp("weapon") ) type = ob->query("skill_type");
 	else if ( sizeof(prepare) == 0)	type = "unarmed";
 	else if ( sizeof(prepare) == 1)	type = (keys(prepare))[0];
-	else if ( sizeof(prepare) == 2)	
+	else if ( sizeof(prepare) == 2)
 		type = (keys(prepare))[query_temp("action_flag")];
 
 	if( stringp(skill = query_skill_mapped(type)) ) {
 		// If using a mapped skill, call the skill daemon.
                 if (ob && (ob->query("flag")&SELF_ACTION))
 			set("actions", ob->query("actions",1) );
-		else if (ob)			
+		else if (ob)
 	         	set("actions", (: call_other, SKILL_D(skill), "query_action", me, ob :) );
                 else
                         set("actions", (: call_other, SKILL_D(skill), "query_action" :) );
@@ -211,9 +211,9 @@ void reset_action()
 
 // modified by cyz&&kitten@xeno 1999.06.08
 /****************************************************
-The following changes are done so to add new elements 
-to traditional ES2 based combat system. It is done in 
-prototype sytle. Refer to following list for actual 
+The following changes are done so to add new elements
+to traditional ES2 based combat system. It is done in
+prototype sytle. Refer to following list for actual
 prototypes. As for actual turn-based SRPG styled combat
 system prototype, refer to /u/oyxb/dragonroom and related
 files.
@@ -236,7 +236,7 @@ int special_attack(object opponent)
 	object ob = this_object();
 	if ((ob->query_temp("stand/anubis")) || (opponent->query_temp("stand/anubis")))
 	{
-		S_COMBAT_D->fight(ob, opponent); 
+		S_COMBAT_D->fight(ob, opponent);
 		return 1;
 	}
 	return 0;
@@ -245,13 +245,13 @@ int special_attack(object opponent)
 int attack()
 {
 	object opponent;
-	
+
 	clean_up_enemy();
 
 	opponent = select_opponent();
 	if( objectp(opponent) ) {
 		set_temp("last_opponent", opponent);
-		if (this_object()->query_temp("yield")) 
+		if (this_object()->query_temp("yield"))
 			return 1;
 		if (!(special_attack(opponent)))
 			COMBAT_D->fight(this_object(), opponent);
@@ -274,7 +274,7 @@ void init()
 	// launched by auto_fight() and saves some overhead.
 	if(	is_fighting()
 	||	!living(this_object())
-	||	!(ob = this_player()) 
+	||	!(ob = this_player())
 	||	environment(ob)!=environment()
 	||	!living(ob)
 	||	ob->query("linkdead") )
@@ -291,5 +291,5 @@ void init()
 	} else if( userp(ob) && (string)query("attitude")=="aggressive" ) {
 		COMBAT_D->auto_fight(this_object(), ob, "aggressive");
 		return;
-	} 
+	}
 }

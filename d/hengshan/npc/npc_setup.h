@@ -2,7 +2,7 @@
 #ifndef _NPC_SETUP_H_
 #define _NPC_SETUP_H_
 
-static string *menpai_list = ({
+nosave string *menpai_list = ({
     "huashan", "shaolin", "wudang", "emei", "gaibang",
     "baituo", "hengshan","songshan","taohua","xueshan", "xingxiu" });
 

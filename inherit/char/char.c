@@ -36,7 +36,7 @@ inherit F_TEAM;
 inherit F_TRIGGER;
 
 // Use a tick with longer period than heart beat to save cpu's work
-static int tick;
+nosave int tick;
 
 void create()
 {
@@ -75,14 +75,14 @@ void heart_beat()
                 {
 		if ( !objectp(rum_ob = find_object("/d/city/npc/aqingsao")) )
 			rum_ob = load_object("/d/city/npc/aqingsao");
-                                      
+
 		CHANNEL_D->do_channel(rum_ob,"rumor","因为一次讲话太多，"+name() +"的频道被关闭了。\n");
 		set("chblk_on", 1);
 		add("chblk_c", 1);
                 apply_condition("chblk_c",15 * query("chblk_c"));
-	        log_file("Chblk",sprintf("[%s] %s(%s) 的频道被 系统 关闭了\n",ctime(time())[0..15],query("name"),query("id"))); 
+	        log_file("Chblk",sprintf("[%s] %s(%s) 的频道被 系统 关闭了\n",ctime(time())[0..15],query("name"),query("id")));
 		}
-		set_temp("channel_msg_cnt", 0); 
+		set_temp("channel_msg_cnt", 0);
 	}
 
 	// check too high neili and jingli
@@ -109,12 +109,12 @@ void heart_beat()
 	}
 
 
-	// If we're dying or falling unconcious? 
+	// If we're dying or falling unconcious?
 	if( my["qi"] < 0 || my["jing"] < 0 || my["jingli"] < 0) {
 		remove_all_enemy();
 // xuy, die only if falling unconcious (sleeping will have living() return 0 as well)
 		if( living(this_object()) ) unconcious();
-		else if( this_object()->query("disable_type") == " <昏迷不醒>" ) 
+		else if( this_object()->query("disable_type") == " <昏迷不醒>" )
 			die();
 		return;
 	}
@@ -140,8 +140,8 @@ void heart_beat()
 	if( !userp(this_object()) ) {
 		this_object()->chat();
 		// chat() may do anything -- include destruct(this_object())
-		if( !this_object() ) return;	
-	} 
+		if( !this_object() ) return;
+	}
 
 	if( tick--  ) return;
 	else tick = 5 + random(10);
@@ -152,7 +152,7 @@ void heart_beat()
 	// heal_up() must be called prior to other two to make sure it is called
 	// because the && operator is lazy :P
 	if( ((cnd_flag & CND_NO_HEAL_UP) || !heal_up())
-	&&	!is_fighting() 
+	&&	!is_fighting()
 	&&	!interactive(this_object())) {
 		if( environment() ) {
 			ob = first_inventory(environment());
@@ -161,7 +161,7 @@ void heart_beat()
 		}
 		if( !ob ) set_heart_beat(0);
 	}
-    if ( query( "scheming" ) ) 
+    if ( query( "scheming" ) )
         "/cmds/usr/scheme"->execute_schedule(me);
 
 	if( !interactive(this_object()) )

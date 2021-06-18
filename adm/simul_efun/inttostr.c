@@ -1,8 +1,8 @@
-static string *c_num = ({"0","1","2","3","4","5","6","7","8","9","10"});
+nosave string *c_num = ({"0","1","2","3","4","5","6","7","8","9","10"});
 
 string tostring(int i)
-{	
-	
+{
+
         if (i < 0)
                 return "-" + tostring(-i);
         if (i < 11)
@@ -28,7 +28,7 @@ string tostring(int i)
                         return c_num[i / 1000] + "000";
                 else if (i % 1000 < 100)
                         return c_num[i / 1000] + c_num[0] + tostring(i % 1000);
-                else 
+                else
                         return c_num[i / 1000] + tostring(i % 1000);
         }
         if (i < 100000000) {
@@ -44,7 +44,7 @@ string tostring(int i)
                         return tostring(i / 100000000) + "0000";
                 else if (i % 100000000 < 1000000)
                         return tostring(i / 100000000) + c_num[0] + tostring(i % 100000000);
-                else 
+                else
                         return tostring(i / 100000000) + tostring(i % 100000000);
         }
         if (i % 1000000000000 == 0)

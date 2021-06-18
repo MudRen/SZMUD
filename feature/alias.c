@@ -12,14 +12,14 @@
 #define MAX_REPEAT 40
 #define MAX_ALIASES 40
 #define HISTORY_BUFFER_SIZE 10
-// assuming 20 commands per tick is normal	 
-#define CMDS_PER_TICK 20   	
+// assuming 20 commands per tick is normal
+#define CMDS_PER_TICK 20
 
 mapping alias;
 
-static string *history, last_input;
-static int last_cmd, repeat_cnt = 0;
-static int cnt = 0;
+nosave string *history, last_input;
+nosave int last_cmd, repeat_cnt = 0;
+nosave int cnt = 0;
 
 string process_input(string str)
 {
@@ -29,11 +29,11 @@ string process_input(string str)
         clear_written();
 	if (str == "")
 		 return "";
-	else 
+	else
 		last_input = str;
-	
-	if (userp(this_object()) 
- 	 && (this_object()->query_temp("quit/forced") || 
+
+	if (userp(this_object())
+ 	 && (this_object()->query_temp("quit/forced") ||
              !living(this_object())) )
 		return "";
 
@@ -41,23 +41,23 @@ string process_input(string str)
 	{
 	cnt++;
 	me = this_object();
-	if ( cnt >  3*CMDS_PER_TICK ) 
+	if ( cnt >  3*CMDS_PER_TICK )
 	{
 		tell_object(me, "\n\n本游戏发现你滥用指令！\n\n");
-		
+
 		if ( random(2) )
 		{
 		message_vision(HIR"忽然一声惊雷在你头顶炸开，震得你两耳欲聋！\n"
 		   "一道闪电从天降下，正劈在$N身上…\n"NOR, me);
-		   
+
 		me->set_temp("last_damage_from", "被天雷劈死了");
 		me->unconcious();
-		} else 
+		} else
 		{
 		message_vision(HIR"忽然一声惊雷在你头顶炸开，震得你两耳欲聋！\n"
 		   "一道闪电从天降下，直朝$N劈去……结果没打中！\n"NOR, me);
 		}
-		
+
 		log_file("FLOODER", sprintf("%s(%s) was caught flooding on %s.\n",
 			 me->query("name"), geteuid(me), ctime(time())));
 
@@ -65,11 +65,11 @@ string process_input(string str)
 		me->set_temp("quit/report_msg", "由于滥用指令被踢出游戏（Command Flooding）。");
 		if ( !command("quit") ) me->delete_temp("quit");
 		return "";
-	} else if (cnt > CMDS_PER_TICK) 
+	} else if (cnt > CMDS_PER_TICK)
 	{
-		i = (int)me->query("qi"); 
+		i = (int)me->query("qi");
 		j = 1+(cnt-CMDS_PER_TICK)/4;
-		
+
 		if (i > j) me->receive_damage("qi", j, "被天雷劈死了");
 		else me->receive_damage("jing", j/2, "被天雷劈死了");
 	}
@@ -140,4 +140,3 @@ mapping query_all_alias()
 {
 	return alias;
 }
-

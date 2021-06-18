@@ -3,7 +3,7 @@
 //产生任务发布人名单
 
 #include <ansi.h>
-static mapping family_skills_award=([
+nosave mapping family_skills_award=([
 					  "武当派" :({"taiji-shengong","taiji-quan","taiji-jian","taoism"}),
 					  "星宿派"	:({"huagong-dafa","poison","chousui-zhang","sanyin-zhua"}),
 					  "华山派"	:({"zhengqi-jue","zixia-gong","ziyin-yin","hunyuan-zhang"}),
@@ -19,7 +19,7 @@ static mapping family_skills_award=([
 					  ]);
 
 
-static mapping family_master=([
+nosave mapping family_master=([
 					   "武当派" :"掌门人张真人/张真人/zhang sanfeng/湖北武当山/张三丰",
 					  "星宿派"	:"星宿老仙/老仙/ding chunqiu/星宿海/丁春秋",
 					  "华山派"	:"岳掌门/掌门/yue buqun/华山/岳不群",
@@ -33,7 +33,7 @@ static mapping family_master=([
 					  "少林派"	:"玄慈方丈/方丈/xuanci dashi/嵩山少林寺/玄慈大师",
 					  "古墓派"	:"孙婆婆/管家/sun popo/古墓/孙婆婆",
 					  ]);
-static mapping family_master_place=([
+nosave mapping family_master_place=([
 					   "武当派" :"/d/wudang/xiaoyuan",
 					  "星宿派"	:"/d/xingxiu/riyuedong",
 					  "华山派"	:"/d/huashan/buwei1",
@@ -49,7 +49,7 @@ static mapping family_master_place=([
 
 					  ]);
 
-static mapping assess_place=([
+nosave mapping assess_place=([
 					   "武当派" :"/d/wudang/sanqingdian",
 					  "星宿派"	:"/d/xingxiu/riyuedong",
 					  "华山派"	:"/d/huashan/buwei1",
@@ -65,7 +65,7 @@ static mapping assess_place=([
 
 					  ]);
 
-static mapping family_master_basefile=([
+nosave mapping family_master_basefile=([
 					   "武当派" :"/kungfu/class/wudang/zhang",
 					  "星宿派"	:"/kungfu/class/xingxiu/ding",
 					  "华山派"	:"/kungfu/class/huashan/buqun",
@@ -81,7 +81,7 @@ static mapping family_master_basefile=([
 					  ]);
 
 
-static mapping *wudang_message = ({
+nosave mapping *wudang_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N拍了拍$n的头,说道：“$P，你来的正好。”\n",
@@ -104,7 +104,7 @@ static mapping *wudang_message = ({
 		"opposepk_award" : "$N说道:“辛苦你了，$P，你为本门立下了一功。”\n"
 		]),
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"掌门张真人已传下号令，马上召开武当重要会议，请您尽快赶到武当山三清殿。\n"NOR,
 		"send_to" :"各位武当弟子请了！",
 		"send_to1":"为察看各位武当弟子近期来的表现，定于三日后在武当山三清殿召开门派大会。",
@@ -116,10 +116,10 @@ static mapping *wudang_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我武当号令，令武当威严受损，该受门规处置！”\n",
 		"assess_award_common":"$N说道：“希望我武当能振兴武林，凡武当弟子须时时牢记我武当精义。”\n",
 		"assess_end":"$N说道：“这次武当大会到此结束。”说罢$N道袍一挥。\n"
-		
+
 		]),
 		});
-static mapping *xingxiu_message = ({
+nosave mapping *xingxiu_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n「嘿嘿嘿」奸笑了几声，说道：“$P，本尊正有事找你呢。”\n",
@@ -143,7 +143,7 @@ static mapping *xingxiu_message = ({
 		"opposepk_award" : "$N说道:“干得好，$P，老仙我越来越欣赏你了。”\n"
 		]),
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"星宿老仙已传下号令，马上召开星宿派百仙大会，请您尽快赶到星宿海日月洞。\n"NOR,
 		"send_to" :"各位星宿弟子听了！",
 		"send_to1":"为察看你们对老仙我的忠诚心，现定于三日后在星宿海日月洞召开百仙大会。",
@@ -155,14 +155,14 @@ static mapping *xingxiu_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我命令，现已万毒穿心之法处置。”\n",
 		"assess_award_common":"$N说道：“希望星宿派能争霸武林，老仙我长生不老。”\n",
 		"assess_end":"$N说道：“这次白仙大会到此结束。”说罢$N道袍一挥。\n"
-		
+
 		]),
 
 
 
 
 		});
-static mapping *huashan_message = ({
+nosave mapping *huashan_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n点了点头,说道：“$P，你来的正好，我正有事要让你去办。”\n",
@@ -186,7 +186,7 @@ static mapping *huashan_message = ({
 		]),
 
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"岳掌门已传下号令，令华山弟子人速华山正气堂召开门派评定大会。\n"NOR,
 		"send_to" :"各位华山弟子请了！",
 		"send_to1":"为审查大家近期的所作所为，现定于三日后在华山正气堂召开门派评定大会，凡我华山弟子，务必到时参加。",
@@ -198,7 +198,7 @@ static mapping *huashan_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我掌门号令，该当严惩！”\n",
 		"assess_award_common":"$N说道：“希望各位继续努力，将我华山发扬光大。”\n",
 		"assess_end":"$N说道：“这次评定大会到此结束。”\n"
-		
+
 		]),
 
 
@@ -208,7 +208,7 @@ static mapping *huashan_message = ({
 
 		});
 
-static mapping *taohua_message = ({
+nosave mapping *taohua_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n点了点头,说道：“$P，你来的正好。”\n",
@@ -232,7 +232,7 @@ static mapping *taohua_message = ({
 		]),
 
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"桃花岛主黄药师已经传下号令，令东邪门人速回太湖归云庄，在大厅侯命。\n"NOR,
 		"send_to" : "凡我东邪门人听了",
 		"send_to1":	"三日后，老夫会于太湖归云庄察看各位近期来的表现，到时须来归云庄见我。",
@@ -244,13 +244,13 @@ static mapping *taohua_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我命令，该当严惩！”\n",
 		"assess_award_common":"$N说道：“希望各位继续努力，让江湖中人莫要小瞧了我桃花岛。”\n",
 		"assess_end":"$N说道：“老夫还有要事去办，就不多留了，我们有缘再会。”\n"
-		
+
 		]),
 
 
 
 		});
-static mapping *gumu_message = ({
+nosave mapping *gumu_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n点了点头,说道：“$P，你来的正好。”\n",
@@ -274,7 +274,7 @@ static mapping *gumu_message = ({
 		]),
 
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"古墓管家孙婆婆已经传下号令，令古墓弟子速回古墓，在大厅侯命。\n"NOR,
 		"send_to" : "凡我古墓弟子听了",
 		"send_to1":	"三日后，会于古墓大厅察看各位近期来的表现，到时须来见我。",
@@ -286,13 +286,13 @@ static mapping *gumu_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我命令，该当严惩！”\n",
 		"assess_award_common":"$N说道：“希望各位继续努力，让江湖中人莫要小瞧了我古墓弟子。”\n",
 		"assess_end":"$N说道：“这次古墓大会到此结束。”\n"
-		
+
 		]),
 
 
 
 		});
-static mapping *gaibang_message = ({
+nosave mapping *gaibang_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N拍拍$n的肩，说道：“$P，来，老叫化给你份差事。”\n",
@@ -315,7 +315,7 @@ static mapping *gaibang_message = ({
 		]),
 
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"洪帮主已传下号令，马上召开改帮大会，请您尽快赶到扬州总舵。\n"NOR,
 		"send_to" : "各位丐帮英雄请了！",
 		"send_to1":	"为察看各位弟子近期来的表现，定于三日后在扬州总舵召开丐帮大会。",
@@ -327,13 +327,13 @@ static mapping *gaibang_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我帮主号令，该受帮规处置！”\n",
 		"assess_award_common":"$N说道：“希望丐帮能振兴武林，凡丐帮弟子须时时牢记我改帮精义。”\n",
 		"assess_end":"$N说道：“这次丐帮大会到此结束。”\n"
-		
+
 		]),
 
 
 
 		});
-static mapping *emei_message = ({
+nosave mapping *emei_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n点了点头,说道：“$P，你来的正好。”\n",
@@ -355,7 +355,7 @@ static mapping *emei_message = ({
 		"opposepk_award" : "$N说道:“辛苦你了，$P，你为本门立下了一功。”\n"
 		]),
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"掌门灭绝师太已经传下法旨，令峨嵋弟子速回峨嵋山华藏庵大雄宝殿召开掌教大会。\n"NOR,
 		"send_to" : "峨嵋弟子听了！",
 		"send_to1":	"三日后于华藏庵大雄宝殿召开峨嵋大会，凡峨嵋弟子，到时务必参加。",
@@ -367,7 +367,7 @@ static mapping *emei_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我峨嵋掌门意旨，该当严惩！”\n",
 		"assess_award_common":"$N说道：“还望各位能牢记我峨嵋派信义，行侠仗义，除恶扬善。”\n",
 		"assess_end":"$N说道：“本次评定大会到此结束。”\n"
-		
+
 		]),
 
 
@@ -375,7 +375,7 @@ static mapping *emei_message = ({
 
 
 		});
-static mapping *baituo_message = ({
+nosave mapping *baituo_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N回过头看了$n一眼，说道：“$P，我现在差你去办件事。”\n",
@@ -397,7 +397,7 @@ static mapping *baituo_message = ({
 		"opposepk_award" : "$N说道:“辛苦你了，$P，你为本门立下了一功。”\n"
 		]),
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"欧阳主人已经传下命令，令白驼弟子速回西域白驼山庄召开评议大会。\n"NOR,
 		"send_to" : "白驼山弟子听了！",
 		"send_to1":	"三日后于西域白驼山庄召开评议大会，到时务必参加。",
@@ -409,13 +409,13 @@ static mapping *baituo_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我意旨，该当严惩！”\n",
 		"assess_award_common":"$N说道：“还望各位能牢记我的训斥。”\n",
 		"assess_end":"$N说道：“本次评定大会到此结束。”\n"
-		
+
 		]),
 
 
 
 		});
-static mapping *quanzhen_message = ({
+nosave mapping *quanzhen_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n点了点头,说道：“$P，你来的正好。”\n",
@@ -440,7 +440,7 @@ static mapping *quanzhen_message = ({
 
 
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"掌门丘真人已经传下法旨，令全真弟子速回终南山重阳宫长春殿召开掌教大会。\n"NOR,
 		"send_to" : "全真教徒听了！",
 		"send_to1":	"三日后于终南山重阳宫长春殿召开掌教大会，凡我全真教门下，务必准时参加。",
@@ -452,12 +452,12 @@ static mapping *quanzhen_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我全真教意旨，该当严惩！”\n",
 		"assess_award_common":"$N说道：“还望各位能牢记重阳祖师所训，行侠仗义，除恶扬善。”\n",
 		"assess_end":"$N说道：“本次评定大会到此结束。”\n"
-		
+
 		]),
 
 
 		});
-static mapping *xueshan_message = ({
+nosave mapping *xueshan_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n点了点头,说道：“$P，你来的正好，本尊差你去办件事。”\n",
@@ -479,7 +479,7 @@ static mapping *xueshan_message = ({
 		"opposepk_award" : "$N说道:“辛苦你了，$P，你为本门立下了一功。”\n"
 		]),
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"大轮寺的钟声已经响起，催促各喇嘛们回到大轮寺广场召开宏法大会。\n"NOR,
 		"send_to" : "各位雪山派喇嘛听旨！",
 		"send_to1":	"为评定各喇嘛们近日的所作所为，将于三日后于大轮寺广场召开宏法大会。",
@@ -491,13 +491,13 @@ static mapping *xueshan_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我指令，该受本座严惩！”\n",
 		"assess_award_common":"$N说道：“希望各位继续努力，时时刻刻牢记活佛教义。”\n",
 		"assess_end":"$N说道：“这次大会到此结束，阿弥陀佛！”。说罢起座离席。\n"
-		
+
 		]),
 
 
 
 		});
-static mapping *dali_message = ({
+nosave mapping *dali_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n点了点头,说道：“$P，你来的正好。”\n",
@@ -519,7 +519,7 @@ static mapping *dali_message = ({
 		"opposepk_award" : "$N说道:“辛苦你了，$P，你为本门立下了一功。”\n"
 		]),
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"段王爷已经传下旨意，令大理段家之人速回王府大殿，召开王府大会。\n"NOR,
 		"send_to" : "各位大理段家的英雄请了！",
 		"send_to1":	"为评定各位近日的所作所为，将于三日后于大理王府大殿召开王府大会，请大家务必出席。",
@@ -531,13 +531,13 @@ static mapping *dali_message = ({
 		"assess_punish":"$N说道：“$P，你数次违我旨意，该受严惩！”\n",
 		"assess_award_common":"$N说道：“希望各位能行侠仗义，造福武林。”\n",
 		"assess_end":"$N说道：“这次王府大会到此结束！”。说罢起座离席。\n"
-		
+
 		]),
 
 
 
 		});
-static mapping *shaolin_message = ({
+nosave mapping *shaolin_message = ({
 	([
 		"job_tell_mode":"传话",
 		"time_noover" : "$N对$n点了点头,说道：“$P，你来的正好，老纳正有事找你。”\n",
@@ -560,7 +560,7 @@ static mapping *shaolin_message = ({
 		]),
 
 		([
-		"job_tell_mode":"assess",		
+		"job_tell_mode":"assess",
 		"prompt":HIY"方丈大师已经传下法旨，招少林弟子速回少林寺，在大雄宝殿召开少林大会。\n"NOR,
 		"send_to" : "阿弥陀佛！！",
 		"send_to1":	"请少林弟子速回少林寺，三日后于大雄宝殿召开少林大会。",
@@ -574,8 +574,3 @@ static mapping *shaolin_message = ({
 		"assess_end":"$N说道：“本次大会到此结束，阿弥陀佛！”。说罢起座离席。\n"
 		]),
 		});
-
-
-
-
-

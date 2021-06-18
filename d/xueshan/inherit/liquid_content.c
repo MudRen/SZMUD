@@ -14,8 +14,8 @@ inherit F_NAME;
 // liquid/status set to 1 if it's a liquid type
 // must inherit this
 
-static int amount;
-static string chinese_amount;
+nosave int amount;
+nosave string chinese_amount;
 
 void setup()
 {
@@ -38,14 +38,14 @@ void set_amount(int v)
 
 void add_amount(int v)  { set_amount(amount+v); }
 
-// this is the conversion function 
-// to convert the amount into chinese number and 
+// this is the conversion function
+// to convert the amount into chinese number and
 // scalers
 string query_chinese_amount()
 {
 
    //   ºÏ¡¢Éý¡¢¶·¡¢õú¡£is the base,
-   // 10 ºÏ = 1 Éý, 10 Éý = 1 ¶· 
+   // 10 ºÏ = 1 Éý, 10 Éý = 1 ¶·
    // 10 ¶· = 1 õú
    int base1, base2, base3, base4;
    string str1, str2, str3, str4;
@@ -107,19 +107,19 @@ int move_liquid (object target)
 	 // but if you do find any other kind, should destory it
      for( i=0; i<sizeof(inv); i++ )
      	{
-			// double check if it's liquid inside 
+			// double check if it's liquid inside
 			// also check if this is the first kinda of liquid found
 			if (inv[i]->query("liquid/status") && liquid_found == 0 ) {
 				liquid_found = 1;
 				liquid = inv[i];
 			}
-			else 
+			else
 			   destruct(inv[i]);
 	 }
 	 // if there are liquid inside, then check if it's the same liquid
 	 if (liquid_found) {
 		// if the same kind, move some amount into it
-		if ( obj->query("id") == liquid->query("id") ) 
+		if ( obj->query("id") == liquid->query("id") )
 		{
 			// how much can if be filled
 			remain = target->query_max_liquid() - liquid->query_amount();

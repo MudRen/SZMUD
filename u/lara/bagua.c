@@ -8,10 +8,10 @@ inherit ITEM;
 
 #define ROUTER "/clone/obj/traverser"
 
-static object route_finder;
-static object target_room;
+nosave object route_finder;
+nosave object target_room;
 // 0: idle, 1: searching
-static int status;
+nosave int status;
 
 int do_route(string, object);
 int do_printroute(object);
@@ -53,11 +53,11 @@ int do_divine(string arg)
 	object ob, where, env, me = this_player();
 	mapping myfam;
 	string region;
-	int i, lvl, diff, busy_time ,rate; 
+	int i, lvl, diff, busy_time ,rate;
         if( me->query_temp("quitting") )
         return notify_fail("都要退出游戏了还占卜？不用这么认真吧！\n");//修正quit时zhanbu的bug
 	if (me->is_busy() || me->query_temp("pending/exercising") || me->query_temp("exit_blocked")) return notify_fail("你现在正忙着呢。\n");
-	myfam = (mapping)me->query("family");	
+	myfam = (mapping)me->query("family");
 	if( !myfam || myfam["family_name"] != "桃花岛" ) return notify_fail("你非桃花弟子，不能将奇门遁甲用于占卜。\n");
 	if( (lvl = (int)me->query_skill("qimen-dunjia", 1)) < 60 ) return notify_fail("你奇门遁甲等级不够。\n");
 	if( me->query("jingli") < 100 ) return notify_fail("你的精力不够，不足以占卜！\n");
@@ -67,8 +67,8 @@ int do_divine(string arg)
 	message_vision(CYN"$N拿起一只铁八卦屏心凝气，拇指依次掐向铁八卦上子、丑、寅、卯、辰、巳、午、未、申、酉、戌、亥\n各个方位，细心推算起来……\n\n\n"NOR, me);
         rate = 21 - lvl/20; //报酬率
         if(rate < 1) rate = 1;
-	busy_time = rate-random(me->query("int")-20); 
-        //调整busy time计算公式，先天悟性越高busy time越短         
+	busy_time = rate-random(me->query("int")-20);
+        //调整busy time计算公式，先天悟性越高busy time越短
 	if(busy_time < 1) busy_time = 1;
 	me->start_busy(busy_time);
 	me->add("jing", -50);
@@ -80,7 +80,7 @@ int do_divine(string arg)
 	env = environment(me);
 	diff = (int)(me->query("combat_exp")/ob->query("combat_exp"));
 	if( lvl > 120 && !ob->query_temp("apply/name") && random(lvl / 10 + me->query_int() + diff) > ob->query_kar()/2 )
-	{ 
+	{
 		me->add("jing", -random(200-lvl));
 		printf("%s(%s)现在在%s%s。\n", (string)ob->name(), (string)ob->query("id"), region, (string)where->query("short"));
 		if( me->query("combat_exp") < (me->query("int")*3+me->query_int()) * 5000 )
@@ -127,9 +127,9 @@ int do_chuzhen(string arg)
 	if(!arg) return notify_fail("你要从哪个方向出阵？\n");
 	me = this_player();
 	if (me->is_busy() || me->query_temp("pending/exercising") || me->query_temp("exit_blocked")) return notify_fail("你现在正忙着呢。\n");
-	env = environment(me);	
+	env = environment(me);
 	if( !env->query("th_buzhen") ) return notify_fail("这里并无布有奇门阵法。\n");
-	if( me->query_skill("qimen-dunjia", 1) < 60 ) return notify_fail("你的奇门遁甲修为不够，无法看出阵法秘奥。\n");	
+	if( me->query_skill("qimen-dunjia", 1) < 60 ) return notify_fail("你的奇门遁甲修为不够，无法看出阵法秘奥。\n");
 	if( me->query_skill("qimen-dunjia",1) < env->query("th_pozhen")/3)
 	{
 		message_vision(CYN"$N坐在地上冥思苦想，突然脸色大变，口吐鲜血！\n"NOR,me);
@@ -141,10 +141,10 @@ int do_chuzhen(string arg)
 	if(undefinedp(exit[arg])) return notify_fail("这个方向没有出路。\n");
 	if( !(obj = find_object(dest)) ) call_other(dest, "???");
 	if( !(obj = find_object(dest)) ) return notify_fail("这个方向没有出路。\n");
-	message_vision(CYN"$N凝思片刻，身形左一转，右一旋，忽然消失得无影无踪。\n"NOR,me);	
+	message_vision(CYN"$N凝思片刻，身形左一转，右一旋，忽然消失得无影无踪。\n"NOR,me);
 	if( me->move(obj) )
 	{
-		message( "vision", me->name()+"快步走了过来。\n"NOR, 
+		message( "vision", me->name()+"快步走了过来。\n"NOR,
 		environment(me), ({me}) );
 		return 1;
 	}
@@ -299,7 +299,7 @@ int do_convert(string arg)
 {
 	object me, obj;
 	int th_exp, th_pot, exp, pot, max_pot, use_pot;
-	
+
 	me = this_player();
 	exp = me->query("combat_exp");
 	pot = me->query("potential");

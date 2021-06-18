@@ -10,8 +10,8 @@ inherit CHARACTER;
 inherit F_AUTOLOAD;
 inherit F_SAVE;
 
-static int last_age_set;
-static int attach_flag = 0; 
+nosave int last_age_set;
+nosave int attach_flag = 0;
 void create()
 {
     ::create();
@@ -27,7 +27,7 @@ void terminal_type(string term_type)
 void reset()
 {
     int c = (int)query("combat_exp") - (int)query("combat_exp_last");
-    int m = (int)query("mud_age") - (int)query("mud_age_last"); 
+    int m = (int)query("mud_age") - (int)query("mud_age_last");
 
         if( m == 0 )
         {
@@ -38,11 +38,11 @@ void reset()
         add("potential", 1);
     if( (int)query("thief") > 0 )
         add("thief", -1 );
-    if (3*c > m) log_file("CombatExp", sprintf("%s(%s) got %d combat_exp in %d seconds: %s\n", 
+    if (3*c > m) log_file("CombatExp", sprintf("%s(%s) got %d combat_exp in %d seconds: %s\n",
             query("name"), getuid(this_object()), c, m, ctime(time())));
     set("combat_exp_last", query("combat_exp"));
     set("mud_age_last", query("mud_age"));
-    if ( c/m*3600 > 10000 ) 
+    if ( c/m*3600 > 10000 )
         log_file( "abnormalExp", sprintf("%s(%s) got %d combat_exp in%d seconds: %s\n", query("name"), getuid(this_object()), c, m, ctime(time())));
 }
 
@@ -100,8 +100,8 @@ year:259200 month:21600 total:max
 	if( !last_age_set ) last_age_set = time();
 	add("mud_age", time() - last_age_set);
 	last_age_set = time();
-	if((int)query("mud_age") <= 172800) { // age <= 16 
-		set("age", 14 + (int)query("age_modify") + ((int)query("mud_age") / 86400)); 
+	if((int)query("mud_age") <= 172800) { // age <= 16
+		set("age", 14 + (int)query("age_modify") + ((int)query("mud_age") / 86400));
 		set("month",((query("mud_age")-(query("age")-14)*86400)/7200 + 1 ));
 	}else if((int)query("mud_age") > 172800 && (int)query("mud_age") <= 1555200) { // age > 16 && age <= 24
 		set("age", 16 + (int)query("age_modify") + (((int)query("mud_age")-172800) / 172800));
@@ -144,16 +144,16 @@ private void user_dump(int type)
             }
             break;
         case DUMP_IDLE:
-       
+
             if (wiz_type != "(admin)" && wiz_type != "(arch)" && wiz_type != "(wizard)" )
 //              {
 //                  say(HIR + "Rank Has Its Privileges! ^_*" + NOR + "\n");
-//                  command("hehe");    
+//                  command("hehe");
 //              }
-//              else    
+//              else
             {
             if ( query( "scheming" ) ) return;
-            tell_object( this_object(), "对不起，您已经发呆超过 " 
+            tell_object( this_object(), "对不起，您已经发呆超过 "
                 + IDLE_TIMEOUT/60 + " 分钟了，请下次再来。\n");
             tell_room( environment(), "一阵风吹来，将发呆中的" + query("name")
                 + "化为一堆飞灰，消失了。\n", ({this_object()}));
@@ -177,10 +177,10 @@ private void net_dead()
     // Stop fighting, we'll be back soon.
     remove_all_enemy();
     if( objectp(link_ob = query_temp("link_ob")) )
-        destruct(link_ob);    
+        destruct(link_ob);
     if ( query( "scheming" ) ) return;
     set_temp("netdead", 1);
-    if( userp(this_object()) ) 
+    if( userp(this_object()) )
     {
         call_out("user_dump", NET_DEAD_TIMEOUT, DUMP_NET_DEAD);
         tell_room(environment(), query("name") + "断线了。\n", this_object());
@@ -188,8 +188,8 @@ private void net_dead()
         sDis = this_object()->query( "env/disconnect" );
         if ( stringp( sDis ) )
             command( sDis );
-    } 
-    else 
+    }
+    else
     {
         set_temp("quit/forced", 1);
         command("quit");
@@ -204,7 +204,7 @@ void reconnect()
     set_temp("netdead",0);
     remove_call_out("user_dump");
     tell_object(this_object(), "重新连线完毕。\n");
-    
+
     if (query_temp("sleep_type"))
         input_to("check_input",0,this_object());
 }

@@ -10,7 +10,7 @@ inherit F_DBASE;
 inherit F_MOVE;
 inherit F_NAME;
 
-static int amount;
+nosave int amount;
 
 void setup()
 {
@@ -46,17 +46,17 @@ varargs int move(mixed dest, int silent)
 
 // we want combined item can always be transfered without checking
 // overweight. The correct weight will be reset by set_amount later;
-  
-		//wzfeng have remove it.becasue if set it =0 ,u can arbitrari put anything in a bag. 
+
+		//wzfeng have remove it.becasue if set it =0 ,u can arbitrari put anything in a bag.
 		//this_object()->set_weight(0);
         if( ::move(dest, silent) ) {
 			//I douno why add living .if add it, when u put something in bag, will jump over
 			//so I'm remove it				wzfeng 2000 7/////////////////////////////////
-/*                if( living(env = environment()) 
-                   && !this_object()->query("embedded")) 
+/*                if( living(env = environment())
+                   && !this_object()->query("embedded"))
 				   */
-                if( (env = environment()) 
-                   && !this_object()->query("embedded")) 
+                if( (env = environment())
+                   && !this_object()->query("embedded"))
 				{
                         file = base_name(this_object());
                         inv = all_inventory(env);

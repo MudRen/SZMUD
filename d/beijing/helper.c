@@ -7,15 +7,15 @@
 
 #define START_ROOM "/d/beijing/tianqiao"
 
-static int *kill_base_a = ({5, 5, 5, 5, 5, 5, 5});
-static int *job_upgrade_a = ({100, 200, 400, 800, 1000, 1200, 200});
+nosave int *kill_base_a = ({5, 5, 5, 5, 5, 5, 5});
+nosave int *job_upgrade_a = ({100, 200, 400, 800, 1000, 1200, 200});
 int job_upgrade_num(int rank) {return job_upgrade_a[rank];}
 
-static int *speed_base_a = ({500, 800, 1000, 1500, 1800, 2200, 2500});
+nosave int *speed_base_a = ({500, 800, 1000, 1500, 1800, 2200, 2500});
 int speed_base(int rank) { return speed_base_a[rank]; }
-static int *exp_base_a = ({20000, 50000, 100000, 200000, 
+nosave int *exp_base_a = ({20000, 50000, 100000, 200000,
 	    400000, 700000, 1000000});
-static string *RANK_NAME = ({
+nosave string *RANK_NAME = ({
     "城门千总",
     "城门守备",
     "骁骑营佐领",
@@ -24,7 +24,7 @@ static string *RANK_NAME = ({
     "副都统",
     "都统",
 });
-static string *DEPT_NAME = ({
+nosave string *DEPT_NAME = ({
 	"骁骑营",
 	"侍卫营",
 });
@@ -39,7 +39,7 @@ string player_title(object player) {
     }
 }
 
-static string *JUEWEI_NAME = ({
+nosave string *JUEWEI_NAME = ({
     "云骑尉",
     "骑都尉",
     "三等轻车都尉", "二等轻车都尉", "一等轻车都尉",
@@ -49,19 +49,19 @@ static string *JUEWEI_NAME = ({
     "三等侯爵", "二等侯爵", "一等侯爵",
     "三等公爵", "二等公爵", "一等公爵",
 });
-string juewei_name(int job_total) { 	
+string juewei_name(int job_total) {
     if ((job_total/50) >= sizeof(JUEWEI_NAME)) {
 	return JUEWEI_NAME[sizeof(JUEWEI_NAME)-1];
     }
-    return JUEWEI_NAME[job_total/50]; 
+    return JUEWEI_NAME[job_total/50];
 }
 
-static int *SUICONG_MAX = ({
+nosave int *SUICONG_MAX = ({
     0, 0, 1, 2, 3, 4, 5,
 });
 int suicong_max(int rank) {return SUICONG_MAX[rank]; }
 
-static int *RANK_POSITION_NUM = ({36, 24, 18, 12, 8, 4, 2});
+nosave int *RANK_POSITION_NUM = ({36, 24, 18, 12, 8, 4, 2});
 int rank_position_num(int rank) { return RANK_POSITION_NUM[rank];}
 int rank_upgrade_num(int rank) {return job_upgrade_a[rank];}
 int pending_time() {return 1296000; }
@@ -116,7 +116,7 @@ int shichen()
     string ev = NATURE_D->outdoor_room_event();
 
     switch (ev) {
-	case "event_dawn" : 
+	case "event_dawn" :
 	    return 4;
 	case "event_sunrise" :
 	    return 8;
@@ -144,7 +144,7 @@ int is_night_shift()
 }
 int is_sunrise() { return shichen()-8; }
 int is_sunset() { return shichen()-19; }
-int is_dark_time() 
+int is_dark_time()
 {
     int sc = shichen();
     if (sc == 0 || sc == 21) return 1;
@@ -177,7 +177,7 @@ void job_reward(object player, int rank, int kill_num, int fail_num)
     int kill_finish, rate;
     float kill_ratio, ftemp_a, ftemp_b;
 
-    // sanity check 
+    // sanity check
     if (!player || rank<0 || rank>6 || kill_num < 0 || fail_num < 0) {
 	write("BUG: 请告诉负责北京的巫师：job_reward sanity check.\n");
 	return;
@@ -193,7 +193,7 @@ void job_reward(object player, int rank, int kill_num, int fail_num)
 
     pos_ratio_a = mizheng->pos_ratio();
     speed_cur_a = mizheng->query("speed_cur");
-    
+
     speed_base = speed_base_a[rank];
     speed_cur = speed_cur_a[rank];
     pos_ratio = pos_ratio_a[rank];
@@ -217,7 +217,7 @@ void job_reward(object player, int rank, int kill_num, int fail_num)
   	break;
     }
 
-    /* position fullness */        
+    /* position fullness */
     if (pos_ratio > 50) {  /* too many players */
 	if (speed_cur*100/speed_base > 70) {
 	    speed_cur -= pos_ratio*speed_base/1000;
@@ -227,7 +227,7 @@ void job_reward(object player, int rank, int kill_num, int fail_num)
 	    speed_cur += (100-pos_ratio)*speed_base/1000;
 	}
     }
-      
+
     /* kill numbers and player exp take effect */
     if (exp_player > exp_base) {
 	kill_finish = kill_finish*exp_base/exp_player;
@@ -238,25 +238,25 @@ void job_reward(object player, int rank, int kill_num, int fail_num)
     kill_ratio=ftemp_a/ftemp_b;
     if (kill_ratio > 1.0){
        /* I hope log and floating point numbers work */
-       kill_ratio = 1.0+0.1*sqrt(kill_ratio); 
+       kill_ratio = 1.0+0.1*sqrt(kill_ratio);
        if (kill_ratio > 1.4) kill_ratio=1.40;
     }
 
     /* primary reward: I wish the mixed float/int arithmetic is all right */
     exp_reward = speed_cur * kill_ratio / 2; /* half hour job */
-	
+
     if (job_finish > 2*job_upgrade) {
 	exp_reward = exp_reward * job_upgrade / (job_finish-job_upgrade);
     }
-	
+
     exp_reward = exp_reward * (95+random(10))/200;  // each job is 15 min
     player->add("combat_exp", exp_reward);
     player->add("potential",  exp_reward/10);
- 
+
     if (player->query("id") != "xuanyuan") {	// no need to log my testing
 	log_file("beijing/reward",
 	    sprintf("%s : %s得了 %d 点经验。kill_num=%d, fail_num=%d\n",
-	    ctime(time()), player->name(), exp_reward, 
+	    ctime(time()), player->name(), exp_reward,
 	    kill_num, fail_num));
     }
     tell_object(player, "你的经验增加了 "+exp_reward+" 点！\n", exp_reward);
@@ -282,16 +282,16 @@ int random_walk()
         object here = environment(me);
 
 	if ( strsrch(base_name(here), "/d/beijing") != 0) {
-                message("vision", me->name() + 
+                message("vision", me->name() +
 		    "急急忙忙地离开了。\n", here, me);
                 me->move(START_ROOM);
                 message("vision", me->name() + "走了过来。\n",
 		    here, me);
         }
 
-        if( !objectp(here) 
+        if( !objectp(here)
         || me->is_fighting() || me->is_busy()
-        || !mapp(exits = here->query("exits")) 
+        || !mapp(exits = here->query("exits"))
         || me->query("jingli") < me->query("max_jingli") / 2 ) return 0;
 
         dirs = keys(exits);

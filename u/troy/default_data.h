@@ -2,19 +2,19 @@
 //2002.1.1 troy update 古墓
 //default data set
 
-static int OPPOSE_DROP_EXP=0;//200;
+nosave int OPPOSE_DROP_EXP=0;//200;
 
 
 
-static int MASTER_CALL_IN_EXP=300;
-static int FINISH_JOB_EXP=100;//100;
+nosave int MASTER_CALL_IN_EXP=300;
+nosave int FINISH_JOB_EXP=100;//100;
 
-static int MASTER_CALL_IN_CON=10;
-static int OPPOSE_DROP_CON=5;
-static int FINISH_JOB_CON=2;
+nosave int MASTER_CALL_IN_CON=10;
+nosave int OPPOSE_DROP_CON=5;
+nosave int FINISH_JOB_CON=2;
 
 //When assess meeting start, will dealy ASSESS_DELAY time do it.
-static int ASSESS_DELAY=300;
+nosave int ASSESS_DELAY=300;
 int ASSESS_NUM=10000;
 //门派评定的基数
 //
@@ -54,13 +54,13 @@ mapping strategy_wd=([
 				   //竞争性参数
 				   "oppose_pker"		:30,
 				   "support_pker"		:0,
-				   
+
 				   "protect"			:30,
 				   "plunder"			:0,
-				   
+
 //     		       "develop"			:20,
 //				   "destroy"			:-50,
-			  
+
 				   //传统性参数
 				   "business"			:0,
 				   "generally"			:40,
@@ -71,10 +71,10 @@ mapping strategy_xx=([
 				   //竞争性参数
 				   "oppose_pker"		:0,
 				   "support_pker"		:30,
-				   
+
 				   "protect"			:0,
 				   "plunder"			:30,
-				   
+
 				   //传统性参数
 				   "business"			:0,
 				   "generally"			:40,
@@ -85,11 +85,11 @@ mapping strategy_hs=([
 				   //竞争性参数
 				   "oppose_pker"		:40,
 				   "support_pker"		:0,
-				   
+
 				   "protect"			:20,
 				   "plunder"			:0,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:10,
 				   "generally"			:30,
@@ -100,11 +100,11 @@ mapping strategy_th=([
 				   //竞争性参数
 				   "oppose_pker"		:15,
 				   "support_pker"		:15,
-				   
+
 				   "protect"			:15,
 				   "plunder"			:15,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:15,
 				   "generally"			:25,
@@ -115,11 +115,11 @@ mapping strategy_gb=([
 				   //竞争性参数
 				   "oppose_pker"		:20,
 				   "support_pker"		:20,
-				   
+
 				   "protect"			:20,
 				   "plunder"			:20,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:0,
 				   "generally"			:20,
@@ -130,11 +130,11 @@ mapping strategy_gm=([
 				   //竞争性参数
 				   "oppose_pker"		:20,
 				   "support_pker"		:20,
-				   
+
 				   "protect"			:20,
 				   "plunder"			:20,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:0,
 				   "generally"			:20,
@@ -145,11 +145,11 @@ mapping strategy_em=([
 				   //竞争性参数
 				   "oppose_pker"		:50,
 				   "support_pker"		:0,
-				   
+
 				   "protect"			:10,
 				   "plunder"			:0,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:0,
 				   "generally"			:40,
@@ -160,11 +160,11 @@ mapping strategy_bt=([
 				   //竞争性参数
 				   "oppose_pker"		:0,
 				   "support_pker"		:30,
-				   
+
 				   "protect"			:0,
 				   "plunder"			:30,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:20,
 				   "generally"			:20,
@@ -175,11 +175,11 @@ mapping strategy_qz=([
 				   //竞争性参数
 				   "oppose_pker"		:30,
 				   "support_pker"		:0,
-				   
+
 				   "protect"			:50,
 				   "plunder"			:0,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:0,
 				   "generally"			:20,
@@ -190,11 +190,11 @@ mapping strategy_xs=([
 				   //竞争性参数
 				   "oppose_pker"		:0,
 				   "support_pker"		:20,
-				   
+
 				   "protect"			:15,
 				   "plunder"			:15,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:0,
 				   "generally"			:50,
@@ -205,11 +205,11 @@ mapping strategy_dl=([
 				   //竞争性参数
 				   "oppose_pker"		:10,
 				   "support_pker"		:0,
-				   
+
 				   "protect"			:15,
 				   "plunder"			:0,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:40,
 				   "generally"			:35,
@@ -220,11 +220,11 @@ mapping strategy_sl=([
 				   //竞争性参数
 				   "oppose_pker"		:0,
 				   "support_pker"		:0,
-				   
+
 				   "protect"			:70,
 				   "plunder"			:0,
-				   
-			  
+
+
 				   //传统性参数
 				   "business"			:0,
 				   "generally"			:30,
@@ -316,7 +316,7 @@ mapping power_wd=([
 				   "南疆"		:5,
 				   "西域"		:0,
 				   "东北"		:5,
-				   
+
 
 ]);
 //xingxiu
@@ -327,7 +327,7 @@ mapping power_xx=([
 				   "南疆"		:0,
 				   "西域"		:30,
 				   "东北"		:5,
-				   
+
 
 ]);
 //huashan
@@ -338,7 +338,7 @@ mapping power_hs=([
 				   "南疆"		:5,
 				   "西域"		:0,
 				   "东北"		:5,
-				   
+
 
 ]);
 
@@ -350,7 +350,7 @@ mapping power_th=([
 				   "南疆"		:0,
 				   "西域"		:0,
 				   "东北"		:5,
-				   
+
 
 ]);
 
@@ -362,7 +362,7 @@ mapping power_gm=([
 				   "南疆"		:0,
 				   "西域"		:0,
 				   "东北"		:0,
-				   
+
 
 ]);
 
@@ -432,10 +432,3 @@ mapping power_sl=([
 				   "西域"		:0,
 				   "东北"		:5,
 ]);
-
-
-
-
-
-
-

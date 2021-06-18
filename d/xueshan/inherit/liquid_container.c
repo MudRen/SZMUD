@@ -10,9 +10,9 @@
 // liquid/unique : set to 1 if there is only one kind of liquid can be inside
 // liquid/uniqueid : set to the id of that kind	liquid
 
-static int max_liquid;
-static int current_liquid;
-static string liquid_name;
+nosave int max_liquid;
+nosave int current_liquid;
+nosave string liquid_name;
 
 // couple of statics
 // max_liquid is the max amout of liquid this container can hold
@@ -43,7 +43,7 @@ varargs object carry_liquid(string file, int amount, string alternative)
         return ob;
 }
 
-void set_liquid_name(string arg) 
+void set_liquid_name(string arg)
 {
     if(strlen(arg) < 1)
         liquid_name = arg;
@@ -94,7 +94,7 @@ string extra_long()
 
 int do_pour(string arg)
 {
-	// bottle1 is this current container, 
+	// bottle1 is this current container,
 	// bottle2 is the destination container.
 	string arg1, arg2, liquid_name;
 	object me = this_player();
@@ -110,7 +110,7 @@ int do_pour(string arg)
 	     return  notify_fail("命令格式：pour <容器> into <容器>\n");
 
 	// syntex is pour bottle1 into bottle2
-    if( sscanf(arg, "%s into %s", arg1, arg2)!= 2 ) 
+    if( sscanf(arg, "%s into %s", arg1, arg2)!= 2 )
 	     return  notify_fail("命令格式：pour <容器> into <容器>\n");
 
 	// player has to have the bottle in his inventory to pour.
@@ -120,10 +120,10 @@ int do_pour(string arg)
 
 	// check if the destination container is in player's inventory or on the ground
 	if( !(bottle2 = present(arg2, me)) ){
-	  if(  !(bottle2 = present(arg2, environment(me))) ) 
+	  if(  !(bottle2 = present(arg2, environment(me))) )
 	     return  notify_fail("找不到那样东西。 \n");
     }
-	// check I am pouring the same bottle as the action, 
+	// check I am pouring the same bottle as the action,
 	// don't know if the check is needed, leave it out for now
 //	if (bottle1 != obj)
 //	     return  notify_fail("can find that bottle \n");
@@ -140,13 +140,13 @@ int do_pour(string arg)
 		// but if you do find any other kind, should destory it
      	for( i=0; i<sizeof(inv); i++ )
      	{
-			// double check if it's liquid inside 
+			// double check if it's liquid inside
 			// also check if this is the first kinda of liquid found
 			if (inv[i]->query("liquid/status") && liquid_found == 0 ) {
 				liquid_found = 1;
 				liquid = inv[i];
 			}
-			else 
+			else
 			   destruct(inv[i]);
 		}
 		// if no liquid
@@ -166,19 +166,19 @@ int do_pour(string arg)
 				 if(!liquid)
 					 bottle1->set_current_liquid(0);
                  else {
-				     if (present(liquid, bottle1)) 
+				     if (present(liquid, bottle1))
 				         bottle1->set_current_liquid(liquid->query_amount());
 				     else
 				         bottle1->set_current_liquid(0);
 				 }
                  message_vision("$N将"+liquid_name+"小心翼翼的倒入"+bottle2->name()+"内。\n"NOR, me );
-			 } 
+			 }
 		}
-    	else 
+    	else
 	         return  notify_fail("你不能往那里倒。\n");
-		
+
 	}
-	else 
+	else
 	   return  notify_fail("这样东西不能倒。\n");
 
 

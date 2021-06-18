@@ -1,7 +1,7 @@
 //Cracked by Roath
 #ifndef __BJ_ROOMS_H__
 #define __BJ_ROOMS_H__
-static string *BJ_ROOMS = ({
+nosave string *BJ_ROOMS = ({
 "/d/beijing/andingmen.c",
 "/d/beijing/beihai.c",
 "/d/beijing/bingbuyamen.c",

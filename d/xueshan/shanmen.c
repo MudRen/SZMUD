@@ -40,19 +40,19 @@ int valid_leave(object me, string dir)
 
         if (present("ge lunbu", environment(me))) {
             if (!myfam || myfam["family_name"] != "Ñ©É½ÅÉ"
-	    && myfam["family_name"] != "Ñªµ¶ÃÅ" 
+	    && myfam["family_name"] != "Ñªµ¶ÃÅ"
 	    && !present("suyou guan", this_player()))
-            if (!this_player()->query_temp("marks/ËÖ"))		
+            if (!this_player()->query_temp("marks/ËÖ"))
                 return notify_fail("¸ğÂ×²¼µ²×¡ÄãËµ£ºÄã×¼±¸ÓÃÊ²÷á¹©·îÎÒÃÇ·ğÒ¯Ñ½£¿\n");
 	else this_player()->set_temp("marks/ËÖ", 0);
         }
-        
+
         return 1;
    }
    return ::valid_leave(me, dir);
 }
-static string current_id = "";
-static int current_job = 0;
+nosave string current_id = "";
+nosave int current_job = 0;
 
 int introduce_robber(object current_player);
 int reset_to_normal();

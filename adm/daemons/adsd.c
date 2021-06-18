@@ -3,7 +3,7 @@
 #define TIME_TICK (time()*60)
 
 
-static int current_ads_phase;
+nosave int current_ads_phase;
 mapping *ads_phase;
 
 mapping *read_table(string file);
@@ -42,27 +42,27 @@ void update_ads_phase()
 	int i;
 	int ads_count = 0;
 	object* all;
-	
+
 	remove_call_out("update_ads_phase");
-	
-	if(current_ads_phase==0) 
+
+	if(current_ads_phase==0)
 	{
        		init_ads_phase();
    	}
 
 	current_ads_phase = (++current_ads_phase) % sizeof(ads_phase);
-	
+
 	message("channel:ads", "【广告】" + ads_phase[current_ads_phase]["time_msg"] + "\n", users());
-	
+
 	all = users();
 	for(i=0;i<sizeof(all);i++) {
 		if( member_array("ads", all[i]->query("channels"))==-1 ) continue;
 		else ads_count++;
 	}
-	
+
 	if(ads_count >=1) {
 	//	message( "channel:wiz", sprintf("【巫师】%d 个玩家接收此广告。\n", ads_count), users());
-		log_file("ADS", sprintf("[%s] \"" + ads_phase[current_ads_phase]["time_msg"] + "\" 被 [%d] 个玩家接收\n", 
+		log_file("ADS", sprintf("[%s] \"" + ads_phase[current_ads_phase]["time_msg"] + "\" 被 [%d] 个玩家接收\n",
 		ctime(time()),	ads_count));
 	}
 
